@@ -30,4 +30,8 @@ A [Craft CMS](https://craftcms.com/) starter project by [Andrea DeMers](http://a
 - [Vue.js](https://vuejs.org/)
 
 ## Todo
-- [] Configure PurgeCSS
+- [ ] Configure PurgeCSS
+- [ ] Add usage instructions
+
+## License
+The MIT License (MIT). Please see [License file](https://github.com/ademers/craft-starter/blob/develop/LICENSE.md) for more information.
