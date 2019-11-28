@@ -1,0 +1,21 @@
+{# Home page #}
+{% extends "_layouts/base.twig" %}
+
+{% block sectionhHeader %}
+    <div class="container px-4">
+        {# <h1 class="text-6xl">{{ siteName }}</h1> #}
+        <h1 class="text-4xl font-bold">The best Craft CMS starter project in the world!</h1>
+    </div>
+{% endblock sectionhHeader %}
+
+{% block content %}
+    <div class="container mt-8 px-4">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, praesentium voluptatem. Asperiores aut incidunt ex adipisci ipsam ipsa sapiente modi odio corrupti doloribus?</p>
+
+        <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, praesentium voluptatem. Asperiores aut incidunt ex adipisci ipsam ipsa sapiente modi odio corrupti doloribus? Expedita commodi sequi alias eveniet reprehenderit obcaecati!</p>
+        
+        <test-component inline-template>
+            <p class="mt-4">This is a Vue.js greeting component: ${ greeting }</p>
+        </test-component>
+    </div>
+{% endblock content %}

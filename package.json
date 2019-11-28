@@ -1,0 +1,33 @@
+{
+  "name": "craft-starter",
+  "version": "1.0.0",
+  "description": "Craft CMS starter project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "npm run development -- --watch",
+    "watch-poll": "npm run watch -- --watch-poll",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "author": "Andrea DeMers",
+  "license": "ISC",
+  "dependencies": {
+    "lazysizes": "^5.1.2",
+    "tailwindcss": "^1.2.0-canary.1",
+    "vue": "^2.6.10"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "cross-env": "^6.0.3",
+    "laravel-mix": "^5.0.0",
+    "laravel-mix-critical": "^0.1.2",
+    "laravel-mix-criticalcss": "^1.0.1",
+    "laravel-mix-purgecss": "^4.2.0",
+    "vue-template-compiler": "^2.6.10"
+  }
+}

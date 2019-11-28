@@ -1,0 +1,66 @@
+dateModified: 1574884918
+email:
+  fromEmail: admin@andreademers.com
+  fromName: 'Craft Starter'
+  transportType: craft\mail\transportadapters\Sendmail
+fieldGroups:
+  71d53f95-1c79-4cf9-9bf3-bff04b506bea:
+    name: Common
+plugins:
+  minify:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  twigpack:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  seomatic:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.8
+  imager:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.0
+  mailgun:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+  retcon:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  contact-form:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+siteGroups:
+  3dcc8a9c-1af6-4cb7-b4f3-9102d6f5f013:
+    name: 'Craft Starter'
+sites:
+  5175a4de-61e4-46da-a275-8d5e41e17cb6:
+    baseUrl: $DEFAULT_SITE_URL
+    handle: default
+    hasUrls: true
+    language: en-US
+    name: 'Craft Starter'
+    primary: true
+    siteGroup: 3dcc8a9c-1af6-4cb7-b4f3-9102d6f5f013
+    sortOrder: 1
+system:
+  edition: solo
+  name: $SYSTEM_NAME
+  live: true
+  schemaVersion: 3.3.3
+  timeZone: America/Los_Angeles
+users:
+  requireEmailVerification: true
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoVolumeUid: null
+  photoSubpath: ''
