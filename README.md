@@ -30,4 +30,5 @@ A [Craft CMS](https://craftcms.com/) starter project by [Andrea DeMers](http://a
 - [Vue.js](https://vuejs.org/)
 
 ## Todo
-- [] Configure PurgeCSS
+- [ ] Configure PurgeCSS
+- [ ] Add usage instructions
