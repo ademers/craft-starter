@@ -1,5 +1,8 @@
 {
-  "require": {
+    "name": "ademers/craft-starter",
+    "description": "A Craft CMS starter project by Andrea DeMers.",
+    "version": "1.0.1",
+    "require": {
     "aelvan/imager": "^2.3",
     "craftcms/cms": "^3.0.0",
     "craftcms/contact-form": "^2.2",
