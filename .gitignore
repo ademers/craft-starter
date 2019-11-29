@@ -1,5 +1,6 @@
 # CRAFT ENVIRONMENT
 .env*
+!.env.example
 
 # COMPOSER
 /vendor
