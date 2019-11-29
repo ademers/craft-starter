@@ -1,8 +1,10 @@
-dateModified: 1574884918
+dateModified: 1575060560
 email:
-  fromEmail: admin@andreademers.com
-  fromName: 'Craft Starter'
+  fromEmail: $SYSTEM_EMAIL_ADDRESS
+  fromName: $SENDER_NAME
+  template: null
   transportType: craft\mail\transportadapters\Sendmail
+  transportSettings: null
 fieldGroups:
   71d53f95-1c79-4cf9-9bf3-bff04b506bea:
     name: Common
