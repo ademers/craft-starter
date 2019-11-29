@@ -1,9 +1,10 @@
-# Craft CMS Starter Project
+# Craft CMS 3.x Starter Project
 
 A [Craft CMS](https://craftcms.com/) starter project by [Andrea DeMers](http://andreademers.com).
 
 ## Content Management System (CMS)
 - [Craft CMS](https://craftcms.com/)
+- [Craft CMS 3.x documentation](https://docs.craftcms.com/v3/)
 
 ## Craft CMS Plugins
 - [Contact Form](https://plugins.craftcms.com/contact-form)
@@ -29,9 +30,23 @@ A [Craft CMS](https://craftcms.com/) starter project by [Andrea DeMers](http://a
 - [lazySizes](https://afarkas.github.io/lazysizes/index.html)
 - [Vue.js](https://vuejs.org/)
 
+## Requirements
+- Craft [server requirements](https://docs.craftcms.com/v3/requirements.html)
+- Craft [control panel browser requirements](https://docs.craftcms.com/v3/requirements.html#control-panel-browser-requirements)
+- [Composer](https://getcomposer.org/) PHP dependency manager 1.3.0 or later
+
+## Installation
+1. To create a new project, run `composer create-project ademers/craft-starter <Path>`, substituting `<Path>` with the path where Composer should create the project.
+2. Create a database as per the instructions in the [Craft documentation](https://docs.craftcms.com/v3/installation.html#step-4-create-a-database).
+3. Set up your web server as per the instructions in the [Craft documentation](https://docs.craftcms.com/v3/installation.html#step-5-set-up-the-web-server).
+4. Duplicate the `.env.example` file in the project root and rename it to `.env`.
+5. Run the Craft setup wizard `./craft setup` and answer the questions when prompted.
+6. Access your new Craft website from your web browser.
+7. Do a little dance.
+
 ## Todo
 - [ ] Configure PurgeCSS
-- [ ] Add usage instructions
+- [x] Add installation instructions
 
 ## License
 The MIT License (MIT). Please see [License file](https://github.com/ademers/craft-starter/blob/develop/LICENSE.md) for more information.
