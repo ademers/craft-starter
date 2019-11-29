@@ -1,6 +1,13 @@
 {
     "name": "ademers/craft-starter",
     "description": "A Craft CMS starter project by Andrea DeMers.",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "project"
+      ],
+    "type": "project",
     "version": "1.0.4",
     "license": "MIT",
     "require": {
