@@ -1,4 +1,4 @@
-dateModified: 1578760501
+dateModified: 1578760926
 email:
   fromEmail: $SYSTEM_EMAIL_ADDRESS
   fromName: $SENDER_NAME
@@ -108,7 +108,7 @@ sites:
     siteGroup: 3dcc8a9c-1af6-4cb7-b4f3-9102d6f5f013
     sortOrder: 1
 system:
-  edition: solo
+  edition: pro
   live: true
   name: $SYSTEM_NAME
   schemaVersion: 3.4.5
