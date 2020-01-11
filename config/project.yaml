@@ -1,4 +1,4 @@
-dateModified: 1578760926
+dateModified: 1578761851
 email:
   fromEmail: $SYSTEM_EMAIL_ADDRESS
   fromName: $SENDER_NAME
@@ -111,7 +111,7 @@ system:
   edition: pro
   live: true
   name: $SYSTEM_NAME
-  schemaVersion: 3.4.5
+  schemaVersion: 3.4.6
   timeZone: America/Los_Angeles
 users:
   allowPublicRegistration: false
