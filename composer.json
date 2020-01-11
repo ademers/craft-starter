@@ -12,7 +12,7 @@
     "license": "MIT",
     "require": {
     "aelvan/imager": "^2.3",
-    "craftcms/cms": "^3.0.0",
+    "craftcms/cms": "^3.4.0-beta.4",
     "craftcms/contact-form": "^2.2",
     "craftcms/mailgun": "^1.4",
     "craftcms/redactor": "^2.4",

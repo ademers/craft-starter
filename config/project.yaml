@@ -1,31 +1,49 @@
-dateModified: 1575060560
+dateModified: 1578760926
 email:
   fromEmail: $SYSTEM_EMAIL_ADDRESS
   fromName: $SENDER_NAME
   template: null
-  transportType: craft\mail\transportadapters\Sendmail
   transportSettings: null
+  transportType: craft\mail\transportadapters\Sendmail
 fieldGroups:
   71d53f95-1c79-4cf9-9bf3-bff04b506bea:
     name: Common
+fields:
+  b301e0d5-b8c7-46b2-9798-5765e883999d:
+    contentColumnType: text
+    fieldGroup: 71d53f95-1c79-4cf9-9bf3-bff04b506bea
+    handle: body
+    instructions: ''
+    name: Body
+    searchable: true
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: true
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: Simple.json
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
 plugins:
-  minify:
+  contact-form:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
-  twigpack:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
-  seomatic:
-    edition: standard
-    enabled: true
-    schemaVersion: 3.0.8
   imager:
     edition: standard
     enabled: true
     schemaVersion: 2.0.0
   mailgun:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  minify:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
@@ -37,10 +55,45 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
-  contact-form:
+  seomatic:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.8
+  twigpack:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
+sections:
+  540a3332-e95d-40d1-a4fb-e5b9c7cd28e9:
+    enableVersioning: false
+    entryTypes:
+      f02ca8b5-a06f-40e8-87ef-74d47855121b:
+        fieldLayouts:
+          a560c765-84be-4e50-a13e-08f14dad1367:
+            tabs:
+              -
+                fields:
+                  b301e0d5-b8c7-46b2-9798-5765e883999d:
+                    required: false
+                    sortOrder: 1
+                name: Common
+                sortOrder: 1
+        handle: blog
+        hasTitleField: true
+        name: Blog
+        sortOrder: 1
+        titleFormat: ''
+        titleLabel: Title
+    handle: blog
+    name: Blog
+    propagationMethod: all
+    siteSettings:
+      5175a4de-61e4-46da-a275-8d5e41e17cb6:
+        enabledByDefault: true
+        hasUrls: true
+        template: blog/_entry
+        uriFormat: 'blog/{slug}'
+    type: channel
 siteGroups:
   3dcc8a9c-1af6-4cb7-b4f3-9102d6f5f013:
     name: 'Craft Starter'
@@ -55,14 +108,14 @@ sites:
     siteGroup: 3dcc8a9c-1af6-4cb7-b4f3-9102d6f5f013
     sortOrder: 1
 system:
-  edition: solo
-  name: $SYSTEM_NAME
+  edition: pro
   live: true
-  schemaVersion: 3.3.3
+  name: $SYSTEM_NAME
+  schemaVersion: 3.4.5
   timeZone: America/Los_Angeles
 users:
-  requireEmailVerification: true
   allowPublicRegistration: false
   defaultGroup: null
-  photoVolumeUid: null
   photoSubpath: ''
+  photoVolumeUid: null
+  requireEmailVerification: true
