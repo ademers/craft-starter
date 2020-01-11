@@ -13,6 +13,7 @@
 /web/assets/*
 !/web/assets/.gitignore
 /web/cpresources/*
+!/web/cpresources/.gitignore
 
 # BUILD FILES
 /bower_components/*
