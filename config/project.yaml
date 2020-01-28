@@ -1,4 +1,4 @@
-dateModified: 1578761851
+dateModified: 1580240621
 email:
   fromEmail: $SYSTEM_EMAIL_ADDRESS
   fromName: $SENDER_NAME
@@ -30,6 +30,11 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\redactor\Field
+graphql:
+  schemas:
+    55645ee2-d4ea-4c4b-9bd2-e73354e65b82:
+      isPublic: true
+      name: 'Public Schema'
 plugins:
   contact-form:
     edition: standard
@@ -111,7 +116,7 @@ system:
   edition: pro
   live: true
   name: $SYSTEM_NAME
-  schemaVersion: 3.4.6
+  schemaVersion: 3.4.7
   timeZone: America/Los_Angeles
 users:
   allowPublicRegistration: false

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cf1e338a09552fe116d702fee4b9a9bb",
+    "content-hash": "bb43a1a935dd02137534e80bb04c015b",
     "packages": [
         {
             "name": "aelvan/imager",
@@ -74,16 +74,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.133.0",
+            "version": "3.133.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "fc59f16e01317c7445204baaeff7224050153a97"
+                "reference": "cd7bd2fdd159146ef6c7eeb90b73fae4fd11da57"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/fc59f16e01317c7445204baaeff7224050153a97",
-                "reference": "fc59f16e01317c7445204baaeff7224050153a97",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/cd7bd2fdd159146ef6c7eeb90b73fae4fd11da57",
+                "reference": "cd7bd2fdd159146ef6c7eeb90b73fae4fd11da57",
                 "shasum": ""
             },
             "require": {
@@ -154,7 +154,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2020-01-15T19:18:01+00:00"
+            "time": "2020-01-24T19:11:35+00:00"
         },
         {
             "name": "cebe/markdown",
@@ -524,16 +524,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.4.0-RC1.1",
+            "version": "3.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "e8806a40bb1fecd25b2221329c53e9021e287f0c"
+                "reference": "de44e33e4d29f20d406ad9c00bb4b8593a494a20"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/e8806a40bb1fecd25b2221329c53e9021e287f0c",
-                "reference": "e8806a40bb1fecd25b2221329c53e9021e287f0c",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/de44e33e4d29f20d406ad9c00bb4b8593a494a20",
+                "reference": "de44e33e4d29f20d406ad9c00bb4b8593a494a20",
                 "shasum": ""
             },
             "require": {
@@ -569,7 +569,7 @@
                 "voku/stringy": "~5.1.0",
                 "webonyx/graphql-php": "^0.12.0",
                 "yii2tech/ar-softdelete": "^1.0.2",
-                "yiisoft/yii2": "~2.0.31.0",
+                "yiisoft/yii2": "~2.0.32.0",
                 "yiisoft/yii2-debug": "^2.1.0",
                 "yiisoft/yii2-queue": "~2.3.0",
                 "yiisoft/yii2-shell": "^2.0.2",
@@ -617,7 +617,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2020-01-14T21:20:38+00:00"
+            "time": "2020-01-28T18:07:13+00:00"
         },
         {
             "name": "craftcms/contact-form",
@@ -815,20 +815,20 @@
         },
         {
             "name": "craftcms/redactor",
-            "version": "2.4.0",
+            "version": "2.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/redactor.git",
-                "reference": "8fd0daca685309ad8635f28dca8c9ab2b3f228d4"
+                "reference": "b11b0625c3f84e00ee28739856ce96cd9823fed5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/redactor/zipball/8fd0daca685309ad8635f28dca8c9ab2b3f228d4",
-                "reference": "8fd0daca685309ad8635f28dca8c9ab2b3f228d4",
+                "url": "https://api.github.com/repos/craftcms/redactor/zipball/b11b0625c3f84e00ee28739856ce96cd9823fed5",
+                "reference": "b11b0625c3f84e00ee28739856ce96cd9823fed5",
                 "shasum": ""
             },
             "require": {
-                "craftcms/cms": "^3.2.0"
+                "craftcms/cms": "^3.4.0-RC1"
             },
             "type": "craft-plugin",
             "extra": {
@@ -859,20 +859,20 @@
                 "html",
                 "yii2"
             ],
-            "time": "2019-09-13T11:02:32+00:00"
+            "time": "2020-01-18T00:14:28+00:00"
         },
         {
             "name": "craftcms/server-check",
-            "version": "1.1.7",
+            "version": "1.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/server-check.git",
-                "reference": "b379bbcdd32f2db78d204bc4d6f3f97e63fa8e04"
+                "reference": "a7b6c172b631ec822fbdccbe011dbcf77395a9ee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/server-check/zipball/b379bbcdd32f2db78d204bc4d6f3f97e63fa8e04",
-                "reference": "b379bbcdd32f2db78d204bc4d6f3f97e63fa8e04",
+                "url": "https://api.github.com/repos/craftcms/server-check/zipball/a7b6c172b631ec822fbdccbe011dbcf77395a9ee",
+                "reference": "a7b6c172b631ec822fbdccbe011dbcf77395a9ee",
                 "shasum": ""
             },
             "type": "library",
@@ -893,7 +893,7 @@
                 "requirements",
                 "yii2"
             ],
-            "time": "2019-01-31T19:59:15+00:00"
+            "time": "2020-01-17T22:23:26+00:00"
         },
         {
             "name": "creocoder/yii2-nested-sets",
@@ -1144,21 +1144,22 @@
         },
         {
             "name": "egulias/email-validator",
-            "version": "2.1.14",
+            "version": "2.1.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/egulias/EmailValidator.git",
-                "reference": "c4b8d12921999d8a561004371701dbc2e05b5ece"
+                "reference": "e834eea5306d85d67de5a05db5882911d5b29357"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/c4b8d12921999d8a561004371701dbc2e05b5ece",
-                "reference": "c4b8d12921999d8a561004371701dbc2e05b5ece",
+                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/e834eea5306d85d67de5a05db5882911d5b29357",
+                "reference": "e834eea5306d85d67de5a05db5882911d5b29357",
                 "shasum": ""
             },
             "require": {
                 "doctrine/lexer": "^1.0.1",
-                "php": ">=5.5"
+                "php": ">=5.5",
+                "symfony/polyfill-intl-idn": "^1.10"
             },
             "require-dev": {
                 "dominicsayers/isemail": "^3.0.7",
@@ -1197,7 +1198,7 @@
                 "validation",
                 "validator"
             ],
-            "time": "2020-01-05T14:11:20+00:00"
+            "time": "2020-01-20T21:40:59+00:00"
         },
         {
             "name": "elvanto/litemoji",
@@ -1239,16 +1240,16 @@
         },
         {
             "name": "enshrined/svg-sanitize",
-            "version": "0.13.2",
+            "version": "0.13.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/darylldoyle/svg-sanitizer.git",
-                "reference": "19e85021505b29f3055c1f57a620ee4aa5c24113"
+                "reference": "bc66593f255b7d2613d8f22041180036979b6403"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/darylldoyle/svg-sanitizer/zipball/19e85021505b29f3055c1f57a620ee4aa5c24113",
-                "reference": "19e85021505b29f3055c1f57a620ee4aa5c24113",
+                "url": "https://api.github.com/repos/darylldoyle/svg-sanitizer/zipball/bc66593f255b7d2613d8f22041180036979b6403",
+                "reference": "bc66593f255b7d2613d8f22041180036979b6403",
                 "shasum": ""
             },
             "require": {
@@ -1276,7 +1277,7 @@
                 }
             ],
             "description": "An SVG sanitizer for PHP",
-            "time": "2019-12-09T09:24:04+00:00"
+            "time": "2020-01-20T01:34:17+00:00"
         },
         {
             "name": "ezyang/htmlpurifier",
@@ -1424,16 +1425,16 @@
         },
         {
             "name": "google/cloud",
-            "version": "v0.122.0",
+            "version": "v0.123.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/googleapis/google-cloud-php.git",
-                "reference": "7d435e7144df34ab64d0e1564a0fe0342a4e6ccd"
+                "reference": "3bf8b7bf041cf7a70440cc497678389ca9940001"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/googleapis/google-cloud-php/zipball/7d435e7144df34ab64d0e1564a0fe0342a4e6ccd",
-                "reference": "7d435e7144df34ab64d0e1564a0fe0342a4e6ccd",
+                "url": "https://api.github.com/repos/googleapis/google-cloud-php/zipball/3bf8b7bf041cf7a70440cc497678389ca9940001",
+                "reference": "3bf8b7bf041cf7a70440cc497678389ca9940001",
                 "shasum": ""
             },
             "require": {
@@ -1452,13 +1453,13 @@
             "replace": {
                 "google/cloud-asset": "0.5.0",
                 "google/cloud-automl": "0.8.1",
-                "google/cloud-bigquery": "1.12.1",
-                "google/cloud-bigquerydatatransfer": "0.15.0",
+                "google/cloud-bigquery": "1.12.2",
+                "google/cloud-bigquerydatatransfer": "0.15.1",
                 "google/cloud-bigtable": "1.1.1",
                 "google/cloud-common-protos": "0.2.0",
                 "google/cloud-container": "0.11.0",
                 "google/cloud-core": "1.34.0",
-                "google/cloud-dataproc": "0.16.0",
+                "google/cloud-dataproc": "0.16.1",
                 "google/cloud-datastore": "1.10.1",
                 "google/cloud-debugger": "0.20.0",
                 "google/cloud-dialogflow": "0.10.0",
@@ -1466,7 +1467,7 @@
                 "google/cloud-error-reporting": "0.15.0",
                 "google/cloud-firestore": "1.10.1",
                 "google/cloud-iot": "0.10.0",
-                "google/cloud-kms": "1.7.0",
+                "google/cloud-kms": "1.8.0",
                 "google/cloud-language": "0.21.0",
                 "google/cloud-logging": "1.18.0",
                 "google/cloud-monitoring": "0.19.0",
@@ -1474,9 +1475,10 @@
                 "google/cloud-pubsub": "1.19.0",
                 "google/cloud-redis": "0.11.0",
                 "google/cloud-scheduler": "1.1.0",
-                "google/cloud-security-center": "0.2.0",
+                "google/cloud-secret-manager": "0.1.0",
+                "google/cloud-security-center": "0.3.0",
                 "google/cloud-spanner": "1.23.0",
-                "google/cloud-speech": "0.29.0",
+                "google/cloud-speech": "0.30.0",
                 "google/cloud-storage": "1.17.0",
                 "google/cloud-talent": "0.8.2",
                 "google/cloud-tasks": "1.4.0",
@@ -1523,6 +1525,41 @@
             },
             "autoload": {
                 "psr-4": {
+                    "GPBMetadata\\Google\\": "CommonProtos/metadata",
+                    "GPBMetadata\\Google\\Bigtable\\": "Bigtable/metadata",
+                    "GPBMetadata\\Google\\Cloud\\Asset\\": "Asset/metadata",
+                    "GPBMetadata\\Google\\Cloud\\Automl\\": "AutoMl/metadata",
+                    "GPBMetadata\\Google\\Cloud\\Bigquery\\Datatransfer\\": "BigQueryDataTransfer/metadata",
+                    "GPBMetadata\\Google\\Cloud\\Dataproc\\": "Dataproc/metadata",
+                    "GPBMetadata\\Google\\Cloud\\Dialogflow\\": "Dialogflow/metadata",
+                    "GPBMetadata\\Google\\Cloud\\Iot\\": "Iot/metadata",
+                    "GPBMetadata\\Google\\Cloud\\Kms\\": "Kms/metadata",
+                    "GPBMetadata\\Google\\Cloud\\Language\\": "Language/metadata",
+                    "GPBMetadata\\Google\\Cloud\\Oslogin\\": "OsLogin/metadata",
+                    "GPBMetadata\\Google\\Cloud\\Redis\\": "Redis/metadata",
+                    "GPBMetadata\\Google\\Cloud\\Scheduler\\": "Scheduler/metadata",
+                    "GPBMetadata\\Google\\Cloud\\Secrets\\": "SecretManager/metadata",
+                    "GPBMetadata\\Google\\Cloud\\Securitycenter\\": "SecurityCenter/metadata",
+                    "GPBMetadata\\Google\\Cloud\\Speech\\": "Speech/metadata",
+                    "GPBMetadata\\Google\\Cloud\\Talent\\": "Talent/metadata",
+                    "GPBMetadata\\Google\\Cloud\\Tasks\\": "Tasks/metadata",
+                    "GPBMetadata\\Google\\Cloud\\Texttospeech\\": "TextToSpeech/metadata",
+                    "GPBMetadata\\Google\\Cloud\\Translate\\": "Translate/metadata",
+                    "GPBMetadata\\Google\\Cloud\\Videointelligence\\": "VideoIntelligence/metadata",
+                    "GPBMetadata\\Google\\Cloud\\Vision\\": "Vision/metadata",
+                    "GPBMetadata\\Google\\Cloud\\Webrisk\\": "WebRisk/metadata",
+                    "GPBMetadata\\Google\\Cloud\\Websecurityscanner\\": "WebSecurityScanner/metadata",
+                    "GPBMetadata\\Google\\Container\\": "Container/metadata",
+                    "GPBMetadata\\Google\\Datastore\\": "Datastore/metadata",
+                    "GPBMetadata\\Google\\Devtools\\Clouddebugger\\": "Debugger/metadata",
+                    "GPBMetadata\\Google\\Devtools\\Clouderrorreporting\\": "ErrorReporting/metadata",
+                    "GPBMetadata\\Google\\Devtools\\Cloudtrace\\": "Trace/metadata",
+                    "GPBMetadata\\Google\\Firestore\\": "Firestore/metadata",
+                    "GPBMetadata\\Google\\Logging\\": "Logging/metadata",
+                    "GPBMetadata\\Google\\Monitoring\\": "Monitoring/metadata",
+                    "GPBMetadata\\Google\\Privacy\\Dlp\\": "Dlp/metadata",
+                    "GPBMetadata\\Google\\Pubsub\\": "PubSub/metadata",
+                    "GPBMetadata\\Google\\Spanner\\": "Spanner/metadata",
                     "Google\\Cloud\\": [
                         "src",
                         "CommonProtos/src"
@@ -1550,6 +1587,7 @@
                     "Google\\Cloud\\PubSub\\": "PubSub/src",
                     "Google\\Cloud\\Redis\\": "Redis/src",
                     "Google\\Cloud\\Scheduler\\": "Scheduler/src",
+                    "Google\\Cloud\\SecretManager\\": "SecretManager/src",
                     "Google\\Cloud\\SecurityCenter\\": "SecurityCenter/src",
                     "Google\\Cloud\\Spanner\\": "Spanner/src",
                     "Google\\Cloud\\Speech\\": "Speech/src",
@@ -1562,41 +1600,7 @@
                     "Google\\Cloud\\VideoIntelligence\\": "VideoIntelligence/src",
                     "Google\\Cloud\\Vision\\": "Vision/src",
                     "Google\\Cloud\\WebRisk\\": "WebRisk/src",
-                    "Google\\Cloud\\WebSecurityScanner\\": "WebSecurityScanner/src",
-                    "GPBMetadata\\Google\\": "CommonProtos/metadata",
-                    "GPBMetadata\\Google\\Bigtable\\": "Bigtable/metadata",
-                    "GPBMetadata\\Google\\Container\\": "Container/metadata",
-                    "GPBMetadata\\Google\\Cloud\\Asset\\": "Asset/metadata",
-                    "GPBMetadata\\Google\\Cloud\\Automl\\": "AutoMl/metadata",
-                    "GPBMetadata\\Google\\Cloud\\Bigquery\\Datatransfer\\": "BigQueryDataTransfer/metadata",
-                    "GPBMetadata\\Google\\Cloud\\Dataproc\\": "Dataproc/metadata",
-                    "GPBMetadata\\Google\\Cloud\\Dialogflow\\": "Dialogflow/metadata",
-                    "GPBMetadata\\Google\\Cloud\\Iot\\": "Iot/metadata",
-                    "GPBMetadata\\Google\\Cloud\\Kms\\": "Kms/metadata",
-                    "GPBMetadata\\Google\\Cloud\\Language\\": "Language/metadata",
-                    "GPBMetadata\\Google\\Cloud\\Oslogin\\": "OsLogin/metadata",
-                    "GPBMetadata\\Google\\Cloud\\Redis\\": "Redis/metadata",
-                    "GPBMetadata\\Google\\Cloud\\Scheduler\\": "Scheduler/metadata",
-                    "GPBMetadata\\Google\\Cloud\\Securitycenter\\": "SecurityCenter/metadata",
-                    "GPBMetadata\\Google\\Cloud\\Speech\\": "Speech/metadata",
-                    "GPBMetadata\\Google\\Cloud\\Talent\\": "Talent/metadata",
-                    "GPBMetadata\\Google\\Cloud\\Tasks\\": "Tasks/metadata",
-                    "GPBMetadata\\Google\\Cloud\\Texttospeech\\": "TextToSpeech/metadata",
-                    "GPBMetadata\\Google\\Cloud\\Translate\\": "Translate/metadata",
-                    "GPBMetadata\\Google\\Cloud\\Videointelligence\\": "VideoIntelligence/metadata",
-                    "GPBMetadata\\Google\\Cloud\\Vision\\": "Vision/metadata",
-                    "GPBMetadata\\Google\\Cloud\\Webrisk\\": "WebRisk/metadata",
-                    "GPBMetadata\\Google\\Cloud\\Websecurityscanner\\": "WebSecurityScanner/metadata",
-                    "GPBMetadata\\Google\\Datastore\\": "Datastore/metadata",
-                    "GPBMetadata\\Google\\Devtools\\Clouddebugger\\": "Debugger/metadata",
-                    "GPBMetadata\\Google\\Devtools\\Clouderrorreporting\\": "ErrorReporting/metadata",
-                    "GPBMetadata\\Google\\Devtools\\Cloudtrace\\": "Trace/metadata",
-                    "GPBMetadata\\Google\\Firestore\\": "Firestore/metadata",
-                    "GPBMetadata\\Google\\Logging\\": "Logging/metadata",
-                    "GPBMetadata\\Google\\Monitoring\\": "Monitoring/metadata",
-                    "GPBMetadata\\Google\\Privacy\\Dlp\\": "Dlp/metadata",
-                    "GPBMetadata\\Google\\Pubsub\\": "PubSub/metadata",
-                    "GPBMetadata\\Google\\Spanner\\": "Spanner/metadata"
+                    "Google\\Cloud\\WebSecurityScanner\\": "WebSecurityScanner/src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1643,7 +1647,7 @@
                 "translation",
                 "vision"
             ],
-            "time": "2020-01-07T21:25:58+00:00"
+            "time": "2020-01-16T23:11:20+00:00"
         },
         {
             "name": "google/common-protos",
@@ -2892,21 +2896,20 @@
         },
         {
             "name": "marcusschwarz/lesserphp",
-            "version": "v0.5.3",
+            "version": "v0.5.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/MarcusSchwarz/lesserphp.git",
-                "reference": "280dc40f1b25fa6baecd6a33782cecb55bf16d05"
+                "reference": "3a0f5ae0d63cbb661b5f4afd2f96875e73b3ad7e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/MarcusSchwarz/lesserphp/zipball/280dc40f1b25fa6baecd6a33782cecb55bf16d05",
-                "reference": "280dc40f1b25fa6baecd6a33782cecb55bf16d05",
+                "url": "https://api.github.com/repos/MarcusSchwarz/lesserphp/zipball/3a0f5ae0d63cbb661b5f4afd2f96875e73b3ad7e",
+                "reference": "3a0f5ae0d63cbb661b5f4afd2f96875e73b3ad7e",
                 "shasum": ""
             },
             "require-dev": {
-                "phpunit/phpunit": "^5.6",
-                "squizlabs/php_codesniffer": "2.8.*"
+                "phpunit/phpunit": "~4.3"
             },
             "bin": [
                 "plessc"
@@ -2914,13 +2917,13 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.6.0-dev"
+                    "dev-master": "0.5.1-dev"
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "LesserPhp\\": "src/LesserPhp/"
-                }
+                "classmap": [
+                    "lessc.inc.php"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -2940,8 +2943,8 @@
                 }
             ],
             "description": "lesserphp is a compiler for LESS written in PHP based on leafo's lessphp.",
-            "homepage": "https://www.maswaba.de/lesserphpdocs/",
-            "time": "2019-12-03T09:58:37+00:00"
+            "homepage": "http://leafo.net/lessphp/",
+            "time": "2020-01-19T19:18:49+00:00"
         },
         {
             "name": "masterminds/html5",
@@ -3554,16 +3557,16 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.2.38",
+            "version": "3.2.39",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "ea40d15bf182761e5f69eec52f46354b884609ef"
+                "reference": "c04732f04a8ce9ce3a72d7170bce1b6cce2ffe08"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/ea40d15bf182761e5f69eec52f46354b884609ef",
-                "reference": "ea40d15bf182761e5f69eec52f46354b884609ef",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/c04732f04a8ce9ce3a72d7170bce1b6cce2ffe08",
+                "reference": "c04732f04a8ce9ce3a72d7170bce1b6cce2ffe08",
                 "shasum": ""
             },
             "require": {
@@ -3624,20 +3627,20 @@
                 "tags",
                 "twitter"
             ],
-            "time": "2020-01-07T17:12:49+00:00"
+            "time": "2020-01-17T13:54:42+00:00"
         },
         {
             "name": "nystudio107/craft-twigpack",
-            "version": "1.1.12",
+            "version": "1.1.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-twigpack.git",
-                "reference": "5cf2416a791adcb5e15d46754f49fe904ae37610"
+                "reference": "60231fdc64a55ae7d8553d5708b417e54e5929e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-twigpack/zipball/5cf2416a791adcb5e15d46754f49fe904ae37610",
-                "reference": "5cf2416a791adcb5e15d46754f49fe904ae37610",
+                "url": "https://api.github.com/repos/nystudio107/craft-twigpack/zipball/60231fdc64a55ae7d8553d5708b417e54e5929e6",
+                "reference": "60231fdc64a55ae7d8553d5708b417e54e5929e6",
                 "shasum": ""
             },
             "require": {
@@ -3680,7 +3683,7 @@
                 "webpack",
                 "webpack-dev-server"
             ],
-            "time": "2019-11-12T15:34:41+00:00"
+            "time": "2020-01-22T18:33:47+00:00"
         },
         {
             "name": "opis/closure",
@@ -7135,16 +7138,16 @@
         },
         {
             "name": "voku/portable-ascii",
-            "version": "1.4.6",
+            "version": "1.4.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/voku/portable-ascii.git",
-                "reference": "8b23920025c9b040301e3d1443b302547560f48d"
+                "reference": "a691852adbf7518370332fd7921292d8dad34e7e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/voku/portable-ascii/zipball/8b23920025c9b040301e3d1443b302547560f48d",
-                "reference": "8b23920025c9b040301e3d1443b302547560f48d",
+                "url": "https://api.github.com/repos/voku/portable-ascii/zipball/a691852adbf7518370332fd7921292d8dad34e7e",
+                "reference": "a691852adbf7518370332fd7921292d8dad34e7e",
                 "shasum": ""
             },
             "require": {
@@ -7180,7 +7183,7 @@
                 "clean",
                 "php"
             ],
-            "time": "2019-12-23T12:30:26+00:00"
+            "time": "2020-01-27T08:58:33+00:00"
         },
         {
             "name": "voku/portable-utf8",
@@ -7574,16 +7577,16 @@
         },
         {
             "name": "yiisoft/yii2",
-            "version": "2.0.31",
+            "version": "2.0.32",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "0329b2db8bbf9719b1add17d6defd2d6045b4f09"
+                "reference": "a4aca1a2154098844a039d21112cafd31d70b8fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/0329b2db8bbf9719b1add17d6defd2d6045b4f09",
-                "reference": "0329b2db8bbf9719b1add17d6defd2d6045b4f09",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/a4aca1a2154098844a039d21112cafd31d70b8fd",
+                "reference": "a4aca1a2154098844a039d21112cafd31d70b8fd",
                 "shasum": ""
             },
             "require": {
@@ -7670,7 +7673,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2019-12-18T12:52:03+00:00"
+            "time": "2020-01-21T22:29:38+00:00"
         },
         {
             "name": "yiisoft/yii2-composer",
@@ -7729,16 +7732,16 @@
         },
         {
             "name": "yiisoft/yii2-debug",
-            "version": "2.1.12",
+            "version": "2.1.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-debug.git",
-                "reference": "bf9234ba1369116d12ebe266d98006416a5ae304"
+                "reference": "696712a2a3565b1a072ad3c9d298e262967e8282"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-debug/zipball/bf9234ba1369116d12ebe266d98006416a5ae304",
-                "reference": "bf9234ba1369116d12ebe266d98006416a5ae304",
+                "url": "https://api.github.com/repos/yiisoft/yii2-debug/zipball/696712a2a3565b1a072ad3c9d298e262967e8282",
+                "reference": "696712a2a3565b1a072ad3c9d298e262967e8282",
                 "shasum": ""
             },
             "require": {
@@ -7783,7 +7786,7 @@
                 "debugger",
                 "yii2"
             ],
-            "time": "2019-11-19T20:09:08+00:00"
+            "time": "2020-01-17T13:40:32+00:00"
         },
         {
             "name": "yiisoft/yii2-queue",
@@ -7978,9 +7981,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "craftcms/cms": 10
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
