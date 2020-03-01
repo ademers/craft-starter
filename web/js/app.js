@@ -528,7 +528,7 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.config.productionTip = false; // Test
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('test-component', {
   data: function data() {
     return {
-      greeting: "Hello World kdsafjak!"
+      greeting: "Hello World!"
     };
   }
 }); // Horizontal nav

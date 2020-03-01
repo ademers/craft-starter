@@ -13,9 +13,20 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, praesentium voluptatem. Asperiores aut incidunt ex adipisci ipsam ipsa sapiente modi odio corrupti doloribus?</p>
 
         <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, praesentium voluptatem. Asperiores aut incidunt ex adipisci ipsam ipsa sapiente modi odio corrupti doloribus? Expedita commodi sequi alias eveniet reprehenderit obcaecati!</p>
-        
+
         <test-component inline-template>
             <p class="mt-4">This is a Vue.js greeting component: ${ greeting }</p>
         </test-component>
+    </div>
+
+    <div class="container mt-8 px-4">
+        <h2 class="text-3xl font-semibold">Tailwind CSS Grid</h2>
+        <div class="grid grid-cols-2 lg:grid-cols-8 gap-6 mt-4 bg-blue-100">
+            <div class="col-span-1 lg:col-span-3 bg-blue-300">dafasf</div>
+            <div class="col-span-1 lg:col-span-3 bg-blue-300">dasfaf</div>
+            <div class="col-start-1 col-end-3 lg:col-start-4 lg:col-end-8 bg-blue-300">asdfdsaf</div>
+            <div class="col-span-1 col-start-1 lg:col-span-4 lg:col-start-2 bg-blue-300">reeqwrqwr</div>
+            <div class="col-span-1 col-end-3 lg:col-span-6 lg:col-end-9 bg-blue-300">hdgfhdgf</div>
+        </div>
     </div>
 {% endblock content %}

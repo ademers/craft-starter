@@ -1,13 +1,13 @@
 // Vue.js
 import Vue from 'vue'
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
 
 // Test component {
 Vue.component('test-component', {
     data() {
         return {
-            greeting: "Hello World!"
+            greeting: "Hello World fdkf dkajf!"
         }
     },
 });

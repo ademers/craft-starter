@@ -1,5 +1,4 @@
-<tw-ui-navbar
-	inline-template>
+<tw-ui-navbar inline-template>
 	{# <div class="bg-gray-200"> #}
 	<div id="nav" class="bg-white shadow">
 		<div class="md:px-8">
@@ -79,41 +78,3 @@
 	</div>
 	{# </div> #}
 </tw-ui-navbar>
-
-{# <script src="https://unpkg.com/vue@^2.6/dist/vue.min.js"></script>
-<script>
-  new Vue({
-    el: '#nav',
-    data: function () {
-      return {
-        isOpen: true,
-      }
-    },
-    methods: {
-      open() {
-        this.isOpen = true
-        this.$nextTick(() => {
-          this.$refs.closeButton.focus()
-        })
-      },
-      close() {
-        this.isOpen = false
-        this.$nextTick(() => {
-          this.$refs.openButton.focus()
-        })
-      }
-    },
-    watch: {
-      isOpen: {
-        immediate: true,
-        handler(isOpen) {
-          if (isOpen) {
-            document.body.style.setProperty('overflow', 'hidden')
-          } else {
-            document.body.style.removeProperty('overflow')
-          }
-        }
-      }
-    }
-  })
-</script> #}
