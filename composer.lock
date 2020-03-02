@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8bc9bd6653c42ada286e56481ff2a942",
+    "content-hash": "a8b46fd1fe39a7bcc2b390e4f0457121",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -2676,16 +2676,16 @@
         },
         {
             "name": "nystudio107/craft-twigpack",
-            "version": "1.1.13",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-twigpack.git",
-                "reference": "60231fdc64a55ae7d8553d5708b417e54e5929e6"
+                "reference": "c8ebda472ae4da0b3f796ec22f7e03e5370ada55"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-twigpack/zipball/60231fdc64a55ae7d8553d5708b417e54e5929e6",
-                "reference": "60231fdc64a55ae7d8553d5708b417e54e5929e6",
+                "url": "https://api.github.com/repos/nystudio107/craft-twigpack/zipball/c8ebda472ae4da0b3f796ec22f7e03e5370ada55",
+                "reference": "c8ebda472ae4da0b3f796ec22f7e03e5370ada55",
                 "shasum": ""
             },
             "require": {
@@ -2728,7 +2728,7 @@
                 "webpack",
                 "webpack-dev-server"
             ],
-            "time": "2020-01-22T18:33:47+00:00"
+            "time": "2020-02-28T18:38:02+00:00"
         },
         {
             "name": "opis/closure",
