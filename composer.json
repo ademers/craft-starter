@@ -14,7 +14,7 @@
     "craftcms/cms": "3.4.9",
     "craftcms/contact-form": "^2.2",
     "craftcms/mailgun": "^1.4",
-    "craftcms/redactor": "^2.4",
+    "craftcms/redactor": "2.6.0.1",
     "mmikkel/retcon": "^2.0",
     "nystudio107/craft-minify": "^1.2",
     "nystudio107/craft-scripts": "^1.2",
