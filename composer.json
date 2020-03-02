@@ -18,7 +18,7 @@
     "mmikkel/retcon": "^2.0",
     "nystudio107/craft-minify": "^1.2",
     "nystudio107/craft-scripts": "^1.2",
-    "nystudio107/craft-seomatic": "^3.2",
+    "nystudio107/craft-seomatic": "^3.2.45",
     "nystudio107/craft-twigpack": "^1.1",
     "vlucas/phpdotenv": "^3.4.0"
   },

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e9188bc6b31504831ec5a0391fa612ac",
+    "content-hash": "8bc9bd6653c42ada286e56481ff2a942",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -2602,16 +2602,16 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.2.39",
+            "version": "3.2.45",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "c04732f04a8ce9ce3a72d7170bce1b6cce2ffe08"
+                "reference": "554448680162b8628787a53c9344f70611248a67"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/c04732f04a8ce9ce3a72d7170bce1b6cce2ffe08",
-                "reference": "c04732f04a8ce9ce3a72d7170bce1b6cce2ffe08",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/554448680162b8628787a53c9344f70611248a67",
+                "reference": "554448680162b8628787a53c9344f70611248a67",
                 "shasum": ""
             },
             "require": {
@@ -2672,7 +2672,7 @@
                 "tags",
                 "twitter"
             ],
-            "time": "2020-01-17T13:54:42+00:00"
+            "time": "2020-02-28T14:05:37+00:00"
         },
         {
             "name": "nystudio107/craft-twigpack",
