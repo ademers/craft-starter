@@ -2,7 +2,7 @@ let mix = require('laravel-mix');
 let tailwindcss = require('tailwindcss');
 // Laravel Mix plugins
 require('laravel-mix-criticalcss');
-// require('laravel-mix-purgecss');
+require('laravel-mix-purgecss');
 
 /*
  |--------------------------------------------------------------------------
@@ -72,34 +72,45 @@ mix
 
     // Enable Critical CSS, CSS purging, versioning in Production only
     if (mix.inProduction()) {
-        mix.criticalCss({
-            paths: {
-                base: 'http://craft-starter.test/',
-                templates: './web/criticalcss/'
-            },
-            urls: [
-                { url: '/', template: 'index' },
-                { url: '404', template: '404' }
-            ],
-            options: {
-                width: 1400,
-                height: 1400,
-                minify: true,
-                penthouse: {
-                    // blockJSRequests: false,
-                    forceInclude: [
-                        '.block',
-                        '.hidden',
-                        '.openClass',
-                        '.closedClass',
-                        // Just for fun (and testing)
-                        '.myPinkPony'
-                    ]
+        mix
+            .criticalCss({
+                paths: {
+                    base: 'http://craft-starter.test/',
+                    templates: './web/criticalcss/'
                 },
-            },
-
-        })
-        mix.version();
+                urls: [
+                    { url: '/', template: 'index' },
+                    { url: '404', template: '404' }
+                ],
+                options: {
+                    width: 1400,
+                    height: 1400,
+                    minify: true,
+                    penthouse: {
+                        // blockJSRequests: false,
+                        forceInclude: [
+                            '.block',
+                            '.hidden',
+                        ]
+                    },
+                },
+            })
+            .purgeCss({
+                enabled: true,
+                globs: [
+                    path.join(__dirname, 'templates/*.twig'),
+                    path.join(__dirname, 'templates/**/*.twig'),
+                    path.join(__dirname, 'templates/**/**/*.twig'),
+                    path.join(__dirname, 'src/**/*.js'),
+                    path.join(__dirname, 'src/**/*.vue'),
+                ],
+                extensions: ['html', 'js', 'twig', 'vue'],
+                whitelist: [
+                
+                ],
+                folders: ['src', 'templates'],     
+            })
+            .version();
     }
 
 // Full API
