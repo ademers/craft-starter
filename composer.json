@@ -11,8 +11,7 @@
     "version": "1.0.5",
     "license": "MIT",
     "require": {
-    "aelvan/imager": "^2.3",
-    "craftcms/cms": "3.4.0",
+    "craftcms/cms": "3.4.9",
     "craftcms/contact-form": "^2.2",
     "craftcms/mailgun": "^1.4",
     "craftcms/redactor": "^2.4",
