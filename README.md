@@ -45,7 +45,8 @@ A [Craft CMS](https://craftcms.com/) starter project by [Andrea DeMers](http://a
 7. Do a little dance.
 
 ## Todo
-- [ ] Configure PurgeCSS
+- [x] Replace Vue.js with Alpine.js as default JavaScript framework
+- [x] Configure PurgeCSS
 - [x] Add installation instructions
 
 ## License
