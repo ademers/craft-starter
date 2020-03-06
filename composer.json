@@ -8,19 +8,18 @@
         "project"
       ],
     "type": "project",
-    "version": "1.0.5",
+    "version": "1.1.0",
     "license": "MIT",
     "require": {
-    "aelvan/imager": "^2.3",
-    "craftcms/cms": "^3.0.0",
+    "craftcms/cms": "^3.4.9",
     "craftcms/contact-form": "^2.2",
     "craftcms/mailgun": "^1.4",
-    "craftcms/redactor": "^2.4",
+    "craftcms/redactor": "^2.6.0.1",
     "mmikkel/retcon": "^2.0",
     "nystudio107/craft-minify": "^1.2",
     "nystudio107/craft-scripts": "^1.2",
-    "nystudio107/craft-seomatic": "^3.2",
-    "nystudio107/craft-twigpack": "^1.1",
+    "nystudio107/craft-seomatic": "^3.2.45",
+    "nystudio107/craft-twigpack": "^1.2.0",
     "vlucas/phpdotenv": "^3.4.0"
   },
   "autoload": {

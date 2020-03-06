@@ -1,6 +1,7 @@
+{# Minify all the things! #}
 {%- minify -%}
 <!doctype html>
-<html lang="{{ craft.app.language|slice(0,2) }}" class="bg-white antialiased">
+<html lang="{{ craft.app.language|slice(0,2) }}">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,57 +16,68 @@
 		<meta name="msapplication-TileColor" content="#2d89ef">
 		<meta name="theme-color" content="#ffffff">
 
+		{# Alpine.js internal CSS #}
+		{% css %}
+			[x-cloak] {
+				display: none
+			}
+		{% endcss %}
+
 		{# Google fonts #}
+		{# Uncomment and edit to use Google Fonts #}
 		{# <link rel="dns-prefetch" href="//fonts.googleapis.com"> #}
 		{# <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin> #}
 		{# <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,600,700,800,900&display=swap" rel="stylesheet"> #}
 
+		{# Inter font #}
+		<link rel="preconnect" href="https://rsms.me/" crossorigin>
+		<link rel="dns-prefetch" href="https://rsms.me/">
+		<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+
 		{# Critical CSS #}
 		<!-- Critical CSS -->
 		{{ craft.twigpack.includeCriticalCssTags() }}
-
+		<!-- /Critical CSS -->
+        
 		{# Non-critical CSS #}
-        {{ craft.twigpack.includeCssModule("/css/app.css") }}
-		{# {{ craft.twigpack.includeCssModule("/css/app.css", true) }} #}
+		{{ craft.twigpack.includeCssModule("/css/app.css", true) }}
 	</head>
 
-	{# <body class="font-body antialiased text-gray-800 bg-white"> #}
-	<body
-		class="text-gray-900 leading-normal">
+	<body class="text-base font-sans antialiased text-gray-900 bg-white leading-normal">
 		{# Sticky footer: https://jsfiddle.net/adamwathan/xgykyfkg/ #}
-		<div id="app" class="min-h-screen flex flex-col">
+		{# Uncomment below to enable app id if using Vue.js #}
+		{# <div id="app" class="min-h-screen flex flex-col"> #}
+		{# Comment out if not using Vue.js and app id not required #}
+		<div class="min-h-screen flex flex-col">
 			<div class="flex-grow">
-				<header
-					class="bg-gray-100">
-					{# Mobile nav Vue.js component #}
-					{% include '_partials/navbar.twig' %}
+				<header>
+					{# Vue.js navbar component #}
+					{# {% include '_partials/navbar-vue.twig' %} #}
+					{# Alpine.js navbar #}
+					{% include '_partials/navbar-alpine.twig' %}
 
-					<div class="py-8 sm:py-20"> {% block sectionhHeader %}{% endblock sectionhHeader %}
-						</div>
-					</header>
-
-					{% block content %}{% endblock content %}
-				</div>
-
-				<footer class="mt-8 bg-gray-100">
-					<div class="container px-4 py-8">
-						<small>&copy;
-							{{ "now"|date("Y") }}
-							{{ siteName }}
-							by
-							<a href="http://andreademers.com">Andrea DeMers</a>
-						</small>
+					<div class="py-8 sm:py-20">
+						{% block sectionHeader %}{% endblock sectionHeader %}
 					</div>
-				</footer>
+				</header>
+
+				{% block content %}{% endblock content %}
 			</div>
 
-			{# -- Any JavaScript that should be included before </body> -- #}
-			{% block bodyJs %}
-				{#-- Site-wide JavaScript --#}
-				{{ craft.twigpack.includeJsModule("/js/manifest.js") }}
-				{{ craft.twigpack.includeJsModule("/js/vendor.js") }}
-				{{ craft.twigpack.includeJsModule("/js/app.js") }}
-			{% endblock bodyJs %}
-		</body>
-	</html>
-	{%- endminify -%}
+			<footer class="mt-8 bg-indigo-50">
+				<div class="container px-4 py-8">
+					<small>&copy; {{ "now"|date("Y") }} {{ siteName }} <span class="italic">by</span> <a href="https://andreademers.com">Andrea DeMers</a></small>
+				</div>
+			</footer>
+		</div>
+
+		{# JS to be included before </body> #}
+		{% block bodyJs %}
+			{# Site-wide JavaScript #}
+			{{ craft.twigpack.includeJsModule("/js/manifest.js") }}
+			{{ craft.twigpack.includeJsModule("/js/vendor.js") }}
+			{{ craft.twigpack.includeJsModule("/js/app.js") }}
+		{% endblock bodyJs %}
+	</body>
+</html>
+{%- endminify -%}

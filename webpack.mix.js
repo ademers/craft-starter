@@ -1,9 +1,3 @@
-let mix = require('laravel-mix');
-let tailwindcss = require('tailwindcss');
-// Laravel Mix plugins
-require('laravel-mix-criticalcss');
-// require('laravel-mix-purgecss');
-
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -15,22 +9,71 @@ require('laravel-mix-criticalcss');
  |
  */
 
+let mix = require('laravel-mix');
+let tailwindcss = require('tailwindcss');
+// Laravel Mix plugins
+require('laravel-mix-criticalcss');
+require('laravel-mix-purgecss');
+
 mix
+    .postCss('src/css/app.css', 'web/css', [
+        tailwindcss('tailwind.config.js'),
+    ])
+    .criticalCss({
+        enabled: mix.inProduction(),
+        paths: {
+            base: 'http://craft-starter.test/',
+            templates: './web/criticalcss/'
+        },
+        urls: [
+            { url: '/', template: 'index' },
+            { url: '404', template: '404' }
+        ],
+        options: {
+            width: 1400,
+            height: 1400,
+            minify: true,
+            // Uncomment penthouse: if using Vue.js navbar
+            // penthouse: {
+            //     forceInclude: [
+            //         '.block',
+            //         '.hidden',
+            //     ]
+            // },
+        },
+    })
+    .purgeCss({
+        enabled: mix.inProduction(),
+        // Not sure what's advantage of globs: (??)
+        // globs: [
+        //     path.join(__dirname, 'templates/**/*.html'),
+        //     path.join(__dirname, 'templates/**/*.twig'),
+        //     path.join(__dirname, 'src/**/*.js'),
+        //     path.join(__dirname, 'src/**/*.vue'),
+        // ],
+        folders: ['src', 'templates'],
+        extensions: ['html', 'twig', 'js', 'vue'],
+        whitelist: [
+            // Add selectors
+        ],
+    })
+
+    // JS
+    .js('src/js/app.js', 'web/js')
+    // Uncomment to use Vue
+    // .extract(['lazysizes', 'vue'])
+    // Comment out if have uncommented above
+    .extract(['alpinejs', 'lazysizes'])
+    .setPublicPath('web')
     .options({
         hmrOptions: {
             host: 'craft-starter.test',
             port: 8080
         }
     })
-    .js('src/js/app.js', 'web/js')
-    .extract(['vue'])
-    .postCss('src/css/app.css', 'web/css', [
-        tailwindcss('tailwind.config.js'),
-    ])
-    .setPublicPath('web')
-
     .webpackConfig({
         resolve: {
+            // TODO: check if . required
             extensions: ['.js', '.vue', '.twig'],
         },
         // Add any webpack dev server config here
@@ -42,17 +85,21 @@ mix
             disableHostCheck: true,
             watchContentBase: true,
             proxy: {
-                host: '0.0.0.0',  // host machine ip 
+                host: '0.0.0.0',  // host machine ip
                 port: 8080,
             },
             watchOptions:{
                 poll: true,
                 ignored: ["storage", "node_modules", "vendor"],
             },
-            
         },
     });
-    
+
+    // CSS & JS file versioning in production only
+    if (mix.inProduction()) {
+        mix.version();
+    }
+
     // Keep commented out just in case HMR breaks
     // .browserSync({
     //     proxy: 'http://craft-starter.test/',
@@ -63,44 +110,12 @@ mix
     //         'templates/**/*.twig',
     //         'templates/**/*.svg'
     //     ],
-
+    //
     //     watchOptions: {
     //         usePolling: true,
     //         interval: 500,
     //     },
     // });
-
-    // Enable Critical CSS, CSS purging, versioning in Production only
-    if (mix.inProduction()) {
-        mix.criticalCss({
-            paths: {
-                base: 'http://craft-starter.test/',
-                templates: './web/criticalcss/'
-            },
-            urls: [
-                { url: '/', template: 'index' },
-                { url: '404', template: '404' }
-            ],
-            options: {
-                width: 1400,
-                height: 1400,
-                minify: true,
-                penthouse: {
-                    // blockJSRequests: false,
-                    forceInclude: [
-                        '.block',
-                        '.hidden',
-                        '.openClass',
-                        '.closedClass',
-                        // Just for fun (and testing)
-                        '.myPinkPony'
-                    ]
-                },
-            },
-
-        })
-        mix.version();
-    }
 
 // Full API
 // mix.js(src, output);
