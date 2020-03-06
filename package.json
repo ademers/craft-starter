@@ -23,7 +23,6 @@
     "vue": "^2.6.11"
   },
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^2.1.0",
     "browser-sync": "^2.26.7",
     "browser-sync-webpack-plugin": "^2.2.2",
     "cross-env": "^6.0.3",
