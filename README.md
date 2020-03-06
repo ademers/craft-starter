@@ -8,7 +8,6 @@ A [Craft CMS](https://craftcms.com/) starter project by [Andrea DeMers](http://a
 
 ## Craft CMS Plugins
 - [Contact Form](https://plugins.craftcms.com/contact-form)
-- [Imager](https://plugins.craftcms.com/imager)
 - [Mailgun](https://plugins.craftcms.com/mailgun)
 - [Minify](https://plugins.craftcms.com/minify)
 - [Redactor](https://plugins.craftcms.com/redactor)
