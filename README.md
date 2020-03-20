@@ -1,6 +1,6 @@
 # Craft CMS 3.x Starter Project
 
-A [Craft CMS](https://craftcms.com/) starter project by [Andrea DeMers](http://andreademers.com).
+A [Craft CMS](https://craftcms.com/) starter project by [Andrea DeMers](https://andreademers.com).
 
 ## Content Management System (CMS)
 - [Craft CMS](https://craftcms.com/)
@@ -8,7 +8,6 @@ A [Craft CMS](https://craftcms.com/) starter project by [Andrea DeMers](http://a
 
 ## Craft CMS Plugins
 - [Contact Form](https://plugins.craftcms.com/contact-form)
-- [Mailgun](https://plugins.craftcms.com/mailgun)
 - [Minify](https://plugins.craftcms.com/minify)
 - [Redactor](https://plugins.craftcms.com/redactor)
 - [Retcon](https://plugins.craftcms.com/retcon)
@@ -24,8 +23,10 @@ A [Craft CMS](https://craftcms.com/) starter project by [Andrea DeMers](http://a
 
 ### CSS
 - [Tailwind CSS](https://tailwindcss.com/)
+- [Tailwind UI](https://tailwindui.com/)
 
 ### JavaScript
+- [Alpine JS](https://github.com/alpinejs/alpine)
 - [lazySizes](https://afarkas.github.io/lazysizes/index.html)
 - [Vue.js](https://vuejs.org/)
 
@@ -41,7 +42,7 @@ A [Craft CMS](https://craftcms.com/) starter project by [Andrea DeMers](http://a
 4. Duplicate the `.env.example` file in the project root and rename it to `.env`.
 5. Run the Craft setup wizard `./craft setup` and answer the questions when prompted.
 6. Access your new Craft website from your web browser.
-7. Do a little dance.
+7. Do a little dance. :dancer:
 
 ## Todo
 - [x] Replace Vue.js with Alpine.js as default JavaScript framework

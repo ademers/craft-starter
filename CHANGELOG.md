@@ -4,6 +4,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## 1.1.1 - 2020-03-20
+### Changed
+- Update Craft and Craft plugins to latest versions.
+- Update README.
+
+### Removed
+- Uninstall and remove Craft Mailgun plugin.
+- Remove Composer platform config.
+
 ## 1.1.0 - 2020-03-06
 ### Added
 - Install Tailwind UI npm package.
