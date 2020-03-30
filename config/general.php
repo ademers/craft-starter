@@ -11,9 +11,7 @@
 return [
     // Global settings
     '*' => [
-        // Timezone to ET by default
-        'timezone' => 'America/Toronto',
-
+        // Start default configs settings
         // Default Week Start Day (0 = Sunday, 1 = Monday...)
         'defaultWeekStartDay' => 1,
 
@@ -29,24 +27,35 @@ return [
         // Whether to save the project config out to config/project.yaml
         // (see https://docs.craftcms.com/v3/project-config.html)
         'useProjectConfigFile' => true,
-    ],
+        // End default config settings
 
-    // Dev environment settings
-    'dev' => [
-        'siteUrl' => 'http://craft-starter.test',
-        // Dev Mode (see https://craftcms.com/guides/what-dev-mode-does)
-        'devMode' => true,
+        // Start custom configs settings
+        'allowAdminChanges' => false,
+        'backupOnUpdate' => true,
+        'defaultTokenDuration' => 'P2W',
+        'enableCsrfProtection' => true,
+        'enableGql' => false,
+        'generateTransformsBeforePageLoad' => true,
+        'isSystemLive' => true,
+        'timezone' => 'America/Toronto',
+        // End custom configs settings
     ],
-
-    // Staging environment settings
-    'staging' => [
-        // Set this to `false` to prevent administrative changes from being made on staging
-        'allowAdminChanges' => true,
-    ],
-
     // Production environment settings
     'production' => [
         // Set this to `false` to prevent administrative changes from being made on production
+        // 'allowAdminChanges' => false,
+    ],
+    // Staging environment settings
+    'staging' => [
+        // Set this to `false` to prevent administrative changes from being made on staging
+        // 'allowAdminChanges' => false,
+        'isSystemLive' => false,
+    ],
+    // Dev environment settings
+    'dev' => [
+        // 'siteUrl' => 'http://craft-starter.test',
+        // Dev Mode (see https://craftcms.com/guides/what-dev-mode-does)
+        'devMode' => true,
         'allowAdminChanges' => true,
     ],
 ];

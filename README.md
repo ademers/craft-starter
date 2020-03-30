@@ -3,7 +3,7 @@
 A [Craft CMS](https://craftcms.com/) starter project by [Andrea DeMers](https://andreademers.com).
 
 ## Content Management System (CMS)
-- [Craft CMS](https://craftcms.com/)
+- [Craft CMS Solo Edition](https://craftcms.com/)
 - [Craft CMS 3.x documentation](https://docs.craftcms.com/v3/)
 
 ## Craft CMS Plugins
@@ -45,6 +45,7 @@ A [Craft CMS](https://craftcms.com/) starter project by [Andrea DeMers](https://
 7. Do a little dance. :dancer:
 
 ## Todo
+- [ ] Review installation instructions.
 - [x] Replace Vue.js with Alpine.js as default JavaScript framework
 - [x] Configure PurgeCSS
 - [x] Add installation instructions
