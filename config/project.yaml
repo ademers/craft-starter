@@ -1,9 +1,11 @@
-dateModified: 1584735511
+dateModified: 1585350529
 email:
   fromEmail: $SYSTEM_EMAIL_ADDRESS
   fromName: $SENDER_NAME
-  template: null
-  transportSettings: null
+  replyToEmail: $REPLY_TO_ADDRESS
+  template: ''
+  transportSettings:
+    command: ''
   transportType: craft\mail\transportadapters\Sendmail
 fieldGroups:
   71d53f95-1c79-4cf9-9bf3-bff04b506bea:
@@ -109,7 +111,7 @@ sites:
     siteGroup: 3dcc8a9c-1af6-4cb7-b4f3-9102d6f5f013
     sortOrder: 1
 system:
-  edition: pro
+  edition: solo
   live: true
   name: $SYSTEM_NAME
   schemaVersion: 3.4.10
@@ -120,3 +122,13 @@ users:
   photoSubpath: ''
   photoVolumeUid: null
   requireEmailVerification: true
+volumes:
+  7eba656c-f4b4-4871-ba1d-85680617f5d3:
+    handle: images
+    hasUrls: true
+    name: images
+    settings:
+      path: $ASSETS_FILE_SYSTEM_PATH
+    sortOrder: 1
+    type: craft\volumes\Local
+    url: $ASSETS_BASE_URL

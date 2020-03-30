@@ -4,6 +4,23 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## 1.1.2 - 2020-03-30
+### Added
+- Add _images_ Assets Volume.
+- Add SeoMatic plugin config file.
+- Add Minify plugin config file.
+- Add Contact Form plugin config file.
+- Add DSN to DB config file.
+- Add DB_DSN & custom vars to `.env.example.com`.
+
+### Changed
+- Downgrade Craft CMS to Solo edition.
+- Hardcode Craft & plugin versions in `composer.json`.
+- Update readme file.
+
+### Removed
+- Remove DB configs replaced by DSN.
+
 ## 1.1.1 - 2020-03-20
 ### Changed
 - Update Craft and Craft plugins to latest versions.

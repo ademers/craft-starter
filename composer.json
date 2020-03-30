@@ -2,24 +2,24 @@
     "name": "ademers/craft-starter",
     "description": "A Craft CMS starter project by Andrea DeMers.",
     "keywords": [
-        "craft",
-        "cms",
-        "craftcms",
-        "project"
-      ],
+      "craft",
+      "cms",
+      "craftcms",
+      "project"
+    ],
     "type": "project",
-    "version": "1.1.1",
+    "version": "1.1.2",
     "license": "MIT",
     "require": {
-    "craftcms/cms": "^3.4.9",
-    "craftcms/contact-form": "^2.2",
-    "craftcms/redactor": "^2.6.0.1",
-    "mmikkel/retcon": "^2.0",
-    "nystudio107/craft-minify": "^1.2",
-    "nystudio107/craft-scripts": "^1.2",
-    "nystudio107/craft-seomatic": "^3.2.45",
-    "nystudio107/craft-twigpack": "^1.2.0",
-    "vlucas/phpdotenv": "^3.4.0"
+      "craftcms/cms": "3.4.11",
+      "craftcms/contact-form": "2.2.6",
+      "craftcms/redactor": "2.6.1",
+      "mmikkel/retcon": "2.1.0",
+      "nystudio107/craft-minify": "1.2.9",
+      "nystudio107/craft-scripts": "1.2.10",
+      "nystudio107/craft-seomatic": "3.2.49",
+      "nystudio107/craft-twigpack": "1.2.0",
+      "vlucas/phpdotenv": "^3.4.0"
   },
   "autoload": {
     "psr-4": {
@@ -33,6 +33,10 @@
   "scripts": {
     "post-root-package-install": [
       "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+    ],
+    "post-create-project-cmd": [
+      "@composer dump-autoload -o",
+      "@php craft setup/welcome"
     ]
   }
 }
