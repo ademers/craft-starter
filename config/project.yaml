@@ -1,4 +1,4 @@
-dateModified: 1585350529
+dateModified: 1585609569
 email:
   fromEmail: $SYSTEM_EMAIL_ADDRESS
   fromName: $SENDER_NAME
@@ -33,19 +33,14 @@ fields:
     translationMethod: none
     type: craft\redactor\Field
 graphql:
-  schemas:
+  scopes:
     55645ee2-d4ea-4c4b-9bd2-e73354e65b82:
-      isPublic: true
       name: 'Public Schema'
 plugins:
   contact-form:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
-  imager:
-    edition: standard
-    enabled: true
-    schemaVersion: 2.0.0
   minify:
     edition: standard
     enabled: true
@@ -89,6 +84,7 @@ sections:
         titleLabel: Title
     handle: blog
     name: Blog
+    previewTargets: null
     propagationMethod: all
     siteSettings:
       5175a4de-61e4-46da-a275-8d5e41e17cb6:
