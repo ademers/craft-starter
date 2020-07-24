@@ -1,4 +1,4 @@
-dateModified: 1595603554
+dateModified: 1595603987
 email:
   fromEmail: $SYSTEM_EMAIL_ADDRESS
   fromName: $SENDER_NAME
@@ -28,6 +28,10 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 3.0.9
+  sprig:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   twigpack:
     edition: standard
     enabled: true
