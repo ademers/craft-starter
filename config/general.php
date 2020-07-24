@@ -12,6 +12,8 @@ return [
     // Global settings
     '*' => [
         // Start default configs settings
+        // Prevents error message. See https://nystudio107.com/blog/exploring-the-craft-cms-3-console-command-line-interface-cli#clear-caches
+        'resourceBasePath' => dirname(__DIR__) . '/web/cpresources',
         // Default Week Start Day (0 = Sunday, 1 = Monday...)
         'defaultWeekStartDay' => 1,
 
@@ -43,12 +45,12 @@ return [
     // Production environment settings
     'production' => [
         // Set this to `false` to prevent administrative changes from being made on production
-        // 'allowAdminChanges' => false,
+        'allowAdminChanges' => false,
     ],
     // Staging environment settings
     'staging' => [
         // Set this to `false` to prevent administrative changes from being made on staging
-        // 'allowAdminChanges' => false,
+        'allowAdminChanges' => false,
         'isSystemLive' => false,
     ],
     // Dev environment settings
@@ -56,6 +58,5 @@ return [
         // 'siteUrl' => 'http://craft-starter.test',
         // Dev Mode (see https://craftcms.com/guides/what-dev-mode-does)
         'devMode' => true,
-        'allowAdminChanges' => true,
     ],
 ];
