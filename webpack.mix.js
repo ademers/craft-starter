@@ -52,7 +52,7 @@ mix
         //     path.join(__dirname, 'src/**/*.vue'),
         // ],
         folders: ['src', 'templates'],
-        extensions: ['html', 'twig', 'js', 'vue'],
+        extensions: ['html', 'twig', 'js'],
         whitelist: [
             // Add selectors
         ],
@@ -74,7 +74,7 @@ mix
     .webpackConfig({
         resolve: {
             // TODO: check if . required
-            extensions: ['.js', '.vue', '.twig'],
+            extensions: ['.html', '.twig', '.js'],
         },
         // Add any webpack dev server config here
         devServer: {

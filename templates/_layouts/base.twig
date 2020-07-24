@@ -40,28 +40,26 @@
 		<!-- /Critical CSS -->
         
 		{# Non-critical CSS #}
+        {# Twigpack #}
 		{{ craft.twigpack.includeCssModule("/css/app.css", true) }}
 	</head>
 
 	<body class="text-base font-sans antialiased text-gray-900 bg-white leading-normal">
 		{# Sticky footer: https://jsfiddle.net/adamwathan/xgykyfkg/ #}
-		{# Uncomment below to enable app id if using Vue.js #}
-		{# <div id="app" class="min-h-screen flex flex-col"> #}
-		{# Comment out if not using Vue.js and app id not required #}
 		<div class="min-h-screen flex flex-col">
 			<div class="flex-grow">
 				<header>
-					{# Vue.js navbar component #}
-					{# {% include '_partials/navbar-vue.twig' %} #}
 					{# Alpine.js navbar #}
 					{% include '_partials/navbar-alpine.twig' %}
 
 					<div class="py-8 sm:py-20">
-						{% block sectionHeader %}{% endblock sectionHeader %}
+						{% block sectionHeader %}
+                        {% endblock sectionHeader %}
 					</div>
 				</header>
 
-				{% block content %}{% endblock content %}
+				{% block content %}
+                {% endblock content %}
 			</div>
 
 			<footer class="mt-8 bg-indigo-50">

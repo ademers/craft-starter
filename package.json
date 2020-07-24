@@ -20,8 +20,7 @@
     "@tailwindcss/ui": "^0.1.4",
     "alpinejs": "^2.5.0",
     "lazysizes": "^5.2.2",
-    "tailwindcss": "^1.5.2",
-    "vue": "^2.6.11"
+    "tailwindcss": "^1.5.2"
   },
   "devDependencies": {
     "browser-sync": "^2.26.10",
@@ -29,7 +28,6 @@
     "cross-env": "^6.0.3",
     "laravel-mix": "^5.0.4",
     "laravel-mix-criticalcss": "^1.0.1",
-    "laravel-mix-purgecss": "^4.2.0",
-    "vue-template-compiler": "^2.6.11"
+    "laravel-mix-purgecss": "^4.2.0"
   }
 }
