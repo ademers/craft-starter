@@ -12,6 +12,8 @@ return [
     // Global settings
     '*' => [
         // Start default configs settings
+        // Prevents error message. See https://nystudio107.com/blog/exploring-the-craft-cms-3-console-command-line-interface-cli#clear-caches
+        'resourceBasePath' => dirname(__DIR__) . '/web/cpresources',
         // Default Week Start Day (0 = Sunday, 1 = Monday...)
         'defaultWeekStartDay' => 1,
 
