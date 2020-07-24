@@ -4,6 +4,30 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## 1.2.0 2020-07-24
+### Added
+- Install Sprig plugin 1.0.0-beta.9.
+- Install & configure Tailwind CSS typography plugin.
+- Add Tailwind CSS typography classes to templates.
+- Set up Tailwind’s built-in PurgeCSS.
+
+### Changed
+- Update Craft CMS to 3.5.0-RC3.
+- Update SEOmatic plugin to 3.3.8.
+- Update Twigpack plugin to 1.2.3.
+- Update Retcon plugin to 2.2.1.
+- Update Minify plugin to 1.2.10.
+- Update Contact Form plugin to 2.2.7.
+- Update Tailwind CSS to 1.5.2.
+- Update Tailwind UI to 0.1.4.
+- Update Lazysizes to 5.2.2.
+- Update Alpine JS to 2.5.0.
+- Update Browsersync to 2.26.10.
+
+### Removed
+- Uninstall & remove Vue JS in favour of Alpine JS.
+- Uninstall & remove Laravel Mix PurgeCSS in favour of Tailwind’s built-in PurgeCSS.
+
 ## 1.1.3 2020-03-31
 ### Changed
 - Reinstall & uninstall Imager plugin to fix `project.yaml`.
