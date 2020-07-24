@@ -1,0 +1,8 @@
+handle: images
+hasUrls: true
+name: images
+settings:
+  path: $ASSETS_FILE_SYSTEM_PATH
+sortOrder: 1
+type: craft\volumes\Local
+url: $ASSETS_BASE_URL
