@@ -1,4 +1,4 @@
-dateModified: 1585609569
+dateModified: 1595600434
 email:
   fromEmail: $SYSTEM_EMAIL_ADDRESS
   fromName: $SENDER_NAME
@@ -56,7 +56,7 @@ plugins:
   seomatic:
     edition: standard
     enabled: true
-    schemaVersion: 3.0.8
+    schemaVersion: 3.0.9
   twigpack:
     edition: standard
     enabled: true
