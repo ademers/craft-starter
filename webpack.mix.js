@@ -13,9 +13,9 @@ let mix = require('laravel-mix');
 let tailwindcss = require('tailwindcss');
 // Laravel Mix plugins
 require('laravel-mix-criticalcss');
-require('laravel-mix-purgecss');
 
 mix
+    // CSS
     .postCss('src/css/app.css', 'web/css', [
         tailwindcss('tailwind.config.js'),
     ])
@@ -33,36 +33,10 @@ mix
             width: 1400,
             height: 1400,
             minify: true,
-            // Uncomment penthouse: if using Vue.js navbar
-            // penthouse: {
-            //     forceInclude: [
-            //         '.block',
-            //         '.hidden',
-            //     ]
-            // },
         },
     })
-    .purgeCss({
-        enabled: mix.inProduction(),
-        // Not sure what's advantage of globs: (??)
-        // globs: [
-        //     path.join(__dirname, 'templates/**/*.html'),
-        //     path.join(__dirname, 'templates/**/*.twig'),
-        //     path.join(__dirname, 'src/**/*.js'),
-        //     path.join(__dirname, 'src/**/*.vue'),
-        // ],
-        folders: ['src', 'templates'],
-        extensions: ['html', 'twig', 'js'],
-        whitelist: [
-            // Add selectors
-        ],
-    })
-
     // JS
     .js('src/js/app.js', 'web/js')
-    // Uncomment to use Vue
-    // .extract(['lazysizes', 'vue'])
-    // Comment out if have uncommented above
     .extract(['alpinejs', 'lazysizes'])
     .setPublicPath('web')
     .options({
@@ -71,6 +45,7 @@ mix
             port: 8080
         }
     })
+    // Webpack
     .webpackConfig({
         resolve: {
             // TODO: check if . required
