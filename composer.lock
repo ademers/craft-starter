@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e775f215d607c005d7c7510295fe0789",
+    "content-hash": "5dd1303d3d554b00180f26c0301cab05",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -2272,21 +2272,21 @@
         },
         {
             "name": "nystudio107/craft-minify",
-            "version": "1.2.9",
+            "version": "1.2.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-minify.git",
-                "reference": "3bb2a6f160658bcfeeab9fa390cf28fba38fbd26"
+                "reference": "01d5de3f016c9c4a1e62c17e9f3ed981099c3927"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-minify/zipball/3bb2a6f160658bcfeeab9fa390cf28fba38fbd26",
-                "reference": "3bb2a6f160658bcfeeab9fa390cf28fba38fbd26",
+                "url": "https://api.github.com/repos/nystudio107/craft-minify/zipball/01d5de3f016c9c4a1e62c17e9f3ed981099c3927",
+                "reference": "01d5de3f016c9c4a1e62c17e9f3ed981099c3927",
                 "shasum": ""
             },
             "require": {
-                "craftcms/cms": "^3.0.0-RC1",
-                "mrclay/minify": "^3.0.0"
+                "craftcms/cms": "^3.0.0",
+                "mrclay/minify": "^3.0.10"
             },
             "type": "craft-plugin",
             "extra": {
@@ -2324,7 +2324,7 @@
                 "craftcms",
                 "minify"
             ],
-            "time": "2018-07-21T15:09:55+00:00"
+            "time": "2020-04-02T21:20:01+00:00"
         },
         {
             "name": "nystudio107/craft-scripts",
