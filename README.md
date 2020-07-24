@@ -1,10 +1,10 @@
-# Craft CMS 3.x Starter Project
+# Craft CMS 3.5.x Starter Project
 
 A [Craft CMS](https://craftcms.com/) starter project by [Andrea DeMers](https://andreademers.com).
 
 ## Content Management System (CMS)
-- [Craft CMS Solo Edition](https://craftcms.com/)
-- [Craft CMS 3.x documentation](https://docs.craftcms.com/v3/)
+- [Craft CMS 3.5.x Solo Edition](https://craftcms.com/)
+- [Craft CMS 3.5.x documentation](https://docs.craftcms.com/v3/)
 
 ## Craft CMS Plugins
 - [Contact Form](https://plugins.craftcms.com/contact-form)
@@ -12,6 +12,7 @@ A [Craft CMS](https://craftcms.com/) starter project by [Andrea DeMers](https://
 - [Redactor](https://plugins.craftcms.com/redactor)
 - [Retcon](https://plugins.craftcms.com/retcon)
 - [SEOmatic](https://plugins.craftcms.com/seomatic)
+- [Sprig](https://plugins.craftcms.com/sprig)
 - [Twigpack](https://plugins.craftcms.com/twigpack)
 
 ## PHP Packages
@@ -23,12 +24,12 @@ A [Craft CMS](https://craftcms.com/) starter project by [Andrea DeMers](https://
 
 ### CSS
 - [Tailwind CSS](https://tailwindcss.com/)
-- [Tailwind UI](https://tailwindui.com/)
+- [Tailwind CSS Typography Plugin]()
+- [Tailwind UI](https://tailwindui.com/) (*commercial license required*)
 
 ### JavaScript
 - [Alpine JS](https://github.com/alpinejs/alpine)
 - [lazySizes](https://afarkas.github.io/lazysizes/index.html)
-- [Vue.js](https://vuejs.org/)
 
 ## Requirements
 - Craft [server requirements](https://docs.craftcms.com/v3/requirements.html)
@@ -45,10 +46,10 @@ A [Craft CMS](https://craftcms.com/) starter project by [Andrea DeMers](https://
 7. Do a little dance. :dancer:
 
 ## Todo
-- [ ] Review installation instructions.
-- [x] Replace Vue.js with Alpine.js as default JavaScript framework
-- [x] Configure PurgeCSS
-- [x] Add installation instructions
+- [ ] Complete installation instructions.
+- [x] Replace Vue.js with Alpine.js as default JavaScript framework.
+- [x] Configure PurgeCSS.
+- [x] Add installation instructions.
 
 ## License
 The MIT License (MIT). Please see [License file](https://github.com/ademers/craft-starter/blob/develop/LICENSE.md) for more information.
