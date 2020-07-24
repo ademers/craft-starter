@@ -45,12 +45,12 @@ return [
     // Production environment settings
     'production' => [
         // Set this to `false` to prevent administrative changes from being made on production
-        // 'allowAdminChanges' => false,
+        'allowAdminChanges' => false,
     ],
     // Staging environment settings
     'staging' => [
         // Set this to `false` to prevent administrative changes from being made on staging
-        // 'allowAdminChanges' => false,
+        'allowAdminChanges' => false,
         'isSystemLive' => false,
     ],
     // Dev environment settings
@@ -58,6 +58,5 @@ return [
         // 'siteUrl' => 'http://craft-starter.test',
         // Dev Mode (see https://craftcms.com/guides/what-dev-mode-does)
         'devMode' => true,
-        'allowAdminChanges' => true,
     ],
 ];
