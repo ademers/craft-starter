@@ -2,6 +2,10 @@
 @tailwind base;
 
 /* Your own custom base styles */
+/* Alpine JS */
+[x-cloak] {
+    display: none;
+}
 
 @tailwind components;
 
