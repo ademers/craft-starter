@@ -1,75 +1,88 @@
-{% set name = name ?? '' %}
-{% set email = email ?? '' %}
+{# Required Craft plugins:
+# Craft Contact form
+# Sprig
+# Required NPM packages
+# Tailwind CSS
+# Tailwind UI (includes Tailwind CSS Form plugin)
+#}
+
+{# Sprig contact form #}
+{% set fromName = fromName ?? '' %}
+{% set fromEmail = fromEmail ?? '' %}
 {% set message = message ?? '' %}
 
 {% if success is defined %}
-    <p>Your message was successfully sent!</p>
+	<div class="rounded-md bg-green-50 p-4">
+		<div class="flex">
+			<div class="flex-shrink-0">
+				<svg class="h-5 w-5 text-green-400" viewbox="0 0 20 20" fill="currentColor">
+					<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+				</svg>
+			</div>
+			<div class="ml-3">
+				<p class="text-sm leading-5 font-medium text-green-800">
+					Thank you for your message, {{ fromName }}!
+				</p>
+			</div>
+		</div>
+	</div>
 {% else %}
-    {% if errors is defined %}
-        {% for error in errors %}
-            <p class="error">{{ error|join(', ') }}</p>
-
-            {# <div class="rounded-md bg-red-50 p-4">
+	{% if errors is defined %}
+        <div class="rounded-md bg-red-50 p-4">
             <div class="flex">
                 <div class="flex-shrink-0">
-                <svg class="h-5 w-5 text-red-400" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd" />
-                </svg>
+                    <svg class="h-5 w-5 text-red-400" viewbox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/>
+                    </svg>
                 </div>
                 <div class="ml-3">
-                <h3 class="text-sm leading-5 font-medium text-red-800">
-                    There were 2 errors with your submission
-                </h3>
-                <div class="mt-2 text-sm leading-5 text-red-700">
-                    <ul class="list-disc pl-5">
-                    <li>
-                        Your password must be at least 8 characters
-                    </li>
-                    <li class="mt-1">
-                        Your password must included at least one pro wrestling finishing move
-                    </li>
-                    </ul>
+                    <h3 class="text-sm leading-5 font-medium text-red-800">
+                    {% if errors|length == 1 %}
+                        There was an error with your submission
+                    {% else %}
+                        There were {{ errors|length }} errors with your submission
+                    {% endif %}
+                    </h3>
+
+                    <div class="mt-2 text-sm leading-5 text-red-700">
+                        <ul class="list-disc pl-5">
+                            {% for error in errors %}
+                                <li class="error">
+                                    {{ error|join(', ') }}
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
                 </div>
-                </div>
-            </div>
-            </div> #}
-
-        {% endfor %}
-    {% endif %}
-
-  {# <form sprig s-method="post" s-action="contact-form/send">
-      <input type="text" name="name" value="{{ name }}" placeholder="Name">
-      <input type="email" name="email" value="{{ email }}" placeholder="Email">
-      <textarea name="message" placeholder="Message">{{ message }}</textarea>
-      <button type="submit">Send Message</button>
-  </form> #}
-
-
-    <form sprig s-method="post" s-action="contact-form/send" class="grid grid-cols-1 row-gap-6">
-        <div>
-            <label for="name" class="sr-only">Full name</label>
-            <div class="relative rounded-md shadow-sm">
-                <input type="text" id="name" name="fromName" value="{{ name }}" class="form-input block w-full py-3 px-4 placeholder-gray-500 transition ease-in-out duration-150" placeholder="Name">
             </div>
         </div>
-        <div>
-            <label for="email" class="sr-only">Email</label>
-            <div class="relative rounded-md shadow-sm">
-                <input type="email" id="email" name="fromEmail" value="{{ email }}" class="form-input block w-full py-3 px-4 placeholder-gray-500 transition ease-in-out duration-150" placeholder="Email">
-            </div>
-        </div>
-        <div>
-            <label for="message" class="sr-only">Message</label>
-            <div class="relative rounded-md shadow-sm">
-                <textarea id="message" name="message" rows="4" class="form-input block w-full py-3 px-4 placeholder-gray-500 transition ease-in-out duration-150" placeholder="Message">{{ message }}</textarea>
-            </div>
-        </div>
-        <div class="">
-            <span class="inline-flex rounded-md shadow-sm">
-                <button type="submit" class="inline-flex justify-center py-3 px-6 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition duration-150 ease-in-out">
-                    Send message
-                </button>
-            </span>
-        </div>
-    </form>
+	{% endif %}
+
+	<form sprig s-method="post" s-action="contact-form/send" class="grid grid-cols-1 row-gap-6 {% if errors is defined %} mt-6{% endif %}">
+		<div>
+			<label for="name" class="sr-only">Full name</label>
+			<div class="relative rounded-md shadow-sm">
+				<input type="text" id="name" name="fromName" value="{{ fromName }}" class="form-input block w-full py-3 px-4 placeholder-gray-500 transition ease-in-out duration-150" placeholder="Name">
+			</div>
+		</div>
+		<div>
+			<label for="email" class="sr-only">Email</label>
+			<div class="relative rounded-md shadow-sm">
+				<input type="email" id="email" name="fromEmail" value="{{ fromEmail }}" class="form-input block w-full py-3 px-4 placeholder-gray-500 transition ease-in-out duration-150" placeholder="Email">
+			</div>
+		</div>
+		<div>
+			<label for="message" class="sr-only">Message</label>
+			<div class="relative rounded-md shadow-sm">
+				<textarea id="message" name="message" rows="4" class="form-input block w-full py-3 px-4 placeholder-gray-500 transition ease-in-out duration-150" placeholder="Message">{{ message }}</textarea>
+			</div>
+		</div>
+		<div class="">
+			<span class="inline-flex rounded-md shadow-sm">
+				<button type="submit" class="inline-flex justify-center py-3 px-6 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition duration-150 ease-in-out">
+					Send message
+				</button>
+			</span>
+		</div>
+	</form>
 {% endif %}
