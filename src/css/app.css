@@ -3,9 +3,9 @@
 
 /* Your own custom base styles */
 /* Alpine JS */
-[x-cloak] {
+/* [x-cloak] {
     display: none;
-}
+} */
 
 @tailwind components;
 

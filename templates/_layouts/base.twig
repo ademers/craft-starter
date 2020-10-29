@@ -16,6 +16,13 @@
 		<meta name="msapplication-TileColor" content="#2d89ef">
 		<meta name="theme-color" content="#ffffff">
 
+        {# Alpine JS #}
+        <style>
+            [x-cloak] {
+                display: none !important;
+            }
+        </style>
+
 		{# Google fonts #}
 		{# Uncomment and edit to use Google Fonts #}
 		{# <link rel="dns-prefetch" href="//fonts.googleapis.com"> #}
@@ -32,7 +39,7 @@
 		<!-- Critical CSS -->
 		{{ craft.twigpack.includeCriticalCssTags() }}
 		<!-- /Critical CSS -->
-        
+
 		{# Non-critical CSS #}
         {# Twigpack #}
 		{{ craft.twigpack.includeCssModule("/css/app.css", true) }}
