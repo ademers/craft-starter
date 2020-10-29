@@ -16,12 +16,12 @@
 		<meta name="msapplication-TileColor" content="#2d89ef">
 		<meta name="theme-color" content="#ffffff">
 
-		{# Alpine.js internal CSS #}
-		{% css %}
-			[x-cloak] {
-				display: none
-			}
-		{% endcss %}
+        {# Alpine JS #}
+        <style>
+            [x-cloak] {
+                display: none !important;
+            }
+        </style>
 
 		{# Google fonts #}
 		{# Uncomment and edit to use Google Fonts #}
@@ -30,6 +30,7 @@
 		{# <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,600,700,800,900&display=swap" rel="stylesheet"> #}
 
 		{# Inter font #}
+        {# TODO: Get from Google Fonts  ?? #}
 		<link rel="preconnect" href="https://rsms.me/" crossorigin>
 		<link rel="dns-prefetch" href="https://rsms.me/">
 		<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
@@ -38,7 +39,7 @@
 		<!-- Critical CSS -->
 		{{ craft.twigpack.includeCriticalCssTags() }}
 		<!-- /Critical CSS -->
-        
+
 		{# Non-critical CSS #}
         {# Twigpack #}
 		{{ craft.twigpack.includeCssModule("/css/app.css", true) }}
@@ -50,7 +51,7 @@
 			<div class="flex-grow">
 				<header>
 					{# Alpine.js navbar #}
-					{% include '_partials/navbar-alpine.twig' %}
+					{% include '_partials/navbar.twig' %}
 
 					<div class="py-8 sm:py-20">
 						{% block sectionHeader %}
