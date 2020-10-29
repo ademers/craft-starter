@@ -58,7 +58,7 @@
         </div>
 	{% endif %}
 
-	<form sprig s-method="post" s-action="contact-form/send" class="grid grid-cols-1 row-gap-6 {% if errors is defined %} mt-6{% endif %}">
+	<form sprig s-method="post" s-action="contact-form/send" class="grid grid-cols-1 gap-y-6 {% if errors is defined %} mt-6{% endif %}">
 		<div>
 			<label for="name" class="sr-only">Full name</label>
 			<div class="relative rounded-md shadow-sm">
