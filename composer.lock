@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c97726efe28a408582d8f6f0a2866296",
+    "content-hash": "74d4d522bf2450ec37326af7730acf76",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -1425,6 +1425,48 @@
                 "laravel"
             ],
             "time": "2020-03-09T16:18:28+00:00"
+        },
+        {
+            "name": "ivopetkov/html5-dom-document-php",
+            "version": "v2.2.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ivopetkov/html5-dom-document-php.git",
+                "reference": "2dceb001024f1543def2e3c772f160a83def837e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ivopetkov/html5-dom-document-php/zipball/2dceb001024f1543def2e3c772f160a83def837e",
+                "reference": "2dceb001024f1543def2e3c772f160a83def837e",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "ivopetkov/docs-generator": "0.2.*",
+                "phpunit/phpunit": "6.*"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "autoload.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ivo Petkov",
+                    "email": "ivo@ivopetkov.com",
+                    "homepage": "http://ivopetkov.com"
+                }
+            ],
+            "description": "HTML5 DOMDocument PHP library (extends DOMDocument)",
+            "time": "2020-10-28T17:04:40+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -3252,20 +3294,27 @@
         },
         {
             "name": "putyourlightson/craft-sprig",
-            "version": "1.0.0-beta.9",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/putyourlightson/craft-sprig.git",
-                "reference": "9aac2b44e24ac5c3630217936f87743b6d05cc85"
+                "reference": "3088eec02a98b1f6525ef8dc3920fb893cea4fc4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/putyourlightson/craft-sprig/zipball/9aac2b44e24ac5c3630217936f87743b6d05cc85",
-                "reference": "9aac2b44e24ac5c3630217936f87743b6d05cc85",
+                "url": "https://api.github.com/repos/putyourlightson/craft-sprig/zipball/3088eec02a98b1f6525ef8dc3920fb893cea4fc4",
+                "reference": "3088eec02a98b1f6525ef8dc3920fb893cea4fc4",
                 "shasum": ""
             },
             "require": {
-                "craftcms/cms": "^3.0.0"
+                "craftcms/cms": "^3.0.0",
+                "ivopetkov/html5-dom-document-php": "^2.0.0"
+            },
+            "require-dev": {
+                "codeception/codeception": "^4.0.0",
+                "codeception/module-asserts": "^1.0.0",
+                "codeception/module-yii2": "^1.0.0",
+                "vlucas/phpdotenv": "^3.0"
             },
             "type": "craft-plugin",
             "extra": {
@@ -3275,23 +3324,20 @@
                 "developerUrl": "https://putyourlightson.com/",
                 "documentationUrl": "https://putyourlightson.com/plugins/sprig",
                 "changelogUrl": "https://raw.githubusercontent.com/putyourlightson/craft-sprig/v1/CHANGELOG.md",
-                "class": "putyourlightson\\sprig\\Sprig"
+                "class": "putyourlightson\\sprig\\Sprig",
+                "schemaVersion": "1.0.1"
             },
             "autoload": {
                 "psr-4": {
                     "putyourlightson\\sprig\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "mit"
             ],
             "description": "A reactive Twig component framework for Craft.",
-            "support": {
-                "docs": "https://putyourlightson.com/plugins/sprig",
-                "source": "https://github.com/putyourlightson/craft-sprig",
-                "issues": "https://github.com/putyourlightson/craft-sprig/issues"
-            },
-            "time": "2020-07-21T17:32:37+00:00"
+            "time": "2020-10-28T09:10:32+00:00"
         },
         {
             "name": "ralouphie/getallheaders",
@@ -6247,9 +6293,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "putyourlightson/craft-sprig": 10
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
