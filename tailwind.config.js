@@ -2,8 +2,13 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
+    future: {
+        removeDeprecatedGapUtilities: true,
+        purgeLayersByDefault: true,
+        defaultLineHeights: true,
+        standardFontWeights: true,
+    },
     purge:  {
-        mode: 'all',
         content: [
             './templates/**/*.html',
             './templates/**/*.twig'
