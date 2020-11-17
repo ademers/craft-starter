@@ -9,6 +9,10 @@
 /storage/*
 !/storage/.gitignore
 
+# CRAFT LICENSE KEY - ONLY FOR STARTER PROJECT
+# SEE: https://craftcms.com/knowledge-base/more-information-than-you-require-about-craft-license-keys#gotchas
+/config/license.key
+
 # ASSETS
 /web/assets/*
 !/web/assets/.gitignore
