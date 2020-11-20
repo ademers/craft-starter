@@ -1,48 +1,50 @@
-<nav x-data="{ open: false }" class="bg-indigo-800">
-    <div class="max-w-7xl mx-auto px-2 sm:px-4">
-        <div class="relative flex items-center justify-between h-16">
-            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-                <button @click="open = !open" class="inline-flex items-center justify-center p-2 rounded-md text-indigo-400 hover:text-white hover:bg-indigo-700 focus:outline-none focus:bg-indigo-700 focus:text-white transition duration-150 ease-in-out">
-                    <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
-                        <path x-cloak :class="{'hidden': open, 'inline-flex': !open }" class="inline-flex" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                        <path x-cloak :class="{'hidden': !open, 'inline-flex': open }" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                </button>
+<nav x-data="{ open: false }" class="bg-white shadow">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+            <div class="flex">
+                <div class="flex-shrink-0 flex items-center">
+                    <img class="block h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg" alt="company logo"/>
+                </div>
+                <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                    <a href="/" class="inline-flex items-center px-1 pt-1 border-b-2 {{ craft.app.request.segments|first == '' ? 'border-indigo-500' : 'border-transparent' }} text-sm font-medium text-gray-500 hover:text-gray-700 hover:border-gray-300">
+                        Home
+                    </a>
+                    <a href="#" class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium text-gray-500 hover:text-gray-700 hover:border-gray-300">
+                        Alpha
+                    </a>
+                    <a href="#" class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium text-gray-500 hover:text-gray-700 hover:border-gray-300">
+                        Bravo
+                    </a>
+                    <a href="{{ url('contact') }}" class="inline-flex items-center px-1 pt-1 border-b-2 {{ craft.app.request.segments|first == 'contact' ? 'border-indigo-500' : 'border-transparent' }} text-sm font-medium text-gray-500 hover:text-gray-700 hover:border-gray-300">
+                        Contact
+                    </a>
+                </div>
             </div>
 
-            <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
-                <div class="flex-shrink-0">
-                    <img class="block h-8 w-auto" src="/img/workflow-mark-on-dark.svg" width="100%" height="100%" alt="" />
-                </div>
-                <div class="hidden sm:block sm:ml-6">
-                    <div class="flex">
-                        <a href="/" class="px-3 py-2 rounded-md text-sm font-medium leading-5 text-white bg-indigo-900 focus:outline-none focus:text-white focus:bg-indigo-700 transition duration-150 ease-in-out">Home</a>
-
-                        <a href="/contact" class="ml-4 px-3 py-2 rounded-md text-sm font-medium leading-5 text-indigo-300 hover:text-white hover:bg-indigo-700 focus:outline-none focus:text-white focus:bg-indigo-700 transition duration-150 ease-in-out">Contact</a>
-
-                        <a href="#" class="ml-4 px-3 py-2 rounded-md text-sm font-medium leading-5 text-indigo-300 hover:text-white hover:bg-indigo-700 focus:outline-none focus:text-white focus:bg-indigo-700 transition duration-150 ease-in-out">Alpha</a>
-
-                        <a href="#" class="ml-4 px-3 py-2 rounded-md text-sm font-medium leading-5 text-indigo-300 hover:text-white hover:bg-indigo-700 focus:outline-none focus:text-white focus:bg-indigo-700 transition duration-150 ease-in-out">Bravo</a>
-
-                        <a href="#" class="ml-4 px-3 py-2 rounded-md text-sm font-medium leading-5 text-indigo-300 hover:tex-white hover:bg-indigo-700 focus:outline-none focus:text-white focus:bg-indigo-700 transition duration-150 ease-in-out">Charlie</a>
-                    </div>
-                </div>
+            <div
+                class="-mr-2 flex items-center sm:hidden">
+                <!-- Mobile menu button -->
+                <button @click="open = !open" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" x-bind:aria-expanded="open" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <!-- Icon when menu is closed. -->
+                    <svg x-cloak x-state:on="Menu open" x-state:off="Menu closed" :class="{ 'hidden': open, 'block': !open }" class="block h-6 w-6" x-description="Heroicon name: menu" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                    <!-- Icon when menu is open. -->
+                    <svg x-cloak x-state:on="Menu open" x-state:off="Menu closed" :class="{ 'hidden': !open, 'block': open }" class="hidden h-6 w-6" x-description="Heroicon name: x" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
             </div>
         </div>
     </div>
 
-    {# Available on small screens only #}
-    <div x-cloak :class="{'block': open, 'hidden': !open}" class="hidden sm:hidden">
-        <div class="px-2 pt-2 pb-3">
-            <a href="/" class="block px-3 py-2 rounded-md text-base font-medium text-white bg-indigo-900 focus:outline-none focus:text-white focus:bg-indigo-700 transition duration-150 ease-in-out">Home</a>
-
-            <a href="/contact" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-indigo-300 hover:text-white hover:bg-indigo-700 focus:outline-none focus:text-white focus:bg-indigo-700 transition duration-150 ease-in-out">Contact</a>
-
-            <a href="#" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-indigo-300 hover:text-white hover:bg-indigo-700 focus:outline-none focus:text-white focus:bg-indigo-700 transition duration-150 ease-in-out">Alpha</a>
-
-            <a href="#" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-indigo-300 hover:text-white hover:bg-indigo-700 focus:outline-none focus:text-white focus:bg-indigo-700 transition duration-150 ease-in-out">Bravo</a>
-
-            <a href="#" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-indigo-300 hover:text-white hover:bg-indigo-700 focus:outline-none focus:text-white focus:bg-indigo-700 transition duration-150 ease-in-out">Charlie</a>
+    <div x-description="Mobile menu, toggle classes based on menu state." x-state:on="Menu open" x-state:off="Menu closed" :class="{ 'block': open, 'hidden': !open }" class="hidden sm:hidden">
+        <div class="pt-2 pb-3 space-y-1">
+            <a href="/" class="block pl-3 pr-4 py-2 border-l-4 {{ craft.app.request.segments|first == '' ? 'border-indigo-500 bg-indigo-50' : 'border-transparent' }} text-base font-medium text-indigo-700">Home</a>
+            <a href="#" class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300">Alpha</a>
+            <a href="#" class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300">Bravo</a>
+            <a href="{{ url('contact') }}" class="block pl-3 pr-4 py-2 border-l-4 {{ craft.app.request.segments|first == 'contact' ? 'border-indigo-500 bg-indigo-50' : 'border-transparent' }} text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300">Contact</a>
         </div>
     </div>
 </nav>

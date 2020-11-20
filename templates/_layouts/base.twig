@@ -42,7 +42,7 @@
 
 		{# Non-critical CSS #}
         {# Twigpack #}
-        {# NOTE: Causes FOUC when devMode enabled #}
+        {# NOTE: Async loading CSS causes FOUC when devMode enabled #}
 		{# {{ craft.twigpack.includeCssModule("/css/app.css", true) }} #}
 		{% if craft.app.config.general.devMode %}
 			{{ craft.twigpack.includeCssModule("/css/app.css") }}
