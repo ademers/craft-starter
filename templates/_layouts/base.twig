@@ -42,7 +42,13 @@
 
 		{# Non-critical CSS #}
         {# Twigpack #}
-		{{ craft.twigpack.includeCssModule("/css/app.css", true) }}
+        {# NOTE: Async loading CSS causes FOUC when devMode enabled #}
+		{# {{ craft.twigpack.includeCssModule("/css/app.css", true) }} #}
+		{% if craft.app.config.general.devMode %}
+			{{ craft.twigpack.includeCssModule("/css/app.css") }}
+		{% else %}
+			{{ craft.twigpack.includeCssModule("/css/app.css", true) }}
+		{% endif %}
 	</head>
 
 	<body class="text-base font-sans antialiased text-gray-900 bg-white leading-normal">
@@ -63,8 +69,9 @@
                 {% endblock content %}
 			</div>
 
-			<footer class="mt-8 bg-indigo-50">
-				<div class="container px-4 py-8">
+			<footer class="mt-8 bg-gray-50 shadow">
+				{# <div class="container px-4 py-8"> #}
+				<main class="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8">
 					<small>&copy; {{ "now"|date("Y") }} {{ siteName }} <span class="italic">by</span> <a href="https://andreademers.com">Andrea DeMers</a></small>
 				</div>
 			</footer>

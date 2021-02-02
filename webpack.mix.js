@@ -9,16 +9,17 @@
  |
  */
 
-let mix = require('laravel-mix');
-let tailwindcss = require('tailwindcss');
+const mix = require('laravel-mix');
 // Laravel Mix plugins
+// Laravel Mix critical CSS plugin
 require('laravel-mix-criticalcss');
 
 mix
-    // CSS
+    // Tailwind CSS
     .postCss('src/css/app.css', 'web/css', [
-        tailwindcss('tailwind.config.js'),
+        require('tailwindcss'),
     ])
+    // Critical CSS
     .criticalCss({
         enabled: mix.inProduction(),
         paths: {
@@ -39,6 +40,8 @@ mix
     .js('src/js/app.js', 'web/js')
     .extract(['alpinejs', 'lazysizes'])
     .setPublicPath('web')
+    // HMR
+    // NOTE: requires Craft devMode = true
     .options({
         hmrOptions: {
             host: 'craft-starter.test',
@@ -75,22 +78,22 @@ mix
         mix.version();
     }
 
-    // Keep commented out just in case HMR breaks
-    // .browserSync({
-    //     proxy: 'http://craft-starter.test/',
-    //     port: 3000,
-    //     open: false,
-    //     files: [
-    //         'templates/**/*.html',
-    //         'templates/**/*.twig',
-    //         'templates/**/*.svg'
-    //     ],
-    //
-    //     watchOptions: {
-    //         usePolling: true,
-    //         interval: 500,
-    //     },
-    // });
+// Keep around in case HMR breaks
+// mix.browserSync({
+//     proxy: 'http://craft-starter.test/',
+//     port: 3000,
+//     open: false,
+//     files: [
+//         'templates/**/*.html',
+//         'templates/**/*.twig',
+//         'templates/**/*.svg'
+//     ],
+
+//     watchOptions: {
+//         usePolling: true,
+//         interval: 500,
+//     },
+// });
 
 // Full API
 // mix.js(src, output);
