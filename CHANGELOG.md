@@ -4,6 +4,22 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## 1.2.2 2021-02-02
+### Added
+- Add Craft auto-complete for PhpStorm
+### Changed
+- Update Twigpack plugin to 1.2.9
+- Update Sprig plugin to 1.3.2
+- Update SEOmatic plugin to 3.3.30
+- Update Redactor to 2.8.5
+- Update Craft to 3.5.19.1
+- Update Tailwind CSS to 2.0.2 postCSS 7.x compatible version
+- Update Tailwind CSS typography plugin to 0.4.0
+- Update Laravel Mix to 5.0.9
+- Update Alpine JS to 2.8.0
+- Update Lazysizes to 5.3.0
+### Fixed
+- Fix FOUC caused by Twigpack CSS async loading
 ## 1.2.1 2020-10-29
 ### Added
 - Add *Sprigified* Craft contact form.
