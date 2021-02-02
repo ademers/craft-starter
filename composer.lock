@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "60dcb3b8306a7d5b76e00aefab425ec2",
+    "content-hash": "ca539352ae09e0b4e374aa5d644a3c5b",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -2546,20 +2546,20 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.3.22",
+            "version": "3.3.30",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "3d9113e9a407d797da9a794883c494e199a12f33"
+                "reference": "210e8486d1e561990d7d15682dc86a1433e29b9e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/3d9113e9a407d797da9a794883c494e199a12f33",
-                "reference": "3d9113e9a407d797da9a794883c494e199a12f33",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/210e8486d1e561990d7d15682dc86a1433e29b9e",
+                "reference": "210e8486d1e561990d7d15682dc86a1433e29b9e",
                 "shasum": ""
             },
             "require": {
-                "craftcms/cms": "^3.0.0",
+                "craftcms/cms": "^3.1.19",
                 "davechild/textstatistics": "1.0.2",
                 "php-science/textrank": "^1.0.3",
                 "sunra/php-simple-html-dom-parser": "^1.5.2"
@@ -2620,7 +2620,7 @@
                 "tags",
                 "twitter"
             ],
-            "time": "2020-10-20T16:34:40+00:00"
+            "time": "2021-01-27T01:09:01+00:00"
         },
         {
             "name": "nystudio107/craft-twigpack",
