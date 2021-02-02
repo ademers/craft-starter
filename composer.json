@@ -19,7 +19,7 @@
         "nystudio107/craft-scripts": "1.2.10",
         "nystudio107/craft-seomatic": "3.3.22",
         "nystudio107/craft-twigpack": "1.2.9",
-        "putyourlightson/craft-sprig": "1.0.3",
+        "putyourlightson/craft-sprig": "1.3.2",
         "vlucas/phpdotenv": "^3.4.0"
     },
   "autoload": {

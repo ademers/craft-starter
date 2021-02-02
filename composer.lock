@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "734a8d20b2b00e4abe2f70b1ada079ba",
+    "content-hash": "60dcb3b8306a7d5b76e00aefab425ec2",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -3304,21 +3304,21 @@
         },
         {
             "name": "putyourlightson/craft-sprig",
-            "version": "1.0.3",
+            "version": "1.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/putyourlightson/craft-sprig.git",
-                "reference": "3088eec02a98b1f6525ef8dc3920fb893cea4fc4"
+                "reference": "444e3ef4e1aac97a3d1e9ce24a4034e1a4951dc9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/putyourlightson/craft-sprig/zipball/3088eec02a98b1f6525ef8dc3920fb893cea4fc4",
-                "reference": "3088eec02a98b1f6525ef8dc3920fb893cea4fc4",
+                "url": "https://api.github.com/repos/putyourlightson/craft-sprig/zipball/444e3ef4e1aac97a3d1e9ce24a4034e1a4951dc9",
+                "reference": "444e3ef4e1aac97a3d1e9ce24a4034e1a4951dc9",
                 "shasum": ""
             },
             "require": {
-                "craftcms/cms": "^3.0.0",
-                "ivopetkov/html5-dom-document-php": "^2.0.0"
+                "craftcms/cms": "^3.1.19",
+                "ivopetkov/html5-dom-document-php": "^2.2.8"
             },
             "require-dev": {
                 "codeception/codeception": "^4.0.0",
@@ -3347,7 +3347,7 @@
                 "mit"
             ],
             "description": "A reactive Twig component framework for Craft.",
-            "time": "2020-10-28T09:10:32+00:00"
+            "time": "2021-01-29T08:22:15+00:00"
         },
         {
             "name": "ralouphie/getallheaders",
