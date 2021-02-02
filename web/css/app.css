@@ -813,20 +813,49 @@ select {
   font-weight: 600;
 }
 
-.prose ol {
-  counter-reset: list-counter;
-  margin-top: 1.25em;
-  margin-bottom: 1.25em;
+.prose ol[type="A"] {
+  --list-counter-style: upper-alpha;
+}
+
+.prose ol[type="a"] {
+  --list-counter-style: lower-alpha;
+}
+
+.prose ol[type="A s"] {
+  --list-counter-style: upper-alpha;
+}
+
+.prose ol[type="a s"] {
+  --list-counter-style: lower-alpha;
+}
+
+.prose ol[type="I"] {
+  --list-counter-style: upper-roman;
+}
+
+.prose ol[type="i"] {
+  --list-counter-style: lower-roman;
+}
+
+.prose ol[type="I s"] {
+  --list-counter-style: upper-roman;
+}
+
+.prose ol[type="i s"] {
+  --list-counter-style: lower-roman;
+}
+
+.prose ol[type="1"] {
+  --list-counter-style: decimal;
 }
 
 .prose ol > li {
   position: relative;
-  counter-increment: list-counter;
   padding-left: 1.75em;
 }
 
 .prose ol > li::before {
-  content: counter(list-counter) ".";
+  content: counter(list-item, var(--list-counter-style, decimal)) ".";
   position: absolute;
   font-weight: 400;
   color: #6b7280;
@@ -964,11 +993,11 @@ select {
 }
 
 .prose pre code::before {
-  content: "";
+  content: none;
 }
 
 .prose pre code::after {
-  content: "";
+  content: none;
 }
 
 .prose table {
@@ -1048,6 +1077,11 @@ select {
 
 .prose h3 code {
   font-size: 0.9em;
+}
+
+.prose ol {
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
 }
 
 .prose ul {
@@ -32915,20 +32949,49 @@ select {
     font-weight: 600;
   }
 
-  .sm\:prose ol {
-    counter-reset: list-counter;
-    margin-top: 1.25em;
-    margin-bottom: 1.25em;
+  .sm\:prose ol[type="A"] {
+    --list-counter-style: upper-alpha;
+  }
+
+  .sm\:prose ol[type="a"] {
+    --list-counter-style: lower-alpha;
+  }
+
+  .sm\:prose ol[type="A s"] {
+    --list-counter-style: upper-alpha;
+  }
+
+  .sm\:prose ol[type="a s"] {
+    --list-counter-style: lower-alpha;
+  }
+
+  .sm\:prose ol[type="I"] {
+    --list-counter-style: upper-roman;
+  }
+
+  .sm\:prose ol[type="i"] {
+    --list-counter-style: lower-roman;
+  }
+
+  .sm\:prose ol[type="I s"] {
+    --list-counter-style: upper-roman;
+  }
+
+  .sm\:prose ol[type="i s"] {
+    --list-counter-style: lower-roman;
+  }
+
+  .sm\:prose ol[type="1"] {
+    --list-counter-style: decimal;
   }
 
   .sm\:prose ol > li {
     position: relative;
-    counter-increment: list-counter;
     padding-left: 1.75em;
   }
 
   .sm\:prose ol > li::before {
-    content: counter(list-counter) ".";
+    content: counter(list-item, var(--list-counter-style, decimal)) ".";
     position: absolute;
     font-weight: 400;
     color: #6b7280;
@@ -33066,11 +33129,11 @@ select {
   }
 
   .sm\:prose pre code::before {
-    content: "";
+    content: none;
   }
 
   .sm\:prose pre code::after {
-    content: "";
+    content: none;
   }
 
   .sm\:prose table {
@@ -33150,6 +33213,11 @@ select {
 
   .sm\:prose h3 code {
     font-size: 0.9em;
+  }
+
+  .sm\:prose ol {
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
   }
 
   .sm\:prose ul {
@@ -64935,20 +65003,49 @@ select {
     font-weight: 600;
   }
 
-  .md\:prose ol {
-    counter-reset: list-counter;
-    margin-top: 1.25em;
-    margin-bottom: 1.25em;
+  .md\:prose ol[type="A"] {
+    --list-counter-style: upper-alpha;
+  }
+
+  .md\:prose ol[type="a"] {
+    --list-counter-style: lower-alpha;
+  }
+
+  .md\:prose ol[type="A s"] {
+    --list-counter-style: upper-alpha;
+  }
+
+  .md\:prose ol[type="a s"] {
+    --list-counter-style: lower-alpha;
+  }
+
+  .md\:prose ol[type="I"] {
+    --list-counter-style: upper-roman;
+  }
+
+  .md\:prose ol[type="i"] {
+    --list-counter-style: lower-roman;
+  }
+
+  .md\:prose ol[type="I s"] {
+    --list-counter-style: upper-roman;
+  }
+
+  .md\:prose ol[type="i s"] {
+    --list-counter-style: lower-roman;
+  }
+
+  .md\:prose ol[type="1"] {
+    --list-counter-style: decimal;
   }
 
   .md\:prose ol > li {
     position: relative;
-    counter-increment: list-counter;
     padding-left: 1.75em;
   }
 
   .md\:prose ol > li::before {
-    content: counter(list-counter) ".";
+    content: counter(list-item, var(--list-counter-style, decimal)) ".";
     position: absolute;
     font-weight: 400;
     color: #6b7280;
@@ -65086,11 +65183,11 @@ select {
   }
 
   .md\:prose pre code::before {
-    content: "";
+    content: none;
   }
 
   .md\:prose pre code::after {
-    content: "";
+    content: none;
   }
 
   .md\:prose table {
@@ -65170,6 +65267,11 @@ select {
 
   .md\:prose h3 code {
     font-size: 0.9em;
+  }
+
+  .md\:prose ol {
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
   }
 
   .md\:prose ul {
@@ -96955,20 +97057,49 @@ select {
     font-weight: 600;
   }
 
-  .lg\:prose ol {
-    counter-reset: list-counter;
-    margin-top: 1.25em;
-    margin-bottom: 1.25em;
+  .lg\:prose ol[type="A"] {
+    --list-counter-style: upper-alpha;
+  }
+
+  .lg\:prose ol[type="a"] {
+    --list-counter-style: lower-alpha;
+  }
+
+  .lg\:prose ol[type="A s"] {
+    --list-counter-style: upper-alpha;
+  }
+
+  .lg\:prose ol[type="a s"] {
+    --list-counter-style: lower-alpha;
+  }
+
+  .lg\:prose ol[type="I"] {
+    --list-counter-style: upper-roman;
+  }
+
+  .lg\:prose ol[type="i"] {
+    --list-counter-style: lower-roman;
+  }
+
+  .lg\:prose ol[type="I s"] {
+    --list-counter-style: upper-roman;
+  }
+
+  .lg\:prose ol[type="i s"] {
+    --list-counter-style: lower-roman;
+  }
+
+  .lg\:prose ol[type="1"] {
+    --list-counter-style: decimal;
   }
 
   .lg\:prose ol > li {
     position: relative;
-    counter-increment: list-counter;
     padding-left: 1.75em;
   }
 
   .lg\:prose ol > li::before {
-    content: counter(list-counter) ".";
+    content: counter(list-item, var(--list-counter-style, decimal)) ".";
     position: absolute;
     font-weight: 400;
     color: #6b7280;
@@ -97106,11 +97237,11 @@ select {
   }
 
   .lg\:prose pre code::before {
-    content: "";
+    content: none;
   }
 
   .lg\:prose pre code::after {
-    content: "";
+    content: none;
   }
 
   .lg\:prose table {
@@ -97190,6 +97321,11 @@ select {
 
   .lg\:prose h3 code {
     font-size: 0.9em;
+  }
+
+  .lg\:prose ol {
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
   }
 
   .lg\:prose ul {
@@ -128975,20 +129111,49 @@ select {
     font-weight: 600;
   }
 
-  .xl\:prose ol {
-    counter-reset: list-counter;
-    margin-top: 1.25em;
-    margin-bottom: 1.25em;
+  .xl\:prose ol[type="A"] {
+    --list-counter-style: upper-alpha;
+  }
+
+  .xl\:prose ol[type="a"] {
+    --list-counter-style: lower-alpha;
+  }
+
+  .xl\:prose ol[type="A s"] {
+    --list-counter-style: upper-alpha;
+  }
+
+  .xl\:prose ol[type="a s"] {
+    --list-counter-style: lower-alpha;
+  }
+
+  .xl\:prose ol[type="I"] {
+    --list-counter-style: upper-roman;
+  }
+
+  .xl\:prose ol[type="i"] {
+    --list-counter-style: lower-roman;
+  }
+
+  .xl\:prose ol[type="I s"] {
+    --list-counter-style: upper-roman;
+  }
+
+  .xl\:prose ol[type="i s"] {
+    --list-counter-style: lower-roman;
+  }
+
+  .xl\:prose ol[type="1"] {
+    --list-counter-style: decimal;
   }
 
   .xl\:prose ol > li {
     position: relative;
-    counter-increment: list-counter;
     padding-left: 1.75em;
   }
 
   .xl\:prose ol > li::before {
-    content: counter(list-counter) ".";
+    content: counter(list-item, var(--list-counter-style, decimal)) ".";
     position: absolute;
     font-weight: 400;
     color: #6b7280;
@@ -129126,11 +129291,11 @@ select {
   }
 
   .xl\:prose pre code::before {
-    content: "";
+    content: none;
   }
 
   .xl\:prose pre code::after {
-    content: "";
+    content: none;
   }
 
   .xl\:prose table {
@@ -129210,6 +129375,11 @@ select {
 
   .xl\:prose h3 code {
     font-size: 0.9em;
+  }
+
+  .xl\:prose ol {
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
   }
 
   .xl\:prose ul {
@@ -160995,20 +161165,49 @@ select {
     font-weight: 600;
   }
 
-  .\32xl\:prose ol {
-    counter-reset: list-counter;
-    margin-top: 1.25em;
-    margin-bottom: 1.25em;
+  .\32xl\:prose ol[type="A"] {
+    --list-counter-style: upper-alpha;
+  }
+
+  .\32xl\:prose ol[type="a"] {
+    --list-counter-style: lower-alpha;
+  }
+
+  .\32xl\:prose ol[type="A s"] {
+    --list-counter-style: upper-alpha;
+  }
+
+  .\32xl\:prose ol[type="a s"] {
+    --list-counter-style: lower-alpha;
+  }
+
+  .\32xl\:prose ol[type="I"] {
+    --list-counter-style: upper-roman;
+  }
+
+  .\32xl\:prose ol[type="i"] {
+    --list-counter-style: lower-roman;
+  }
+
+  .\32xl\:prose ol[type="I s"] {
+    --list-counter-style: upper-roman;
+  }
+
+  .\32xl\:prose ol[type="i s"] {
+    --list-counter-style: lower-roman;
+  }
+
+  .\32xl\:prose ol[type="1"] {
+    --list-counter-style: decimal;
   }
 
   .\32xl\:prose ol > li {
     position: relative;
-    counter-increment: list-counter;
     padding-left: 1.75em;
   }
 
   .\32xl\:prose ol > li::before {
-    content: counter(list-counter) ".";
+    content: counter(list-item, var(--list-counter-style, decimal)) ".";
     position: absolute;
     font-weight: 400;
     color: #6b7280;
@@ -161146,11 +161345,11 @@ select {
   }
 
   .\32xl\:prose pre code::before {
-    content: "";
+    content: none;
   }
 
   .\32xl\:prose pre code::after {
-    content: "";
+    content: none;
   }
 
   .\32xl\:prose table {
@@ -161230,6 +161429,11 @@ select {
 
   .\32xl\:prose h3 code {
     font-size: 0.9em;
+  }
+
+  .\32xl\:prose ol {
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
   }
 
   .\32xl\:prose ul {
