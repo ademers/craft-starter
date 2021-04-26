@@ -38,20 +38,18 @@ return [
         'enableCsrfProtection' => true,
         'enableGql' => false,
         'generateTransformsBeforePageLoad' => true,
-        'isSystemLive' => true,
         'timezone' => 'America/Toronto',
         // End custom configs settings
     ],
     // Production environment settings
     'production' => [
         // Set this to `false` to prevent administrative changes from being made on production
-        // 'allowAdminChanges' => false,
+        // 'allowAdminChanges' => true,
     ],
     // Staging environment settings
     'staging' => [
         // Set this to `false` to prevent administrative changes from being made on staging
-        // 'allowAdminChanges' => false,
-        'isSystemLive' => false,
+        // 'allowAdminChanges' => true,
     ],
     // Dev environment settings
     'dev' => [
