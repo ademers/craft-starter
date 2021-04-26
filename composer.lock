@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "71c3e4e099085978fc39c6047f77ba3b",
+    "content-hash": "587f11b23a924667980987aa9eebfd0b",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -2722,6 +2722,52 @@
             "time": "2020-04-02T21:20:01+00:00"
         },
         {
+            "name": "nystudio107/craft-plugin-manifest",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nystudio107/craft-plugin-manifest.git",
+                "reference": "803f69b7d18cad99aca0185a44822ac294462eba"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nystudio107/craft-plugin-manifest/zipball/803f69b7d18cad99aca0185a44822ac294462eba",
+                "reference": "803f69b7d18cad99aca0185a44822ac294462eba",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "nystudio107\\pluginmanifest\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "nystudio107",
+                    "homepage": "https://nystudio107.com"
+                }
+            ],
+            "description": "Plugin Manifest is the conduit between Craft CMS plugins and webpack, with manifest.json & webpack-dev-server HMR support",
+            "keywords": [
+                "craftcms",
+                "manifest",
+                "plugin"
+            ],
+            "support": {
+                "docs": "https://github.com/nystudio107/craft-plugin-manifest/blob/v1/README.md",
+                "issues": "https://github.com/nystudio107/craft-plugin-manifest/issues",
+                "source": "https://github.com/nystudio107/craft-plugin-manifest/tree/1.0.3"
+            },
+            "time": "2021-04-08T03:12:09+00:00"
+        },
+        {
             "name": "nystudio107/craft-scripts",
             "version": "1.2.10",
             "source": {
@@ -2768,21 +2814,22 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.3.30",
+            "version": "3.3.40",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "210e8486d1e561990d7d15682dc86a1433e29b9e"
+                "reference": "8f52021d9c566a7a7e34ac16e6bf0229d835c36f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/210e8486d1e561990d7d15682dc86a1433e29b9e",
-                "reference": "210e8486d1e561990d7d15682dc86a1433e29b9e",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/8f52021d9c566a7a7e34ac16e6bf0229d835c36f",
+                "reference": "8f52021d9c566a7a7e34ac16e6bf0229d835c36f",
                 "shasum": ""
             },
             "require": {
                 "craftcms/cms": "^3.1.19",
                 "davechild/textstatistics": "1.0.2",
+                "nystudio107/craft-plugin-manifest": "^1.0.0",
                 "php-science/textrank": "^1.0.3",
                 "sunra/php-simple-html-dom-parser": "^1.5.2"
             },
@@ -2794,23 +2841,8 @@
             "extra": {
                 "name": "SEOmatic",
                 "handle": "seomatic",
-                "hasCpSettings": true,
-                "hasCpSection": true,
                 "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft-seomatic/v3/CHANGELOG.md",
-                "class": "nystudio107\\seomatic\\Seomatic",
-                "components": {
-                    "frontendTemplates": "nystudio107\\seomatic\\services\\FrontendTemplates",
-                    "helper": "nystudio107\\seomatic\\services\\Helper",
-                    "jsonLd": "nystudio107\\seomatic\\services\\JsonLd",
-                    "link": "nystudio107\\seomatic\\services\\Link",
-                    "metaBundles": "nystudio107\\seomatic\\services\\MetaBundles",
-                    "metaContainers": "nystudio107\\seomatic\\services\\MetaContainers",
-                    "seoElements": "nystudio107\\seomatic\\services\\SeoElements",
-                    "script": "nystudio107\\seomatic\\services\\Script",
-                    "sitemaps": "nystudio107\\seomatic\\services\\Sitemaps",
-                    "tag": "nystudio107\\seomatic\\services\\Tag",
-                    "title": "nystudio107\\seomatic\\services\\Title"
-                }
+                "class": "nystudio107\\seomatic\\Seomatic"
             },
             "autoload": {
                 "psr-4": {
@@ -2845,9 +2877,9 @@
             "support": {
                 "docs": "https://nystudio107.com/plugins/seomatic/documentation",
                 "issues": "https://nystudio107.com/plugins/seomatic/support",
-                "source": "https://github.com/nystudio107/craft-seomatic/tree/3.3.30"
+                "source": "https://github.com/nystudio107/craft-seomatic/tree/3.3.40"
             },
-            "time": "2021-01-27T01:09:01+00:00"
+            "time": "2021-04-15T15:01:20+00:00"
         },
         {
             "name": "nystudio107/craft-twigpack",
