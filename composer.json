@@ -20,7 +20,8 @@
     "nystudio107/craft-seomatic": "3.3.40",
     "nystudio107/craft-twigpack": "1.2.13",
     "putyourlightson/craft-sprig": "1.5.2",
-    "vlucas/phpdotenv": "^3.4.0"
+    "vlucas/phpdotenv": "^3.4.0",
+    "yiisoft/yii2-redis": "^2.0"
   },
   "autoload": {
     "psr-4": {
