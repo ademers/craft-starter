@@ -4,6 +4,13 @@
 <html lang="{{ craft.app.language|slice(0,2) }}">
 	<head>
 		<meta charset="utf-8">
+        {# See: https://github.com/h5bp/html5-boilerplate/blob/v8.0.0/dist/doc/extend.md#explicit-prefetches #}
+        <link rel="dns-prefetch" href="https://rsms.me/">
+        <link rel="preconnect" href="https://rsms.me/" crossorigin>
+        {# Uncomment if using Google Fonts #}
+        {# <link rel="dns-prefetch" href="//fonts.googleapis.com"> #}
+        {# <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin> #}
+
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		{# Title and meta description inserted by SEOmatic plugin #}
@@ -23,26 +30,23 @@
             }
         </style>
 
-		{# Google fonts #}
-		{# Uncomment and edit to use Google Fonts #}
-		{# <link rel="dns-prefetch" href="//fonts.googleapis.com"> #}
-		{# <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin> #}
-		{# <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,600,700,800,900&display=swap" rel="stylesheet"> #}
-
 		{# Inter font #}
-        {# TODO: Get from Google Fonts  ?? #}
-		<link rel="preconnect" href="https://rsms.me/" crossorigin>
-		<link rel="dns-prefetch" href="https://rsms.me/">
 		<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 
+        {# Google fonts #}
+        {# Uncomment and edit to use Google Fonts #}
+        {# <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,600,700,800,900&display=swap" rel="stylesheet"> #}
+
 		{# Critical CSS #}
+        {# TODO: Reinstate when get critical CSS working in Mix 6 #}
 		<!-- Critical CSS -->
-		{{ craft.twigpack.includeCriticalCssTags() }}
+		{# {{ craft.twigpack.includeCriticalCssTags() }} #}
 		<!-- /Critical CSS -->
 
 		{# Non-critical CSS #}
         {# Twigpack #}
         {# NOTE: Async loading CSS causes FOUC when devMode enabled #}
+        {# TODO: Reinstate when get critical CSS working in Mix 6 #}
 		{# {{ craft.twigpack.includeCssModule("/css/app.css", true) }} #}
 		{% if craft.app.config.general.devMode %}
 			{{ craft.twigpack.includeCssModule("/css/app.css") }}
@@ -81,8 +85,8 @@
 		{% block bodyJs %}
 			{# Site-wide JavaScript #}
 			{{ craft.twigpack.includeJsModule("/js/manifest.js") }}
-			{{ craft.twigpack.includeJsModule("/js/vendor.js") }}
-			{{ craft.twigpack.includeJsModule("/js/app.js") }}
+			{{ craft.twigpack.includeJsModule("/js/vendor.js", true) }}
+			{{ craft.twigpack.includeJsModule("/js/app.js", true) }}
 		{% endblock bodyJs %}
 	</body>
 </html>
