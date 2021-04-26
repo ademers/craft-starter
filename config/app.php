@@ -17,9 +17,34 @@
  * your config/ folder, alongside this one.
  */
 
+//  Require for 'id' => App::env('APP_ID') ?: 'CraftCMS',
+use craft\helpers\App;
+
 return [
-    'modules' => [
-        'my-module' => \modules\Module::class,
+    '*' => [
+        'id' => App::env('APP_ID') ?: 'CraftCMS',
+        'modules' => [
+            'my-module' => \modules\Module::class,
+        ],
+        //'bootstrap' => ['my-module'],
     ],
-    //'bootstrap' => ['my-module'],
+
+    'dev' => [
+        'components' => [
+            'redis' => [
+                'class' => yii\redis\Connection::class,
+                'hostname' => 'redis.service.nitro',
+                'port' => 6379,
+                // NOTE: Ensure that database is not same as other sites running on Nitro 2
+                'database' => 1,
+                // NOTE: Appears to not be needed in Nitro 2
+                // 'password' => App::env('REDIS_PASSWORD'),
+            ],
+            'cache' => [
+                'class' => yii\redis\Cache::class,
+                'defaultDuration' => 86400,
+                'keyPrefix' => App::env('APP_ID') ?: 'CraftCMS',
+            ],
+        ],
+    ]
 ];
