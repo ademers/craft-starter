@@ -1,4 +1,4 @@
-dateModified: 1604000715
+dateModified: 1619453039
 email:
   fromEmail: $SYSTEM_EMAIL_ADDRESS
   fromName: $SENDER_NAME
@@ -27,6 +27,7 @@ plugins:
   seomatic:
     edition: standard
     enabled: true
+    licenseKey: WSYS8DJUT5OSWLZ1COKUZFVJ
     schemaVersion: 3.0.9
   sprig:
     edition: standard
@@ -40,7 +41,7 @@ system:
   edition: solo
   live: true
   name: $SYSTEM_NAME
-  schemaVersion: 3.5.13
+  schemaVersion: 3.6.8
   timeZone: America/Los_Angeles
 users:
   allowPublicRegistration: false
