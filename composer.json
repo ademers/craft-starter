@@ -1,27 +1,28 @@
 {
-    "name": "ademers/craft-starter",
-    "description": "A Craft CMS starter project by Andrea DeMers.",
-    "keywords": [
-      "craft",
-      "cms",
-      "craftcms",
-      "project"
-    ],
-    "type": "project",
-    "version": "1.2.2",
-    "license": "MIT",
-    "require": {
-        "craftcms/cms": "3.5.19.1",
-        "craftcms/contact-form": "2.2.7",
-        "craftcms/redactor": "2.8.5",
-        "mmikkel/retcon": "2.2.1",
-        "nystudio107/craft-minify": "1.2.10",
-        "nystudio107/craft-scripts": "1.2.10",
-        "nystudio107/craft-seomatic": "3.3.30",
-        "nystudio107/craft-twigpack": "1.2.9",
-        "putyourlightson/craft-sprig": "1.3.2",
-        "vlucas/phpdotenv": "^3.4.0"
-    },
+  "name": "ademers/craft-starter",
+  "description": "A Craft CMS starter project by Andrea DeMers.",
+  "keywords": [
+    "craft",
+    "cms",
+    "craftcms",
+    "project"
+  ],
+  "type": "project",
+  "version": "1.3.0",
+  "license": "MIT",
+  "require": {
+    "craftcms/cms": "3.6.12",
+    "craftcms/contact-form": "2.2.7",
+    "craftcms/redactor": "2.8.6",
+    "mmikkel/retcon": "2.2.1",
+    "nystudio107/craft-minify": "1.2.10",
+    "nystudio107/craft-scripts": "1.2.10",
+    "nystudio107/craft-seomatic": "3.3.40",
+    "nystudio107/craft-twigpack": "1.2.13",
+    "putyourlightson/craft-sprig": "1.5.2",
+    "vlucas/phpdotenv": "^3.4.0",
+    "yiisoft/yii2-redis": "^2.0"
+  },
   "autoload": {
     "psr-4": {
       "modules\\": "modules/"
@@ -29,7 +30,10 @@
   },
   "config": {
     "sort-packages": true,
-    "optimize-autoloader": true
+    "optimize-autoloader": true,
+    "platform": {
+      "php": "7.2.5"
+    }
   },
   "scripts": {
     "post-root-package-install": [

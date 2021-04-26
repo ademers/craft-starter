@@ -9,78 +9,83 @@
  |
  */
 
-const mix = require('laravel-mix');
+let mix = require('laravel-mix');
 // Laravel Mix plugins
 // Laravel Mix critical CSS plugin
 require('laravel-mix-criticalcss');
+const path = require('path');
+// const baseUrl = 'https://craft-starter.nitro';
 
 mix
-    // Tailwind CSS
-    .postCss('src/css/app.css', 'web/css', [
-        require('tailwindcss'),
-    ])
-    // Critical CSS
-    .criticalCss({
-        enabled: mix.inProduction(),
-        paths: {
-            base: 'http://craft-starter.test/',
-            templates: './web/criticalcss/'
-        },
-        urls: [
-            { url: '/', template: 'index' },
-            { url: '404', template: '404' }
-        ],
-        options: {
-            width: 1400,
-            height: 1400,
-            minify: true,
-        },
-    })
-    // JS
-    .js('src/js/app.js', 'web/js')
-    .extract(['alpinejs', 'lazysizes'])
-    .setPublicPath('web')
-    // HMR
-    // NOTE: requires Craft devMode = true
-    .options({
-        hmrOptions: {
-            host: 'craft-starter.test',
-            port: 8080
-        }
-    })
-    // Webpack
-    .webpackConfig({
-        resolve: {
-            // TODO: check if . required
-            extensions: ['.html', '.twig', '.js'],
-        },
-        // Add any webpack dev server config here
-        devServer: {
-            contentBase: [
-                path.resolve(__dirname, 'templates'),
-                path.normalize("web")
-            ],
-            disableHostCheck: true,
-            watchContentBase: true,
-            proxy: {
-                host: '0.0.0.0',  // host machine ip
-                port: 8080,
-            },
-            watchOptions:{
-                poll: true,
-                ignored: ["storage", "node_modules", "vendor"],
-            },
-        },
-    });
+  // Needs to be before CSS & JS otherwise unexpected results
+  .setPublicPath('web')
+  // Tailwind CSS
+  .postCss('src/css/app.css', 'web/css', [
+    require('tailwindcss'),
+  ])
+  // JS
+  .js('src/js/app.js', 'web/js')
+  .extract(['alpinejs', 'lazysizes'])
 
-    // CSS & JS file versioning in production only
-    if (mix.inProduction()) {
-        mix.version();
-    }
+// FIXME: Not working b/c laravel-mix-criticalcss is not using Critical 2.x
+// See: https://github.com/michtio/laravel-mix-criticalcss/issues/12
+// Critical CSS
+//   .criticalCss({
+//     enabled: mix.inProduction(),
+//     paths: {
+//       base: 'https://craft-starter.nitro',
+//       templates: './web/criticalcss/'
+//     },
+//     urls: [{
+//         url: '/',
+//         template: 'index'
+//       },
+//       {
+//         url: '404',
+//         template: '404'
+//       }
+//     ],
+//     options: {
+//       width: 1400,
+//       height: 1400,
+//       minify: true,
+//     },
+//   })
+
+// HMR
+// FIXME: Not working with Mix 6 + Nitro 2
+// mix.options({
+//     hmrOptions: {
+//         host: '0.0.0.0',
+//         port: 8080
+//     }
+// });
+
+// // Not working
+// mix.webpackConfig({
+//     output: {
+//         publicPath: "http://craft-starter.test/"
+//     },
+//     devServer: {
+//         public: "http://craft-starter.test/",
+//         client: {
+//             host: "craft-starter.test",
+//             port: 8080
+//         },
+//         overlay: true,
+//         // liveReload: true,
+//         static: path.resolve(__dirname, "templates")
+//     }
+// })
+
+// CSS & JS file versioning in production only
+if (mix.inProduction()) {
+  mix.version();
+}
 
 // Keep around in case HMR breaks
 // mix.browserSync({
-//     proxy: 'http://craft-starter.test/',
+//     proxy: 'craft-starter.test',
 //     port: 3000,
 //     open: false,
 //     files: [

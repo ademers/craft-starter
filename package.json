@@ -4,14 +4,13 @@
   "description": "Craft CMS starter project",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "npm run development",
-    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "watch": "npm run development -- --watch",
-    "watch-poll": "npm run watch -- --watch-poll",
-    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "development": "mix",
+    "watch": "mix watch",
+    "watch-poll": "mix watch -- --watch-options-poll=1000",
+    "hot": "mix watch --hot",
     "prod": "npm run production",
-    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    "production": "mix --production"
   },
   "author": "Andrea DeMers",
   "license": "ISC",
@@ -19,16 +18,15 @@
     "@tailwindcss/aspect-ratio": "^0.2.0",
     "@tailwindcss/forms": "^0.2.1",
     "@tailwindcss/typography": "^0.4.0",
-    "alpinejs": "^2.8.0",
-    "lazysizes": "^5.3.0",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2"
+    "alpinejs": "^2.8.2",
+    "lazysizes": "^5.3.2",
+    "tailwindcss": "^2.1.2"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.13",
-    "browser-sync-webpack-plugin": "^2.2.2",
-    "cross-env": "^6.0.3",
-    "laravel-mix": "^5.0.7",
+    "browser-sync": "^2.26.14",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "laravel-mix": "^6.0.18",
     "laravel-mix-criticalcss": "^1.0.1",
-    "vue-template-compiler": "^2.6.12"
+    "postcss": "^8.2.13"
   }
 }
