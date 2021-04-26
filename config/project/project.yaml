@@ -1,12 +1,18 @@
-dateModified: 1619453039
+dateModified: 1619462916
 email:
   fromEmail: $SYSTEM_EMAIL_ADDRESS
   fromName: $SENDER_NAME
   replyToEmail: $REPLY_TO_ADDRESS
-  template: ''
+  template: null
   transportSettings:
-    command: ''
-  transportType: craft\mail\transportadapters\Sendmail
+    encryptionMethod: ''
+    host: $NITRO_MAILHOG_HOSTNAME
+    password: ''
+    port: $NITRO_MAILHOG_SMTP_PORT
+    timeout: '10'
+    useAuthentication: ''
+    username: ''
+  transportType: craft\mail\transportadapters\Smtp
 plugins:
   contact-form:
     edition: standard
