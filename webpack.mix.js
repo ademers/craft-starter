@@ -12,66 +12,61 @@
 const mix = require('laravel-mix');
 // Laravel Mix plugins
 // Laravel Mix critical CSS plugin
-require('laravel-mix-criticalcss');
+// require('laravel-mix-criticalcss');
+const path = require('path');
 
 mix
+    // Needs to be before CSS & JS otherwise unexpected results
+    .setPublicPath('web')
     // Tailwind CSS
     .postCss('src/css/app.css', 'web/css', [
         require('tailwindcss'),
     ])
     // Critical CSS
-    .criticalCss({
-        enabled: mix.inProduction(),
-        paths: {
-            base: 'http://craft-starter.test/',
-            templates: './web/criticalcss/'
-        },
-        urls: [
-            { url: '/', template: 'index' },
-            { url: '404', template: '404' }
-        ],
-        options: {
-            width: 1400,
-            height: 1400,
-            minify: true,
-        },
-    })
+    // .criticalCss({
+    //     enabled: mix.inProduction(),
+    //     paths: {
+    //         base: 'http://craft-starter.test/',
+    //         templates: './web/criticalcss/'
+    //     },
+    //     urls: [
+    //         { url: '/', template: 'index' },
+    //         { url: '404', template: '404' }
+    //     ],
+    //     options: {
+    //         width: 1400,
+    //         height: 1400,
+    //         minify: true,
+    //     },
+    // })
     // JS
     .js('src/js/app.js', 'web/js')
     .extract(['alpinejs', 'lazysizes'])
-    .setPublicPath('web')
+
     // HMR
-    // NOTE: requires Craft devMode = true
-    .options({
-        hmrOptions: {
-            host: 'craft-starter.test',
-            port: 8080
-        }
-    })
-    // Webpack
-    .webpackConfig({
-        resolve: {
-            // TODO: check if . required
-            extensions: ['.html', '.twig', '.js'],
-        },
-        // Add any webpack dev server config here
-        devServer: {
-            contentBase: [
-                path.resolve(__dirname, 'templates'),
-                path.normalize("web")
-            ],
-            disableHostCheck: true,
-            watchContentBase: true,
-            proxy: {
-                host: '0.0.0.0',  // host machine ip
-                port: 8080,
-            },
-            watchOptions:{
-                poll: true,
-                ignored: ["storage", "node_modules", "vendor"],
-            },
-        },
-    });
+    // mix.options({
+    //     hmrOptions: {
+    //         host: '0.0.0.0',
+    //         port: 8080
+    //     }
+    // });
+
+    // // Not working
+    // mix.webpackConfig({
+    //     output: {
+    //         publicPath: "http://craft-starter.test/"
+    //     },
+    //     devServer: {
+    //         public: "http://craft-starter.test/",
+    //         client: {
+    //             host: "craft-starter.test",
+    //             port: 8080
+    //         },
+    //         overlay: true,
+    //         // liveReload: true,
+    //         static: path.resolve(__dirname, "templates")
+    //     }
+    // })
 
     // CSS & JS file versioning in production only
     if (mix.inProduction()) {
@@ -79,21 +74,21 @@ mix
     }
 
 // Keep around in case HMR breaks
-// mix.browserSync({
-//     proxy: 'http://craft-starter.test/',
-//     port: 3000,
-//     open: false,
-//     files: [
-//         'templates/**/*.html',
-//         'templates/**/*.twig',
-//         'templates/**/*.svg'
-//     ],
+mix.browserSync({
+    proxy: 'craft-starter.test',
+    port: 3000,
+    open: false,
+    files: [
+        'templates/**/*.html',
+        'templates/**/*.twig',
+        'templates/**/*.svg'
+    ],
 
-//     watchOptions: {
-//         usePolling: true,
-//         interval: 500,
-//     },
-// });
+    watchOptions: {
+        usePolling: true,
+        interval: 500,
+    },
+});
 
 // Full API
 // mix.js(src, output);
