@@ -13,7 +13,7 @@
     "require": {
         "craftcms/cms": "3.5.19.1",
         "craftcms/contact-form": "2.2.7",
-        "craftcms/redactor": "2.8.5",
+        "craftcms/redactor": "2.8.6",
         "mmikkel/retcon": "2.2.1",
         "nystudio107/craft-minify": "1.2.10",
         "nystudio107/craft-scripts": "1.2.10",
