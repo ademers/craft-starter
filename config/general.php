@@ -8,6 +8,8 @@
  * @see \craft\config\GeneralConfig
  */
 
+use craft\helpers\App;
+
 return [
     // Global settings
     '*' => [
@@ -39,21 +41,26 @@ return [
         'enableGql' => false,
         'generateTransformsBeforePageLoad' => true,
         'timezone' => 'America/Toronto',
+        'aliases' => [
+            '@assetsBaseUrl' => App::env('ASSETS_BASE_URL'),
+            '@assetsBasePath' => App::env('ASSETS_BASE_URL'),
+            '@web' => App::env('DEFAULT_SITE_URL'),
+            '@webroot' => App::env('WEB_ROOT_PATH'),
+        ]
         // End custom configs settings
     ],
     // Production environment settings
     'production' => [
-        // Set this to `false` to prevent administrative changes from being made on production
+        // Set this to `true` to allow administrative changes from being made on production
         // 'allowAdminChanges' => true,
     ],
     // Staging environment settings
     'staging' => [
-        // Set this to `false` to prevent administrative changes from being made on staging
+        // Set this to `true` to prevent administrative changes from being made on staging
         // 'allowAdminChanges' => true,
     ],
     // Dev environment settings
     'dev' => [
-        // 'siteUrl' => 'http://craft-starter.test',
         // Dev Mode (see https://craftcms.com/guides/what-dev-mode-does)
         'devMode' => true,
         'allowAdminChanges' => true,

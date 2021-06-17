@@ -8,8 +8,8 @@
  | file for your application, as well as bundling up your JS files.
  |
  */
-
-let mix = require('laravel-mix');
+// Laravel Mix
+const mix = require('laravel-mix');
 // Laravel Mix plugins
 // Laravel Mix critical CSS plugin
 require('laravel-mix-criticalcss');
@@ -20,12 +20,28 @@ mix
   // Needs to be before CSS & JS otherwise unexpected results
   .setPublicPath('web')
   // Tailwind CSS
-  .postCss('src/css/app.css', 'web/css', [
+  .postCss('src/css/app.css', 'css', [
     require('tailwindcss'),
   ])
   // JS
-  .js('src/js/app.js', 'web/js')
+  .js('src/js/app.js', 'js')
   .extract(['alpinejs', 'lazysizes'])
+  .favicon({
+    inputPath: 'src/img/favicon',
+    inputFile: '*.{jpg,png,svg}',
+    publicPath: 'web',
+    output: 'img/favicons',
+    dataFile: 'data/faviconData.json',
+    blade: 'templates/_partials/favicons.twig',
+    reload: false,
+    debug: false,
+    configPath: './realfavicongenerator-config.json',
+    cleaner: {
+      use: false,
+      path: 'parsed',
+      timestamp: true
+    }
+  })
 
 // FIXME: Not working b/c laravel-mix-criticalcss is not using Critical 2.x
 // See: https://github.com/michtio/laravel-mix-criticalcss/issues/12
@@ -53,30 +69,45 @@ mix
 //   })
 
 // HMR
-// FIXME: Not working with Mix 6 + Nitro 2
-// mix.options({
-//     hmrOptions: {
-//         host: '0.0.0.0',
-//         port: 8080
-//     }
-// });
-
-// // Not working
-// mix.webpackConfig({
-//     output: {
-//         publicPath: "http://craft-starter.test/"
-//     },
-//     devServer: {
-//         public: "http://craft-starter.test/",
-//         client: {
-//             host: "craft-starter.test",
-//             port: 8080
-//         },
-//         overlay: true,
-//         // liveReload: true,
-//         static: path.resolve(__dirname, "templates")
-//     }
-// })
+const config = {
+  host: process.env.HMR_SHARED_HOST,
+  port: process.env.HMR_PORT,
+  path: process.env.HMR_PATH,
+  clientHost: process.env.HMR_SITE_HOST,
+  https: process.env.HMR_HTTPS === "true",
+  protocol: process.env.HMR_HTTPS === "true" ? 'https://' : 'http://',
+  outputPath: function(){
+    return `${this.protocol}${this.clientHost}:${this.port}${this.path}`
+  },
+}
+mix.webpackConfig({
+    target: 'web',
+    output: {
+      publicPath: config.outputPath()
+    },
+    devServer:{
+      host: config.host,
+      port: config.port,
+      https: config.https,
+      dev: {
+        publicPath: config.path,
+      },
+      client: {
+        port: config.port,
+        host: config.clientHost,
+      },
+      firewall: false,
+      static: {
+        directory: './templates',
+        publicPath: '/',
+        watch: true
+      },
+      liveReload: true,
+    },
+    infrastructureLogging: {
+      level: 'log',
+    },
+})
 
 // CSS & JS file versioning in production only
 if (mix.inProduction()) {

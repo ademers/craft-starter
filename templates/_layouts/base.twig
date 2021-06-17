@@ -16,12 +16,19 @@
 		{# Title and meta description inserted by SEOmatic plugin #}
 
 		{# Device icons #}
-		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"> <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        {# Favicon & device icons #}
+        {# {% include "_partials/favicons.twig" %} #}
+		{# <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"> <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 		<link rel="manifest" href="/site.webmanifest">
 		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2b6cb0">
 		<meta name="msapplication-TileColor" content="#2d89ef">
-		<meta name="theme-color" content="#ffffff">
+		<meta name="theme-color" content="#ffffff"> #}
+
+        {# Vite icons #}
+        <!-- Vite icons -->
+        {# {{ craft.vite.inline("@webroot/dist/assets/test.text") }} #}
+        <!-- /Vite icons -->
 
         {# Alpine JS #}
         <style>
@@ -44,15 +51,19 @@
 		<!-- /Critical CSS -->
 
 		{# Non-critical CSS #}
+        {# Vite #}
+        <!-- Vite -->
+        {{ craft.vite.script("/src/app.js") }}
+        <!-- /Vite -->
         {# Twigpack #}
         {# NOTE: Async loading CSS causes FOUC when devMode enabled #}
         {# TODO: Reinstate when get critical CSS working in Mix 6 #}
 		{# {{ craft.twigpack.includeCssModule("/css/app.css", true) }} #}
-		{% if craft.app.config.general.devMode %}
+		{# {% if craft.app.config.general.devMode %}
 			{{ craft.twigpack.includeCssModule("/css/app.css") }}
 		{% else %}
 			{{ craft.twigpack.includeCssModule("/css/app.css", true) }}
-		{% endif %}
+		{% endif %} #}
 	</head>
 
 	<body class="text-base font-sans antialiased text-gray-900 bg-white leading-normal">

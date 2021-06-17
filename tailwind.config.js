@@ -1,6 +1,7 @@
-// tailwind.config.js
+// Tailwind CSS Config
 module.exports = {
   mode: 'jit',
+  darkMode: false, // or 'media' or 'class'
   purge: {
     content: [
       './templates/**/*.html',
