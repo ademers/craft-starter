@@ -26,23 +26,23 @@ export default ({ command }) => ({
         './templates/**/*',
       ],
     }),
-    ViteFaviconsPlugin('./src/example-logo.svg'),
-    critical({
-        // criticalUrl: 'http://craft-starter.nitro/',
-        // criticalUrl: 'http://craft-starter.nitro:3000/',
-        // criticalUrl: 'http://localhost:3000/',
-        // criticalUrl: '/templates/',
-        // criticalUrl: '/app/templates/',
-        // criticalUrl: 'http://0.0.0.0:3000/',
-        // criticalUrl: 'http://127.0.0.1:80/',
-        criticalBase: './',
-        criticalPages: [
-            { uri: '', template: 'index' },
-            { uri: 'contact', template: 'contact' },
-        ],
-        criticalConfig: {
-        },
-    }),
+    // ViteFaviconsPlugin('./src/example-logo.svg'),
+    // critical({
+    //     // criticalUrl: 'http://craft-starter.nitro/',
+    //     // criticalUrl: 'http://craft-starter.nitro:3000/',
+    //     // criticalUrl: 'http://localhost:3000/',
+    //     // criticalUrl: '/templates/',
+    //     // criticalUrl: '/app/templates/',
+    //     // criticalUrl: 'http://0.0.0.0:3000/',
+    //     // criticalUrl: 'http://127.0.0.1:80/',
+    //     criticalBase: './',
+    //     criticalPages: [
+    //         { uri: '', template: 'index' },
+    //         { uri: 'contact', template: 'contact' },
+    //     ],
+    //     criticalConfig: {
+    //     },
+    // }),
   ],
   server: {
     host: '0.0.0.0',

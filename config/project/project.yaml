@@ -1,4 +1,4 @@
-dateModified: 1622660487
+dateModified: 1623951242
 email:
   fromEmail: $SYSTEM_EMAIL_ADDRESS
   fromName: $SENDER_NAME
@@ -13,6 +13,10 @@ email:
     useAuthentication: ''
     username: ''
   transportType: craft\mail\transportadapters\Smtp
+meta:
+  __names__:
+    7eba656c-f4b4-4871-ba1d-85680617f5d3: images # images
+    5175a4de-61e4-46da-a275-8d5e41e17cb6: $SITE_NAME # $SITE_NAME
 plugins:
   contact-form:
     edition: standard
@@ -51,7 +55,7 @@ system:
   edition: solo
   live: true
   name: $SYSTEM_NAME
-  schemaVersion: 3.6.8
+  schemaVersion: 3.7.7
   timeZone: America/Los_Angeles
 users:
   allowPublicRegistration: false

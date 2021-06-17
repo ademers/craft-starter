@@ -1,6 +1,6 @@
 {
   "src/app-legacy.js": {
-    "file": "assets/app-legacy.c43279ba.js",
+    "file": "assets/app-legacy.f05d5471.js",
     "src": "src/app-legacy.js",
     "isEntry": true,
     "imports": [
@@ -16,14 +16,14 @@
     "isEntry": true
   },
   "src/app.js": {
-    "file": "assets/app.3d441f3b.js",
+    "file": "assets/app.7364a1c3.js",
     "src": "src/app.js",
     "isEntry": true,
     "imports": [
       "_vendor.7ff3e8c5.js"
     ],
     "css": [
-      "assets/app.7cc8469c.css"
+      "assets/app.8ad74e42.css"
     ]
   },
   "_vendor.7ff3e8c5.js": {
