@@ -11,7 +11,6 @@ export default ({ command }) => ({
     outDir: './web/dist/',
     rollupOptions: {
       input: {
-        // app: './src/js/app.js',
         app: './src/app.js',
       }
     },
@@ -27,32 +26,28 @@ export default ({ command }) => ({
       ],
     }),
     // ViteFaviconsPlugin('./src/example-logo.svg'),
-    // critical({
-    //     // criticalUrl: 'http://craft-starter.nitro/',
-    //     // criticalUrl: 'http://craft-starter.nitro:3000/',
-    //     // criticalUrl: 'http://localhost:3000/',
-    //     // criticalUrl: '/templates/',
-    //     // criticalUrl: '/app/templates/',
-    //     // criticalUrl: 'http://0.0.0.0:3000/',
-    //     // criticalUrl: 'http://127.0.0.1:80/',
-    //     criticalBase: './',
-    //     criticalPages: [
-    //         { uri: '', template: 'index' },
-    //         { uri: 'contact', template: 'contact' },
-    //     ],
-    //     criticalConfig: {
-    //     },
-    // }),
+    critical({
+        criticalUrl: 'http://craft-starter.nitro:8080/',
+        // RequestError: connect ECONNREFUSED 127.0.0.1:80
+        // criticalUrl: 'http://craft-starter.nitro/',
+        criticalBase: './web/dist/criticalcss',
+        criticalPages: [
+            // { uri: '', template: 'index' },
+            { uri: 'contact', template: 'contact' },
+        ],
+        criticalConfig: {
+        },
+    }),
   ],
   server: {
     host: '0.0.0.0',
     port: 3000,
-    strictPort: true,
-    https: false,
+    // strictPort: true,
+    // https: false,
     hmr: {
       host: 'craft-starter.nitro',
-      port: '3000',
-      path: '/'
+      port: 3000,
+    //   path: '/'
     }
   },
 });
