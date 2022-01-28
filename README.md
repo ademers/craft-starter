@@ -2,6 +2,8 @@
 
 A [Craft CMS](https://craftcms.com/) starter project by [Andrea DeMers](https://andreademers.com).
 
+## NOTE: This project is on hold until [Craft Nitro 3](https://github.com/craftcms/nitro/tree/3.0) is released.
+
 ## Content Management System (CMS)
 - [Craft CMS 3.6.x Solo Edition](https://craftcms.com/)
 - [Craft CMS 3.6.x documentation](https://docs.craftcms.com/v3/)
