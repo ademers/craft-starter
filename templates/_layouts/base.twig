@@ -15,6 +15,7 @@
 
 		{# Title and meta description inserted by SEOmatic plugin #}
 
+        {# TODO: Reinstate when get icon auto-generation working in Nitro 3 #}
 		{# Device icons #}
         {# Favicon & device icons #}
         {# {% include "_partials/favicons.twig" %} #}
@@ -45,10 +46,9 @@
         {# <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,600,700,800,900&display=swap" rel="stylesheet"> #}
 
 		{# Critical CSS #}
-        {# TODO: Reinstate when get critical CSS working in Mix 6 #}
+        {# TODO: Reinstate when get critical CSS working in Nitro 3 #}
 		<!-- Critical CSS -->
-		{# {{ craft.twigpack.includeCriticalCssTags() }} #}
-        {{ craft.vite.includeCriticalCssTags() }}
+        {# {{ craft.vite.includeCriticalCssTags() }} #}
 		<!-- /Critical CSS -->
 
 		{# Non-critical CSS #}
@@ -56,15 +56,6 @@
         <!-- Vite -->
         {{ craft.vite.script("/src/app.js") }}
         <!-- /Vite -->
-        {# Twigpack #}
-        {# NOTE: Async loading CSS causes FOUC when devMode enabled #}
-        {# TODO: Reinstate when get critical CSS working in Mix 6 #}
-		{# {{ craft.twigpack.includeCssModule("/css/app.css", true) }} #}
-		{# {% if craft.app.config.general.devMode %}
-			{{ craft.twigpack.includeCssModule("/css/app.css") }}
-		{% else %}
-			{{ craft.twigpack.includeCssModule("/css/app.css", true) }}
-		{% endif %} #}
 	</head>
 
 	<body class="text-base font-sans antialiased text-gray-900 bg-white leading-normal">
@@ -89,16 +80,16 @@
 				{# <div class="container px-4 py-8"> #}
 				<main class="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8">
 					<small>&copy; {{ "now"|date("Y") }} {{ siteName }} <span class="italic">by</span> <a href="https://andreademers.com">Andrea DeMers</a></small>
-				</div>
+				</main>
 			</footer>
 		</div>
 
 		{# JS to be included before </body> #}
 		{% block bodyJs %}
 			{# Site-wide JavaScript #}
-			{{ craft.twigpack.includeJsModule("/js/manifest.js") }}
+			{# {{ craft.twigpack.includeJsModule("/js/manifest.js") }}
 			{{ craft.twigpack.includeJsModule("/js/vendor.js", true) }}
-			{{ craft.twigpack.includeJsModule("/js/app.js", true) }}
+			{{ craft.twigpack.includeJsModule("/js/app.js", true) }} #}
 		{% endblock bodyJs %}
 	</body>
 </html>

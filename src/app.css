@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer base {
-    .test {
-        background-color: red;
-    }
+  .test {
+    background-color: pink;
+  }
 }

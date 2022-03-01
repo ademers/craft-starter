@@ -75,6 +75,9 @@ return [
     // Not needed
     // 'checkDevServer' => true,
 
+    'includeReactRefreshShim' => false,
+    'includeModulePreloadShim' => true,
+
     // Critical CSS
     'criticalPath' => '@webroot/dist/criticalcss',
     'criticalSuffix' =>'_critical.min.css',
