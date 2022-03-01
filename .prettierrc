@@ -1,0 +1,20 @@
+{
+    "endOfLine": "lf",
+    "semi": false,
+    "singleQuote": true,
+    "tabWidth": 4,
+    "useTabs": false,
+    "trailingComma": "es5",
+    "bracketSpacing": true,
+    "printWidth": 100,
+    "twigPrintWidth": 120,
+    "twigOutputEndblockName": true,
+    "twigMultiTags": [
+        "block,endblock",
+        "nav,endnav",
+        "switch,case,default,endswitch",
+        "ifchildren,endifchildren",
+        "cache,endcache",
+        "js,endjs"
+    ],
+}
