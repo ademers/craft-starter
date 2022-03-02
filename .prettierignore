@@ -1,0 +1,19 @@
+# COMPOSER
+/vendor
+
+# CRAFT STORAGE
+/storage/*
+
+# WEB
+/web/*
+
+# BUILD FILES
+/bower_components/*
+/node_modules/*
+/build/*
+/yarn-error.log
+/npm-debug.log
+
+# MISC
+.cache
+package-lock.json

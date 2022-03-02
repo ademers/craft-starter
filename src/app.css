@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    /* Custom class for testing Vite HMR */
+    .test {
+        background-color: pink;
+    }
+}

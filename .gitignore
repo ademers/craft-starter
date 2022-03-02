@@ -18,6 +18,7 @@
 !/web/assets/.gitignore
 /web/cpresources/*
 !/web/cpresources/.gitignore
+/web/dist/*
 
 # BUILD FILES
 /bower_components/*
@@ -43,6 +44,5 @@ hot
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
-.jsbeautifyrc
 config.codekit3
 prepros-6.config

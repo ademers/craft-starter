@@ -1,22 +1,30 @@
 {# Required Craft plugins:
 # Craft Contact form
 # Sprig
-# Required NPM packages
-# Tailwind CSS
-# Tailwind UI
 #}
 
-{# Sprig contact form #}
-{% set fromName = fromName ?? '' %}
-{% set fromEmail = fromEmail ?? '' %}
-{% set message = message ?? '' %}
+{# Sprigified contact form #}
+{# Errors macro #}
+{% macro errorList(errors) %}
+    {% if errors %}
+        {% for error in errors %}
+            <p class="mt-2 text-sm text-red-600">
+                {{ error|t }}
+            </p>
+        {% endfor %}
+    {% endif %}
+{% endmacro %}
 
-{% if success is defined %}
+{% set message = message ?? null %}
+
+{% if success is defined and success %}
     <div class="rounded-md bg-green-50 p-4">
         <div class="flex">
             <div class="flex-shrink-0">
                 <svg class="h-5 w-5 text-green-400" viewbox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                    <path fill-rule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                        clip-rule="evenodd" />
                 </svg>
             </div>
             <div class="ml-3">
@@ -27,55 +35,61 @@
         </div>
     </div>
 {% else %}
-    {% if errors is defined %}
-        <div class="rounded-md bg-red-50 p-4">
-            <div class="flex">
-                <div class="flex-shrink-0">
-                    <svg class="h-5 w-5 text-red-400" viewbox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/>
-                    </svg>
-                </div>
-                <div class="ml-3">
-                    <h3 class="text-sm leading-5 font-medium text-red-800">
-                    {% if errors|length == 1 %}
-                        There was an error with your submission
-                    {% else %}
-                        There were {{ errors|length }} errors with your submission
-                    {% endif %}
-                    </h3>
-
-                    <div class="mt-2 text-sm leading-5 text-red-700">
-                        <ul class="list-disc pl-5">
-                            {% for error in errors %}
-                                <li class="error">
-                                    {{ error|join(', ') }}
-                                </li>
-                            {% endfor %}
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    {% endif %}
-
-    <form sprig s-method="post" s-action="contact-form/send" class="grid grid-cols-1 gap-y-6 {% if errors is defined %} mt-6{% endif %}">
+    {# Form #}
+    <form sprig s-method="post" s-action="contact-form/send" class="grid grid-cols-1 gap-y-6">
+        {# Name #}
         <div>
             <label for="name" class="sr-only">Full name</label>
-            <input type="text" id="name" name="fromName" value="{{ fromName }}" class="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md" placeholder="Full name">
+            <input type="text"
+                id="name"
+                name="fromName"
+                value="{{ message.fromName ?? '' }}"
+                class="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                placeholder="Full name" />
+
+            {# Server-side error message #}
+            {% if message is defined %}
+                {{ message ? _self.errorList(message.getErrors('fromName')) }}
+            {% endif %}
         </div>
 
+        {# Email #}
         <div>
             <label for="email" class="sr-only">Email</label>
-            <input type="email" id="email" name="fromEmail" value="{{ fromEmail }}" class="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md" placeholder="Email">
+            <input type="email"
+                id="email"
+                name="fromEmail"
+                value="{{ message.fromEmail ?? '' }}"
+                class="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                placeholder="Email" />
+
+            {# Server-side error message #}
+            {% if message is defined %}
+                {{ message ? _self.errorList(message.getErrors('fromEmail')) }}
+            {% endif %}
         </div>
 
+        {# Message #}
         <div>
             <label for="message" class="sr-only">Message</label>
-            <textarea id="message" name="message" rows="4" class="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md" placeholder="Message">{{ message }}</textarea>
+            <textarea id="message"
+                name="message"
+                rows="4"
+                class="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                placeholder="Message">
+                {{- message.message ?? '' -}}
+            </textarea>
+
+            {# Server-side error message #}
+            {% if message is defined %}
+                {{ message ? _self.errorList(message.getErrors('message')) }}
+            {% endif %}
         </div>
 
         <div>
-            <button type="submit" class="inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+            <button type="submit"
+                value="Send message"
+                class="inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                 Send message
             </button>
         </div>

@@ -1,24 +1,39 @@
 {# Home page #}
-{% extends "_layouts/base.twig" %}
+{% extends '_layouts/base.twig' %}
 
 {% block sectionHeader %}
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 class="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">{{ siteName }}</h1>
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <h1 class="text-4xl font-extrabold leading-10 tracking-tight text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
+            {{ siteName }}
+        </h1>
 
-        <h2 class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl md:mt-5 md:text-xl lg:mx-0">The best Craft CMS starter project in the multiverse. <span class="align-middle">&#x1F602</span>
+        <h2 class="mt-3 text-base text-indigo-600 sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0">
+            The best Craft CMS starter project in the multiverse.
         </h2>
     </div>
 {% endblock sectionHeader %}
 
 {% block content %}
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <main class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {# Tailwind CSS typography plugin styles #}
         <div class="prose prose-sm sm:prose lg:prose-lg xl:prose-xl">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</p>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
+                iste dolor cupiditate blanditiis ratione.
+            </p>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, praesentium voluptatem. Asperiores aut incidunt ex adipisci ipsam ipsa sapiente modi odio corrupti doloribus? Expedita commodi sequi alias eveniet reprehenderit obcaecati!</p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, praesentium voluptatem. Asperiores
+                aut incidunt ex adipisci ipsam ipsa sapiente modi odio corrupti doloribus? Expedita commodi sequi alias
+                eveniet reprehenderit obcaecati!
+            </p>
 
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</p>
+            {# NOTE: Custom CSS class for testing Vite HMR. See src/app.css #}
+            <p class="test">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
+                iste dolor cupiditate blanditiis ratione. Edit 1. Edit 2. Edit 3. Edit 4. Edit 5. Edit 6. Edit 7. Edit
+                8.
+            </p>
         </div>
     </main>
 {% endblock content %}

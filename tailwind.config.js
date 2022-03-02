@@ -1,27 +1,18 @@
-// tailwind.config.js
+// Tailwind CSS Config
 module.exports = {
-  mode: 'jit',
-  purge: {
-    content: [
-      './templates/**/*.html',
-      './templates/**/*.twig'
-    ]
-  },
-  theme: {
-    container: {
-      center: true,
+    content: ['./templates/**/*.html', './templates/**/*.twig'],
+    theme: {
+        container: {
+            center: true,
+        },
+
+        fontFamily: {
+            sans: ['Inter var', 'sans-serif'],
+        },
     },
-    extend: {
-      fontFamily: {
-        // sans: ['Inter var', ...defaultTheme.fontFamily.sans],
-        sans: ['Inter var'],
-      },
-    }
-  },
-  variants: {},
-  plugins: [
-    require('@tailwindcss/forms'),
-    require('@tailwindcss/typography'),
-    require('@tailwindcss/aspect-ratio'),
-  ]
-};
+    plugins: [
+        require('@tailwindcss/aspect-ratio'),
+        require('@tailwindcss/forms'),
+        require('@tailwindcss/typography'),
+    ],
+}
