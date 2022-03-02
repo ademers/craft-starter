@@ -64,16 +64,13 @@ return [
      *              This can be the same as `$devServerPublic`, but may be different in containerized or VM setups.
      *              ONLY used if $checkDevServer = true
      */
-    'devServerInternal' => '',
-    // Not needed
-    // 'devServerInternal' => 'http://localhost:3000/',
+    'devServerInternal' => 'http://localhost:3000/',
 
     /**
      * @var bool Should we check for the presence of the dev server by pinging $devServerInternal to make sure it's running?
      */
-    'checkDevServer' => false,
-    // Not needed
-    // 'checkDevServer' => true,
+    // !! If not set to true, causes CORS errors after running 'npm run build'.
+    'checkDevServer' => true,
 
     'includeReactRefreshShim' => false,
     'includeModulePreloadShim' => true,
