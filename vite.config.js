@@ -45,7 +45,7 @@ export default ({ command }) => ({
         hmr: {
             host: 'craft-starter.nitro',
             port: 3000,
-            //   path: '/'
+            path: '/',
         },
     },
 })
