@@ -51,6 +51,8 @@ A [Craft CMS](https://craftcms.com/) starter project by [Andrea DeMers](https://
 This Craft Starter project is configured to use Craft Nitro 2.x as the local development environment.
 
 -   [Craft Nitro 2.x](https://craftcms.com/docs/nitro/2.x/)
+    -   PHP 8.0.16 for future compatibility with Craft 4. See [Upgrading from Craft 3](https://craftcms.com/docs/4.x/upgrade.html) docs.
+    -   MySQL 5.7.33. (May change to 8.x in near future.)
 -   [Craft Nitro 2.x Mailhog](https://craftcms.com/docs/nitro/2.x/services/mailhog.html) for email.
 -   [Craft Nitro 2.x Redis](https://craftcms.com/docs/nitro/2.x/services/redis.html) for caching.
 
