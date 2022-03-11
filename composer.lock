@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bf5f8a833bee290ed0140852fb9c4d87",
+    "content-hash": "4d39f0e36e5148f375174d4ce21a0bef",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -613,16 +613,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.7.34",
+            "version": "3.7.36",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "5176602f4ad33769dcee05ccafc0d4d8b894f80a"
+                "reference": "4bb6e9ec02077d18f8692bf50d26afc51596e4b9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/5176602f4ad33769dcee05ccafc0d4d8b894f80a",
-                "reference": "5176602f4ad33769dcee05ccafc0d4d8b894f80a",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/4bb6e9ec02077d18f8692bf50d26afc51596e4b9",
+                "reference": "4bb6e9ec02077d18f8692bf50d26afc51596e4b9",
                 "shasum": ""
             },
             "require": {
@@ -718,7 +718,7 @@
                 "rss": "https://github.com/craftcms/cms/releases.atom",
                 "source": "https://github.com/craftcms/cms"
             },
-            "time": "2022-02-22T18:34:09+00:00"
+            "time": "2022-03-03T17:34:56+00:00"
         },
         {
             "name": "craftcms/contact-form",
@@ -780,23 +780,23 @@
         },
         {
             "name": "craftcms/html-field",
-            "version": "1.0.5",
+            "version": "1.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/html-field.git",
-                "reference": "d8ae4e3e4862a008ce50589eb7c90caf4fc0e2a2"
+                "reference": "fd3d400643fccbe27583102f581640f465987a06"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/html-field/zipball/d8ae4e3e4862a008ce50589eb7c90caf4fc0e2a2",
-                "reference": "d8ae4e3e4862a008ce50589eb7c90caf4fc0e2a2",
+                "url": "https://api.github.com/repos/craftcms/html-field/zipball/fd3d400643fccbe27583102f581640f465987a06",
+                "reference": "fd3d400643fccbe27583102f581640f465987a06",
                 "shasum": ""
             },
             "require": {
                 "craftcms/cms": "^3.6.0"
             },
             "require-dev": {
-                "phpstan/phpstan": "^0.12.96"
+                "craftcms/phpstan": "dev-main"
             },
             "type": "library",
             "autoload": {
@@ -822,7 +822,7 @@
                 "rss": "https://github.com/craftcms/html-field/commits/main.atom",
                 "source": "https://github.com/craftcms/html-field"
             },
-            "time": "2022-02-16T09:33:08+00:00"
+            "time": "2022-03-10T14:39:24+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -4792,16 +4792,16 @@
         },
         {
             "name": "symfony/dom-crawler",
-            "version": "v5.4.5",
+            "version": "v5.4.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dom-crawler.git",
-                "reference": "50777f44e7dc37e16959ca65041df2acd6a65775"
+                "reference": "c0bda97480d96337bd3866026159a8b358665457"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/50777f44e7dc37e16959ca65041df2acd6a65775",
-                "reference": "50777f44e7dc37e16959ca65041df2acd6a65775",
+                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/c0bda97480d96337bd3866026159a8b358665457",
+                "reference": "c0bda97480d96337bd3866026159a8b358665457",
                 "shasum": ""
             },
             "require": {
@@ -4847,7 +4847,7 @@
             "description": "Eases DOM navigation for HTML and XML documents",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/dom-crawler/tree/v5.4.5"
+                "source": "https://github.com/symfony/dom-crawler/tree/v5.4.6"
             },
             "funding": [
                 {
@@ -4863,20 +4863,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-01-31T16:08:03+00:00"
+            "time": "2022-03-02T12:42:23+00:00"
         },
         {
             "name": "symfony/filesystem",
-            "version": "v5.4.5",
+            "version": "v5.4.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
-                "reference": "797680071ea8f71b94eb958680c50d0e002638f5"
+                "reference": "d53a45039974952af7f7ebc461ccdd4295e29440"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/filesystem/zipball/797680071ea8f71b94eb958680c50d0e002638f5",
-                "reference": "797680071ea8f71b94eb958680c50d0e002638f5",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/d53a45039974952af7f7ebc461ccdd4295e29440",
+                "reference": "d53a45039974952af7f7ebc461ccdd4295e29440",
                 "shasum": ""
             },
             "require": {
@@ -4911,7 +4911,7 @@
             "description": "Provides basic utilities for the filesystem",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/filesystem/tree/v5.4.5"
+                "source": "https://github.com/symfony/filesystem/tree/v5.4.6"
             },
             "funding": [
                 {
@@ -4927,7 +4927,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-02-27T10:31:47+00:00"
+            "time": "2022-03-02T12:42:23+00:00"
         },
         {
             "name": "symfony/finder",
@@ -4994,7 +4994,7 @@
         },
         {
             "name": "symfony/polyfill-ctype",
-            "version": "v1.24.0",
+            "version": "v1.25.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-ctype.git",
@@ -5056,7 +5056,7 @@
                 "portable"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.24.0"
+                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.25.0"
             },
             "funding": [
                 {
@@ -5076,7 +5076,7 @@
         },
         {
             "name": "symfony/polyfill-iconv",
-            "version": "v1.24.0",
+            "version": "v1.25.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-iconv.git",
@@ -5139,7 +5139,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-iconv/tree/v1.24.0"
+                "source": "https://github.com/symfony/polyfill-iconv/tree/v1.25.0"
             },
             "funding": [
                 {
@@ -5159,7 +5159,7 @@
         },
         {
             "name": "symfony/polyfill-intl-grapheme",
-            "version": "v1.24.0",
+            "version": "v1.25.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-intl-grapheme.git",
@@ -5220,7 +5220,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-intl-grapheme/tree/v1.24.0"
+                "source": "https://github.com/symfony/polyfill-intl-grapheme/tree/v1.25.0"
             },
             "funding": [
                 {
@@ -5240,7 +5240,7 @@
         },
         {
             "name": "symfony/polyfill-intl-idn",
-            "version": "v1.24.0",
+            "version": "v1.25.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-intl-idn.git",
@@ -5307,7 +5307,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-intl-idn/tree/v1.24.0"
+                "source": "https://github.com/symfony/polyfill-intl-idn/tree/v1.25.0"
             },
             "funding": [
                 {
@@ -5327,7 +5327,7 @@
         },
         {
             "name": "symfony/polyfill-intl-normalizer",
-            "version": "v1.24.0",
+            "version": "v1.25.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-intl-normalizer.git",
@@ -5391,7 +5391,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-intl-normalizer/tree/v1.24.0"
+                "source": "https://github.com/symfony/polyfill-intl-normalizer/tree/v1.25.0"
             },
             "funding": [
                 {
@@ -5411,7 +5411,7 @@
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.24.0",
+            "version": "v1.25.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
@@ -5474,7 +5474,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.24.0"
+                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.25.0"
             },
             "funding": [
                 {
@@ -5494,7 +5494,7 @@
         },
         {
             "name": "symfony/polyfill-php72",
-            "version": "v1.24.0",
+            "version": "v1.25.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php72.git",
@@ -5550,7 +5550,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-php72/tree/v1.24.0"
+                "source": "https://github.com/symfony/polyfill-php72/tree/v1.25.0"
             },
             "funding": [
                 {
@@ -5570,7 +5570,7 @@
         },
         {
             "name": "symfony/polyfill-php73",
-            "version": "v1.24.0",
+            "version": "v1.25.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php73.git",
@@ -5629,7 +5629,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-php73/tree/v1.24.0"
+                "source": "https://github.com/symfony/polyfill-php73/tree/v1.25.0"
             },
             "funding": [
                 {
@@ -5649,16 +5649,16 @@
         },
         {
             "name": "symfony/polyfill-php80",
-            "version": "v1.24.0",
+            "version": "v1.25.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php80.git",
-                "reference": "57b712b08eddb97c762a8caa32c84e037892d2e9"
+                "reference": "4407588e0d3f1f52efb65fbe92babe41f37fe50c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/57b712b08eddb97c762a8caa32c84e037892d2e9",
-                "reference": "57b712b08eddb97c762a8caa32c84e037892d2e9",
+                "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/4407588e0d3f1f52efb65fbe92babe41f37fe50c",
+                "reference": "4407588e0d3f1f52efb65fbe92babe41f37fe50c",
                 "shasum": ""
             },
             "require": {
@@ -5712,7 +5712,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-php80/tree/v1.24.0"
+                "source": "https://github.com/symfony/polyfill-php80/tree/v1.25.0"
             },
             "funding": [
                 {
@@ -5728,7 +5728,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-09-13T13:58:33+00:00"
+            "time": "2022-03-04T08:16:47+00:00"
         },
         {
             "name": "symfony/process",
@@ -6302,16 +6302,16 @@
         },
         {
             "name": "voku/anti-xss",
-            "version": "4.1.37",
+            "version": "4.1.39",
             "source": {
                 "type": "git",
                 "url": "https://github.com/voku/anti-xss.git",
-                "reference": "728e158427a263917f33b0a29eb75d866bd18d17"
+                "reference": "64a59ba4744e6722866ff3440d93561da9e85cd0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/voku/anti-xss/zipball/728e158427a263917f33b0a29eb75d866bd18d17",
-                "reference": "728e158427a263917f33b0a29eb75d866bd18d17",
+                "url": "https://api.github.com/repos/voku/anti-xss/zipball/64a59ba4744e6722866ff3440d93561da9e85cd0",
+                "reference": "64a59ba4744e6722866ff3440d93561da9e85cd0",
                 "shasum": ""
             },
             "require": {
@@ -6357,7 +6357,7 @@
             ],
             "support": {
                 "issues": "https://github.com/voku/anti-xss/issues",
-                "source": "https://github.com/voku/anti-xss/tree/4.1.37"
+                "source": "https://github.com/voku/anti-xss/tree/4.1.39"
             },
             "funding": [
                 {
@@ -6381,20 +6381,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-02-15T01:57:51+00:00"
+            "time": "2022-03-08T17:03:58+00:00"
         },
         {
             "name": "voku/arrayy",
-            "version": "7.9.0",
+            "version": "7.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/voku/Arrayy.git",
-                "reference": "8c56970123b8c6d62d3583f0ba1eb6846b62d913"
+                "reference": "11509d59745af6b2c23a781938491f9981241c1d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/voku/Arrayy/zipball/8c56970123b8c6d62d3583f0ba1eb6846b62d913",
-                "reference": "8c56970123b8c6d62d3583f0ba1eb6846b62d913",
+                "url": "https://api.github.com/repos/voku/Arrayy/zipball/11509d59745af6b2c23a781938491f9981241c1d",
+                "reference": "11509d59745af6b2c23a781938491f9981241c1d",
                 "shasum": ""
             },
             "require": {
@@ -6464,7 +6464,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-02-15T10:43:00+00:00"
+            "time": "2022-03-08T19:16:33+00:00"
         },
         {
             "name": "voku/email-check",
@@ -6544,16 +6544,16 @@
         },
         {
             "name": "voku/portable-ascii",
-            "version": "2.0.0",
+            "version": "2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/voku/portable-ascii.git",
-                "reference": "9bd89e83cecdf8c37b64909454249eaed98b2c89"
+                "reference": "b56450eed252f6801410d810c8e1727224ae0743"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/voku/portable-ascii/zipball/9bd89e83cecdf8c37b64909454249eaed98b2c89",
-                "reference": "9bd89e83cecdf8c37b64909454249eaed98b2c89",
+                "url": "https://api.github.com/repos/voku/portable-ascii/zipball/b56450eed252f6801410d810c8e1727224ae0743",
+                "reference": "b56450eed252f6801410d810c8e1727224ae0743",
                 "shasum": ""
             },
             "require": {
@@ -6590,7 +6590,7 @@
             ],
             "support": {
                 "issues": "https://github.com/voku/portable-ascii/issues",
-                "source": "https://github.com/voku/portable-ascii/tree/2.0.0"
+                "source": "https://github.com/voku/portable-ascii/tree/2.0.1"
             },
             "funding": [
                 {
@@ -6614,20 +6614,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-01-24T18:59:03+00:00"
+            "time": "2022-03-08T17:03:00+00:00"
         },
         {
             "name": "voku/portable-utf8",
-            "version": "6.0.3",
+            "version": "6.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/voku/portable-utf8.git",
-                "reference": "82a714b5a4973974c1113e97b11c1044a8b8cb85"
+                "reference": "f6c78e492520115bb2d947c3a0d90a2c6b7a60a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/voku/portable-utf8/zipball/82a714b5a4973974c1113e97b11c1044a8b8cb85",
-                "reference": "82a714b5a4973974c1113e97b11c1044a8b8cb85",
+                "url": "https://api.github.com/repos/voku/portable-utf8/zipball/f6c78e492520115bb2d947c3a0d90a2c6b7a60a8",
+                "reference": "f6c78e492520115bb2d947c3a0d90a2c6b7a60a8",
                 "shasum": ""
             },
             "require": {
@@ -6689,7 +6689,7 @@
             ],
             "support": {
                 "issues": "https://github.com/voku/portable-utf8/issues",
-                "source": "https://github.com/voku/portable-utf8/tree/6.0.3"
+                "source": "https://github.com/voku/portable-utf8/tree/6.0.4"
             },
             "funding": [
                 {
@@ -6713,7 +6713,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-01-30T05:20:24+00:00"
+            "time": "2022-03-08T17:04:59+00:00"
         },
         {
             "name": "voku/stop-words",
@@ -7628,5 +7628,5 @@
     "platform-overrides": {
         "php": "7.2.5"
     },
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "2.2.0"
 }
