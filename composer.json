@@ -25,7 +25,8 @@
     },
     "autoload": {
         "psr-4": {
-            "modules\\": "modules/"
+            "modules\\": "modules/",
+            "modules\\sitemodule\\": "modules/sitemodule/src/"
         }
     },
     "config": {

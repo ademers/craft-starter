@@ -1,0 +1,19 @@
+/**
+ * Site module for Craft CMS
+ *
+ * Site CSS
+ *
+ * @author    Andrea DeMers
+ * @copyright Copyright (c) 2022 Andrea DeMers
+ * @link      https://andreademers.com
+ * @package   SiteModule
+ * @since     1.0.0
+ */
+
+body.login {
+    /* uncomment `background-color` to test */
+    /* background-color: blue; */
+    /* background-size: 600px;
+    background-repeat: repeat;
+    background-image: url('/img/site/devmode-fm-light-bg-opaque.svg'); */
+}
