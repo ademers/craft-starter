@@ -22,6 +22,10 @@ use yii\base\Event;
 use yii\base\InvalidConfigException;
 use yii\base\Module;
 
+// Contact form plugin
+use craft\contactform\models\Submission;
+use craft\events\DefineRulesEvent;
+
 /**
  * Craft plugins are very much like little applications in and of themselves. We’ve made
  * it as simple as we can, but the training wheels are off. A little prior knowledge is
@@ -120,6 +124,15 @@ class SiteModule extends Module
                 }
             );
         }
+
+        // Contact Form plugin: make fromName field required.
+        Event::on(
+            Submission::class,
+            Submission::EVENT_DEFINE_RULES,
+            function(DefineRulesEvent $event) {
+                $event->rules[] = [['fromName'], 'required'];
+            }
+        );
 
 /**
  * Logging in Craft involves using one of the following methods:
