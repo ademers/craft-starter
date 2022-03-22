@@ -10,6 +10,7 @@ A [Craft CMS](https://craftcms.com/) starter project by [Andrea DeMers](https://
 ## Craft CMS Plugins
 
 -   [Contact Form](https://plugins.craftcms.com/contact-form)
+    -   `fromName` field set to required via custom site Module.
 -   [Minify](https://plugins.craftcms.com/minify)
 -   [Redactor](https://plugins.craftcms.com/redactor)
 -   [Retcon](https://plugins.craftcms.com/retcon)
@@ -70,7 +71,7 @@ This Craft Starter project is configured to use Craft Nitro 2.x as the local dev
 
 -   [ ] Get [Vite critical CSS](https://github.com/nystudio107/rollup-plugin-critical) working with Craft Nitro.
 -   [ ] Get [Vite Favicon generation](https://github.com/khalwat/vite-plugin-favicon) working with Craft Nitro.
--   [ ] Add a Craft custom site module.
+-   [x] Add a Craft custom site module as per [Enhancing a Craft CMS 3 Website with a Custom Module](https://nystudio107.com/blog/enhancing-a-craft-cms-3-website-with-a-custom-module) article.
 -   [ ] Update installation instructions to include Nitro & Packagist versions.
 -   [x] Replace Vue.js with Alpine.js as default JavaScript framework.
 -   [x] Add installation instructions.
