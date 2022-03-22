@@ -28,7 +28,7 @@
 
         {# Vite icons #}
         <!-- Vite icons -->
-        {# {{ craft.vite.inline("@webroot/dist/assets/test.text") }} #}
+        {{ craft.vite.inline('@webroot/dist/assets/favicons/webapp.html') }}
         <!-- /Vite icons -->
 
         {# Alpine JS #}
@@ -50,10 +50,10 @@
         <!-- /Critical CSS -->
 
         {# Non-critical CSS #}
-        {# Vite #}
-        <!-- Vite -->
+        {# Vite non-critical CSS #}
+        <!-- Vite non-critical CSS -->
         {{ craft.vite.script('/src/app.js') }}
-        <!-- /Vite -->
+        <!-- /Vite non-critical CSS -->
     </head>
 
     <body class="text-base font-sans antialiased text-gray-900 bg-white leading-normal">
