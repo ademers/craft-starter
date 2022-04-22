@@ -14,7 +14,6 @@ export default ({ command }) => ({
             },
         },
     },
-
     plugins: [
         legacy({
             targets: ['defaults', 'IE 11'],
