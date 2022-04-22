@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fff196d139e253814d6ffe2d68d96ef6",
+    "content-hash": "e0bbc5f4b81dbfa5d081c3600459a46d",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -3976,22 +3976,23 @@
         },
         {
             "name": "putyourlightson/craft-sprig",
-            "version": "1.12.0",
+            "version": "1.12.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/putyourlightson/craft-sprig.git",
-                "reference": "a585265a1281dc5a1087a4ec8207077f14a45a3b"
+                "reference": "3198beb029ed2cf1e27aa83974a3fa275bd48ea8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/putyourlightson/craft-sprig/zipball/a585265a1281dc5a1087a4ec8207077f14a45a3b",
-                "reference": "a585265a1281dc5a1087a4ec8207077f14a45a3b",
+                "url": "https://api.github.com/repos/putyourlightson/craft-sprig/zipball/3198beb029ed2cf1e27aa83974a3fa275bd48ea8",
+                "reference": "3198beb029ed2cf1e27aa83974a3fa275bd48ea8",
                 "shasum": ""
             },
             "require": {
                 "craftcms/cms": "^3.3.0",
+                "php": ">=7.1",
                 "phpdocumentor/reflection-docblock": "^5.2.0",
-                "putyourlightson/craft-sprig-core": "^1.3.0"
+                "putyourlightson/craft-sprig-core": "^1.3.2"
             },
             "type": "craft-plugin",
             "extra": {
@@ -4025,7 +4026,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-03-01T10:14:18+00:00"
+            "time": "2022-04-14T09:53:01+00:00"
         },
         {
             "name": "putyourlightson/craft-sprig-core",
