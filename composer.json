@@ -11,7 +11,7 @@
     "version": "1.3.0",
     "license": "MIT",
     "require": {
-        "craftcms/cms": "3.7.36",
+        "craftcms/cms": "3.7.38",
         "craftcms/contact-form": "2.3.0",
         "craftcms/redactor": "2.10.5",
         "mmikkel/retcon": "2.3.0",
