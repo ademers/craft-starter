@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e0bbc5f4b81dbfa5d081c3600459a46d",
+    "content-hash": "9e22d89098334ad7534446ce995beb36",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -3197,31 +3197,31 @@
         },
         {
             "name": "nystudio107/craft-vite",
-            "version": "1.0.23",
+            "version": "1.0.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-vite.git",
-                "reference": "7e633346b4765ff1806203df83506a8f09d72806"
+                "reference": "09a90f2a0cba9d9efdc3a80ec75831e89c684fc0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-vite/zipball/7e633346b4765ff1806203df83506a8f09d72806",
-                "reference": "7e633346b4765ff1806203df83506a8f09d72806",
+                "url": "https://api.github.com/repos/nystudio107/craft-vite/zipball/09a90f2a0cba9d9efdc3a80ec75831e89c684fc0",
+                "reference": "09a90f2a0cba9d9efdc3a80ec75831e89c684fc0",
                 "shasum": ""
             },
             "require": {
                 "craftcms/cms": "^3.0.0",
-                "nystudio107/craft-plugin-vite": "^1.0.22"
+                "nystudio107/craft-plugin-vite": "^1.0.23"
             },
             "type": "craft-plugin",
             "extra": {
-                "name": "Vite",
-                "handle": "vite",
+                "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft-vite/v1/CHANGELOG.md",
+                "class": "nystudio107\\vite\\Vite",
                 "developer": "nystudio107",
                 "developerUrl": "https://nystudio107.com",
-                "documentationUrl": "https://github.com/nystudio107/craft-vite/blob/master/README.md",
-                "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft-vite/master/CHANGELOG.md",
-                "class": "nystudio107\\vite\\Vite"
+                "documentationUrl": "https://nystudio107.com/docs/vite/",
+                "handle": "vite",
+                "name": "Vite"
             },
             "autoload": {
                 "psr-4": {
@@ -3249,7 +3249,7 @@
             "support": {
                 "docs": "https://github.com/nystudio107/craft-vite/blob/master/README.md",
                 "issues": "https://github.com/nystudio107/craft-vite/issues",
-                "source": "https://github.com/nystudio107/craft-vite/tree/1.0.23"
+                "source": "https://github.com/nystudio107/craft-vite/tree/1.0.24"
             },
             "funding": [
                 {
@@ -3257,7 +3257,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-01-21T13:19:25+00:00"
+            "time": "2022-03-23T04:02:17+00:00"
         },
         {
             "name": "paragonie/random_compat",

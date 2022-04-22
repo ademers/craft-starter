@@ -18,7 +18,7 @@
         "nystudio107/craft-minify": "1.2.11",
         "nystudio107/craft-scripts": "1.2.10",
         "nystudio107/craft-seomatic": "3.4.30",
-        "nystudio107/craft-vite": "1.0.23",
+        "nystudio107/craft-vite": "1.0.24",
         "putyourlightson/craft-sprig": "1.12.4",
         "vlucas/phpdotenv": "^3.4.0",
         "yiisoft/yii2-redis": "^2.0"
