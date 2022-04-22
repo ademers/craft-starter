@@ -12,7 +12,7 @@
     "license": "MIT",
     "require": {
         "craftcms/cms": "3.7.38",
-        "craftcms/contact-form": "2.3.0",
+        "craftcms/contact-form": "2.5.0",
         "craftcms/redactor": "2.10.5",
         "mmikkel/retcon": "2.3.0",
         "nystudio107/craft-minify": "1.2.11",
