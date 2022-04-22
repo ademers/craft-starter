@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "246312bbfc72aacfd4d2cad2f34f4780",
+    "content-hash": "d3991f4356e5d97a7500196142f96dbc",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -2562,23 +2562,27 @@
         },
         {
             "name": "mmikkel/retcon",
-            "version": "2.3.0",
+            "version": "2.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mmikkel/Retcon-Craft.git",
-                "reference": "e6bf3db96f00eae4acfa4fcedd9be79f7b1e7abc"
+                "reference": "2182e115c1551c2b87db819739151811ca2990e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mmikkel/Retcon-Craft/zipball/e6bf3db96f00eae4acfa4fcedd9be79f7b1e7abc",
-                "reference": "e6bf3db96f00eae4acfa4fcedd9be79f7b1e7abc",
+                "url": "https://api.github.com/repos/mmikkel/Retcon-Craft/zipball/2182e115c1551c2b87db819739151811ca2990e8",
+                "reference": "2182e115c1551c2b87db819739151811ca2990e8",
                 "shasum": ""
             },
             "require": {
-                "craftcms/cms": "^3.0.0-RC1",
+                "craftcms/cms": "^3.7.0|^4.0.0-beta.4",
                 "masterminds/html5": "^2.3",
-                "symfony/css-selector": "^3.3.6 || ^4.0 || ^5.0",
-                "symfony/dom-crawler": "^3.3.6 || ^4.0 || ^5.0"
+                "php": "^7.2.5|^8.0",
+                "symfony/css-selector": "^3.3.6|^4.0|^5.0",
+                "symfony/dom-crawler": "^3.3.6|^4.0|^5.0"
+            },
+            "require-dev": {
+                "craftcms/rector": "dev-main"
             },
             "type": "craft-plugin",
             "extra": {
@@ -2617,9 +2621,9 @@
             "support": {
                 "docs": "https://github.com/mmikkel/Retcon-Craft/blob/master/README.md",
                 "issues": "https://github.com/mmikkel/Retcon-Craft/issues",
-                "source": "https://github.com/mmikkel/Retcon-Craft/tree/2.3.0"
+                "source": "https://github.com/mmikkel/Retcon-Craft/tree/2.4.1"
             },
-            "time": "2021-10-22T12:25:04+00:00"
+            "time": "2022-04-19T12:55:16+00:00"
         },
         {
             "name": "monolog/monolog",
