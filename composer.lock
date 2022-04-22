@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d3991f4356e5d97a7500196142f96dbc",
+    "content-hash": "fff196d139e253814d6ffe2d68d96ef6",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -3122,16 +3122,16 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.4.26",
+            "version": "3.4.30",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "7d0bd6b92bd32758458562ac1b445d9fd384e1d6"
+                "reference": "238b6936d8e755917e77db6300f9d827eeca2ca2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/7d0bd6b92bd32758458562ac1b445d9fd384e1d6",
-                "reference": "7d0bd6b92bd32758458562ac1b445d9fd384e1d6",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/238b6936d8e755917e77db6300f9d827eeca2ca2",
+                "reference": "238b6936d8e755917e77db6300f9d827eeca2ca2",
                 "shasum": ""
             },
             "require": {
@@ -3185,7 +3185,7 @@
             "support": {
                 "docs": "https://nystudio107.com/plugins/seomatic/documentation",
                 "issues": "https://nystudio107.com/plugins/seomatic/support",
-                "source": "https://github.com/nystudio107/craft-seomatic/tree/3.4.26"
+                "source": "https://github.com/nystudio107/craft-seomatic/tree/3.4.30"
             },
             "funding": [
                 {
@@ -3193,7 +3193,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-02-21T17:14:20+00:00"
+            "time": "2022-04-18T22:16:40+00:00"
         },
         {
             "name": "nystudio107/craft-vite",
