@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bc970ae06e15b2d2e7edbdd7525f7a0e",
+    "content-hash": "246312bbfc72aacfd4d2cad2f34f4780",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -970,24 +970,25 @@
         },
         {
             "name": "craftcms/redactor",
-            "version": "2.10.5",
+            "version": "2.10.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/redactor.git",
-                "reference": "b4d5d8e9b034e8f0018c560505022d0b8f5750ce"
+                "reference": "3ae12028303dc5ef95ccdd6b47a9307510080011"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/redactor/zipball/b4d5d8e9b034e8f0018c560505022d0b8f5750ce",
-                "reference": "b4d5d8e9b034e8f0018c560505022d0b8f5750ce",
+                "url": "https://api.github.com/repos/craftcms/redactor/zipball/3ae12028303dc5ef95ccdd6b47a9307510080011",
+                "reference": "3ae12028303dc5ef95ccdd6b47a9307510080011",
                 "shasum": ""
             },
             "require": {
                 "craftcms/cms": "^3.6.0",
-                "craftcms/html-field": "^1.0.4"
+                "craftcms/html-field": "^1.0.5"
             },
             "require-dev": {
-                "phpstan/phpstan": "^0.12.96"
+                "craftcms/ecs": "dev-main",
+                "craftcms/phpstan": "dev-main"
             },
             "type": "craft-plugin",
             "extra": {
@@ -1025,7 +1026,7 @@
                 "rss": "https://github.com/craftcms/redactor/commits/v2.atom",
                 "source": "https://github.com/craftcms/redactor"
             },
-            "time": "2022-02-25T08:14:08+00:00"
+            "time": "2022-04-07T23:15:08+00:00"
         },
         {
             "name": "craftcms/server-check",
