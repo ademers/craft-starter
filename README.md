@@ -69,6 +69,7 @@ This Craft Starter project is configured to use Craft Nitro 2.x as the local dev
 
 ## Todo
 
+-   [ ] Prep for Craft 4.
 -   [ ] Get [Vite critical CSS](https://github.com/nystudio107/rollup-plugin-critical) working with Craft Nitro
 -   [x] Get [Vite Favicon generation](https://github.com/khalwat/vite-plugin-favicon) working with Craft Nitro
 -   [x] Add a Craft custom site module as per [Enhancing a Craft CMS 3 Website with a Custom Module](https://nystudio107.com/blog/enhancing-a-craft-cms-3-website-with-a-custom-module) article
