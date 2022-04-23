@@ -5,8 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## 1.4.2 2022-04-23
+### Fixed
+- Fix changelog.
+## 1.4.1 2022-04-23
+### Changed
+- Update Craft CMS to 3.7.38.
+- Update Craft plugins to latest versions.
+- Update Tailwind CSS to 3.0.24.
+- Update Alpine JS to 3.10.2.
+- Update NPM packages.
+- Change Favicon to match site logo.
 ## 1.4.0 2022-03-02
-
 ### Added
 
 -   Add Prettier for code formatting.
