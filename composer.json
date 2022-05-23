@@ -37,7 +37,8 @@
         },
         "allow-plugins": {
             "craftcms/plugin-installer": true,
-            "yiisoft/yii2-composer": true
+            "yiisoft/yii2-composer": true,
+            "treeware/plant": true
         }
     },
     "scripts": {
