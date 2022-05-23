@@ -19,7 +19,7 @@
         "nystudio107/craft-scripts": "1.2.10",
         "nystudio107/craft-seomatic": "3.4.30",
         "nystudio107/craft-vite": "1.0.25",
-        "putyourlightson/craft-sprig": "1.12.4",
+        "putyourlightson/craft-sprig": "1.13.0",
         "vlucas/phpdotenv": "^3.4.0",
         "yiisoft/yii2-redis": "^2.0"
     },
