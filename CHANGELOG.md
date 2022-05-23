@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## 1.4.3 2022-05-23
+### Changed
+- Update Craft CMS to 3.7.43
+- Update Craft Vite plugint to 1.0.25.
+- Update Craft Sprig plugin to 1.13.0.
+- Update Craft Contact Form plugin to 2.5.1.
+- Update Craft Redactor plugin to 2.10.8.
+- Update allow-plugins in `composer.json`.
+### Removed
+- Uninstall & remove Craft Retcon plugin.
 ## 1.4.2 2022-04-23
 ### Fixed
 - Fix changelog.
