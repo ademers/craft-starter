@@ -13,7 +13,6 @@ A [Craft CMS](https://craftcms.com/) starter project by [Andrea DeMers](https://
     -   `fromName` field set to *required* via a custom Site Module
 -   [Minify](https://plugins.craftcms.com/minify)
 -   [Redactor](https://plugins.craftcms.com/redactor)
--   [Retcon](https://plugins.craftcms.com/retcon)
 -   [SEOmatic](https://plugins.craftcms.com/seomatic)
 -   [Sprig](https://plugins.craftcms.com/sprig)
 -   [Vite](https://plugins.craftcms.com/vite)

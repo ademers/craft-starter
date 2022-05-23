@@ -8,18 +8,17 @@
         "project"
     ],
     "type": "project",
-    "version": "1.4.2",
+    "version": "1.4.3",
     "license": "MIT",
     "require": {
-        "craftcms/cms": "3.7.38",
-        "craftcms/contact-form": "2.5.0",
-        "craftcms/redactor": "2.10.6",
-        "mmikkel/retcon": "2.4.1",
+        "craftcms/cms": "3.7.43",
+        "craftcms/contact-form": "2.5.1",
+        "craftcms/redactor": "2.10.8",
         "nystudio107/craft-minify": "1.2.11",
         "nystudio107/craft-scripts": "1.2.10",
         "nystudio107/craft-seomatic": "3.4.30",
-        "nystudio107/craft-vite": "1.0.24",
-        "putyourlightson/craft-sprig": "1.12.4",
+        "nystudio107/craft-vite": "1.0.25",
+        "putyourlightson/craft-sprig": "1.13.0",
         "vlucas/phpdotenv": "^3.4.0",
         "yiisoft/yii2-redis": "^2.0"
     },
@@ -37,7 +36,8 @@
         },
         "allow-plugins": {
             "craftcms/plugin-installer": true,
-            "yiisoft/yii2-composer": true
+            "yiisoft/yii2-composer": true,
+            "treeware/plant": true
         }
     },
     "scripts": {
