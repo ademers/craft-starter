@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9e22d89098334ad7534446ce995beb36",
+    "content-hash": "b23b971f76e078716988469cdbb34988",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -467,16 +467,16 @@
         },
         {
             "name": "composer/spdx-licenses",
-            "version": "1.5.6",
+            "version": "1.5.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/spdx-licenses.git",
-                "reference": "a30d487169d799745ca7280bc90fdfa693536901"
+                "reference": "c848241796da2abf65837d51dce1fae55a960149"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/spdx-licenses/zipball/a30d487169d799745ca7280bc90fdfa693536901",
-                "reference": "a30d487169d799745ca7280bc90fdfa693536901",
+                "url": "https://api.github.com/repos/composer/spdx-licenses/zipball/c848241796da2abf65837d51dce1fae55a960149",
+                "reference": "c848241796da2abf65837d51dce1fae55a960149",
                 "shasum": ""
             },
             "require": {
@@ -527,7 +527,7 @@
             "support": {
                 "irc": "irc://irc.freenode.org/composer",
                 "issues": "https://github.com/composer/spdx-licenses/issues",
-                "source": "https://github.com/composer/spdx-licenses/tree/1.5.6"
+                "source": "https://github.com/composer/spdx-licenses/tree/1.5.7"
             },
             "funding": [
                 {
@@ -543,7 +543,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-11-18T10:14:14+00:00"
+            "time": "2022-05-23T07:37:50+00:00"
         },
         {
             "name": "composer/xdebug-handler",
@@ -816,22 +816,23 @@
         },
         {
             "name": "craftcms/html-field",
-            "version": "1.0.6",
+            "version": "1.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/html-field.git",
-                "reference": "fd3d400643fccbe27583102f581640f465987a06"
+                "reference": "c78d786f88e7d68d38951cf483222ef9fc77ecbf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/html-field/zipball/fd3d400643fccbe27583102f581640f465987a06",
-                "reference": "fd3d400643fccbe27583102f581640f465987a06",
+                "url": "https://api.github.com/repos/craftcms/html-field/zipball/c78d786f88e7d68d38951cf483222ef9fc77ecbf",
+                "reference": "c78d786f88e7d68d38951cf483222ef9fc77ecbf",
                 "shasum": ""
             },
             "require": {
                 "craftcms/cms": "^3.6.0"
             },
             "require-dev": {
+                "craftcms/ecs": "dev-main",
                 "craftcms/phpstan": "dev-main"
             },
             "type": "library",
@@ -858,7 +859,7 @@
                 "rss": "https://github.com/craftcms/html-field/commits/main.atom",
                 "source": "https://github.com/craftcms/html-field"
             },
-            "time": "2022-03-10T14:39:24+00:00"
+            "time": "2022-05-03T22:04:25+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -2627,16 +2628,16 @@
         },
         {
             "name": "monolog/monolog",
-            "version": "2.5.0",
+            "version": "2.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "4192345e260f1d51b365536199744b987e160edc"
+                "reference": "247918972acd74356b0a91dfaa5adcaec069b6c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/4192345e260f1d51b365536199744b987e160edc",
-                "reference": "4192345e260f1d51b365536199744b987e160edc",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/247918972acd74356b0a91dfaa5adcaec069b6c0",
+                "reference": "247918972acd74356b0a91dfaa5adcaec069b6c0",
                 "shasum": ""
             },
             "require": {
@@ -2649,18 +2650,23 @@
             "require-dev": {
                 "aws/aws-sdk-php": "^2.4.9 || ^3.0",
                 "doctrine/couchdb": "~1.0@dev",
-                "elasticsearch/elasticsearch": "^7",
+                "elasticsearch/elasticsearch": "^7 || ^8",
+                "ext-json": "*",
                 "graylog2/gelf-php": "^1.4.2",
+                "guzzlehttp/guzzle": "^7.4",
+                "guzzlehttp/psr7": "^2.2",
                 "mongodb/mongodb": "^1.8",
                 "php-amqplib/php-amqplib": "~2.4 || ^3",
                 "php-console/php-console": "^3.1.3",
-                "phpspec/prophecy": "^1.6.1",
+                "phpspec/prophecy": "^1.15",
                 "phpstan/phpstan": "^0.12.91",
-                "phpunit/phpunit": "^8.5",
+                "phpunit/phpunit": "^8.5.14",
                 "predis/predis": "^1.1",
                 "rollbar/rollbar": "^1.3 || ^2 || ^3",
-                "ruflin/elastica": ">=0.90@dev",
-                "swiftmailer/swiftmailer": "^5.3|^6.0"
+                "ruflin/elastica": "^7",
+                "swiftmailer/swiftmailer": "^5.3|^6.0",
+                "symfony/mailer": "^5.4 || ^6",
+                "symfony/mime": "^5.4 || ^6"
             },
             "suggest": {
                 "aws/aws-sdk-php": "Allow sending log messages to AWS services like DynamoDB",
@@ -2710,7 +2716,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Seldaek/monolog/issues",
-                "source": "https://github.com/Seldaek/monolog/tree/2.5.0"
+                "source": "https://github.com/Seldaek/monolog/tree/2.6.0"
             },
             "funding": [
                 {
@@ -2722,7 +2728,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-04-08T15:43:54+00:00"
+            "time": "2022-05-10T09:36:00+00:00"
         },
         {
             "name": "mrclay/jsmin-php",
@@ -2783,16 +2789,16 @@
         },
         {
             "name": "mrclay/minify",
-            "version": "3.0.11",
+            "version": "3.0.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mrclay/minify.git",
-                "reference": "f1572a580a8ab29c5c7df4319c4787c74f7dcb3e"
+                "reference": "1962d3614c7ee1795a9fb74e49e603646b34207d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mrclay/minify/zipball/f1572a580a8ab29c5c7df4319c4787c74f7dcb3e",
-                "reference": "f1572a580a8ab29c5c7df4319c4787c74f7dcb3e",
+                "url": "https://api.github.com/repos/mrclay/minify/zipball/1962d3614c7ee1795a9fb74e49e603646b34207d",
+                "reference": "1962d3614c7ee1795a9fb74e49e603646b34207d",
                 "shasum": ""
             },
             "require": {
@@ -2843,10 +2849,10 @@
             "support": {
                 "email": "minify@googlegroups.com",
                 "issues": "https://github.com/mrclay/minify/issues",
-                "source": "https://github.com/mrclay/minify/tree/3.0.11",
+                "source": "https://github.com/mrclay/minify/tree/3.0.12",
                 "wiki": "https://github.com/mrclay/minify/blob/master/docs"
             },
-            "time": "2021-03-11T11:58:14+00:00"
+            "time": "2022-05-14T11:11:27+00:00"
         },
         {
             "name": "mrclay/props-dic",
@@ -2973,16 +2979,16 @@
         },
         {
             "name": "nystudio107/craft-plugin-manifest",
-            "version": "1.0.9",
+            "version": "1.0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-plugin-manifest.git",
-                "reference": "0f3c8129e2a95485e727a880db1d0f9adf6144e6"
+                "reference": "d94d147b548384c7d9bd59777e12462d32042445"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-plugin-manifest/zipball/0f3c8129e2a95485e727a880db1d0f9adf6144e6",
-                "reference": "0f3c8129e2a95485e727a880db1d0f9adf6144e6",
+                "url": "https://api.github.com/repos/nystudio107/craft-plugin-manifest/zipball/d94d147b548384c7d9bd59777e12462d32042445",
+                "reference": "d94d147b548384c7d9bd59777e12462d32042445",
                 "shasum": ""
             },
             "require": {
@@ -3013,7 +3019,7 @@
             "support": {
                 "docs": "https://github.com/nystudio107/craft-plugin-manifest/blob/v1/README.md",
                 "issues": "https://github.com/nystudio107/craft-plugin-manifest/issues",
-                "source": "https://github.com/nystudio107/craft-plugin-manifest/tree/1.0.9"
+                "source": "https://github.com/nystudio107/craft-plugin-manifest/tree/1.0.10"
             },
             "funding": [
                 {
@@ -3021,20 +3027,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-04-17T16:40:28+00:00"
+            "time": "2022-04-26T14:57:11+00:00"
         },
         {
             "name": "nystudio107/craft-plugin-vite",
-            "version": "1.0.23",
+            "version": "1.0.25",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-plugin-vite.git",
-                "reference": "7e6011c0c6b1a70c2d9fcb0b45d217a07d9bb7ab"
+                "reference": "aab4ab58d48fbaae395d4f80b551c0a33cbd1816"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-plugin-vite/zipball/7e6011c0c6b1a70c2d9fcb0b45d217a07d9bb7ab",
-                "reference": "7e6011c0c6b1a70c2d9fcb0b45d217a07d9bb7ab",
+                "url": "https://api.github.com/repos/nystudio107/craft-plugin-vite/zipball/aab4ab58d48fbaae395d4f80b551c0a33cbd1816",
+                "reference": "aab4ab58d48fbaae395d4f80b551c0a33cbd1816",
                 "shasum": ""
             },
             "require": {
@@ -3065,7 +3071,7 @@
             "support": {
                 "docs": "https://github.com/nystudio107/craft-plugin-vite/blob/v1/README.md",
                 "issues": "https://github.com/nystudio107/craft-plugin-vite/issues",
-                "source": "https://github.com/nystudio107/craft-plugin-vite/tree/1.0.23"
+                "source": "https://github.com/nystudio107/craft-plugin-vite/tree/1.0.25"
             },
             "funding": [
                 {
@@ -3073,7 +3079,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-03-23T03:42:56+00:00"
+            "time": "2022-05-16T02:50:28+00:00"
         },
         {
             "name": "nystudio107/craft-scripts",
@@ -3197,21 +3203,21 @@
         },
         {
             "name": "nystudio107/craft-vite",
-            "version": "1.0.24",
+            "version": "1.0.25",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-vite.git",
-                "reference": "09a90f2a0cba9d9efdc3a80ec75831e89c684fc0"
+                "reference": "0ce8ab4a001021754d8ab8712a5677dc4ac53d9c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-vite/zipball/09a90f2a0cba9d9efdc3a80ec75831e89c684fc0",
-                "reference": "09a90f2a0cba9d9efdc3a80ec75831e89c684fc0",
+                "url": "https://api.github.com/repos/nystudio107/craft-vite/zipball/0ce8ab4a001021754d8ab8712a5677dc4ac53d9c",
+                "reference": "0ce8ab4a001021754d8ab8712a5677dc4ac53d9c",
                 "shasum": ""
             },
             "require": {
                 "craftcms/cms": "^3.0.0",
-                "nystudio107/craft-plugin-vite": "^1.0.23"
+                "nystudio107/craft-plugin-vite": "^1.0.25"
             },
             "type": "craft-plugin",
             "extra": {
@@ -3249,7 +3255,7 @@
             "support": {
                 "docs": "https://github.com/nystudio107/craft-vite/blob/master/README.md",
                 "issues": "https://github.com/nystudio107/craft-vite/issues",
-                "source": "https://github.com/nystudio107/craft-vite/tree/1.0.24"
+                "source": "https://github.com/nystudio107/craft-vite/tree/1.0.25"
             },
             "funding": [
                 {
@@ -3257,7 +3263,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-03-23T04:02:17+00:00"
+            "time": "2022-05-16T02:57:36+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -4030,16 +4036,16 @@
         },
         {
             "name": "putyourlightson/craft-sprig-core",
-            "version": "1.3.2",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/putyourlightson/craft-sprig-core.git",
-                "reference": "88661ced05920f06f53aea89e4a33c85af0ec98c"
+                "reference": "0eea40527b119a70f3c69bd2f660209e0e7c4484"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/putyourlightson/craft-sprig-core/zipball/88661ced05920f06f53aea89e4a33c85af0ec98c",
-                "reference": "88661ced05920f06f53aea89e4a33c85af0ec98c",
+                "url": "https://api.github.com/repos/putyourlightson/craft-sprig-core/zipball/0eea40527b119a70f3c69bd2f660209e0e7c4484",
+                "reference": "0eea40527b119a70f3c69bd2f660209e0e7c4484",
                 "shasum": ""
             },
             "require": {
@@ -4067,7 +4073,7 @@
                 "issues": "https://github.com/putyourlightson/craft-sprig-core/issues",
                 "source": "https://github.com/putyourlightson/craft-sprig-core"
             },
-            "time": "2022-03-24T12:44:44+00:00"
+            "time": "2022-04-30T18:17:38+00:00"
         },
         {
             "name": "ralouphie/getallheaders",
@@ -4486,16 +4492,16 @@
         },
         {
             "name": "symfony/console",
-            "version": "v6.0.7",
+            "version": "v6.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "70dcf7b2ca2ea08ad6ebcc475f104a024fb5632e"
+                "reference": "0d00aa289215353aa8746a31d101f8e60826285c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/70dcf7b2ca2ea08ad6ebcc475f104a024fb5632e",
-                "reference": "70dcf7b2ca2ea08ad6ebcc475f104a024fb5632e",
+                "url": "https://api.github.com/repos/symfony/console/zipball/0d00aa289215353aa8746a31d101f8e60826285c",
+                "reference": "0d00aa289215353aa8746a31d101f8e60826285c",
                 "shasum": ""
             },
             "require": {
@@ -4561,7 +4567,7 @@
                 "terminal"
             ],
             "support": {
-                "source": "https://github.com/symfony/console/tree/v6.0.7"
+                "source": "https://github.com/symfony/console/tree/v6.0.8"
             },
             "funding": [
                 {
@@ -4577,7 +4583,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-03-31T17:18:25+00:00"
+            "time": "2022-04-20T15:01:42+00:00"
         },
         {
             "name": "symfony/css-selector",
@@ -4852,16 +4858,16 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v6.0.3",
+            "version": "v6.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "8661b74dbabc23223f38c9b99d3f8ade71170430"
+                "reference": "af7edab28d17caecd1f40a9219fc646ae751c21f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/8661b74dbabc23223f38c9b99d3f8ade71170430",
-                "reference": "8661b74dbabc23223f38c9b99d3f8ade71170430",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/af7edab28d17caecd1f40a9219fc646ae751c21f",
+                "reference": "af7edab28d17caecd1f40a9219fc646ae751c21f",
                 "shasum": ""
             },
             "require": {
@@ -4893,7 +4899,7 @@
             "description": "Finds files and directories via an intuitive fluent interface",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/finder/tree/v6.0.3"
+                "source": "https://github.com/symfony/finder/tree/v6.0.8"
             },
             "funding": [
                 {
@@ -4909,7 +4915,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-01-26T17:23:29+00:00"
+            "time": "2022-04-15T08:07:58+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -5572,16 +5578,16 @@
         },
         {
             "name": "symfony/process",
-            "version": "v5.4.7",
+            "version": "v5.4.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "38a44b2517b470a436e1c944bf9b9ba3961137fb"
+                "reference": "597f3fff8e3e91836bb0bd38f5718b56ddbde2f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/38a44b2517b470a436e1c944bf9b9ba3961137fb",
-                "reference": "38a44b2517b470a436e1c944bf9b9ba3961137fb",
+                "url": "https://api.github.com/repos/symfony/process/zipball/597f3fff8e3e91836bb0bd38f5718b56ddbde2f3",
+                "reference": "597f3fff8e3e91836bb0bd38f5718b56ddbde2f3",
                 "shasum": ""
             },
             "require": {
@@ -5614,7 +5620,7 @@
             "description": "Executes commands in sub-processes",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/process/tree/v5.4.7"
+                "source": "https://github.com/symfony/process/tree/v5.4.8"
             },
             "funding": [
                 {
@@ -5630,7 +5636,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-03-18T16:18:52+00:00"
+            "time": "2022-04-08T05:07:18+00:00"
         },
         {
             "name": "symfony/service-contracts",
@@ -5716,16 +5722,16 @@
         },
         {
             "name": "symfony/string",
-            "version": "v6.0.3",
+            "version": "v6.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/string.git",
-                "reference": "522144f0c4c004c80d56fa47e40e17028e2eefc2"
+                "reference": "ac0aa5c2282e0de624c175b68d13f2c8f2e2649d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/string/zipball/522144f0c4c004c80d56fa47e40e17028e2eefc2",
-                "reference": "522144f0c4c004c80d56fa47e40e17028e2eefc2",
+                "url": "https://api.github.com/repos/symfony/string/zipball/ac0aa5c2282e0de624c175b68d13f2c8f2e2649d",
+                "reference": "ac0aa5c2282e0de624c175b68d13f2c8f2e2649d",
                 "shasum": ""
             },
             "require": {
@@ -5781,7 +5787,7 @@
                 "utf8"
             ],
             "support": {
-                "source": "https://github.com/symfony/string/tree/v6.0.3"
+                "source": "https://github.com/symfony/string/tree/v6.0.8"
             },
             "funding": [
                 {
@@ -5797,7 +5803,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-01-02T09:55:41+00:00"
+            "time": "2022-04-22T08:18:02+00:00"
         },
         {
             "name": "symfony/yaml",
@@ -7466,5 +7472,5 @@
     "platform-overrides": {
         "php": "8.0.16"
     },
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.3.0"
 }
