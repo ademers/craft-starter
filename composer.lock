@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "018b5d2096655162c9863d0d158a7c50",
+    "content-hash": "c9e45933c896fbf70048ad450354f378",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -754,16 +754,16 @@
         },
         {
             "name": "craftcms/contact-form",
-            "version": "2.5.0",
+            "version": "2.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/contact-form.git",
-                "reference": "20f11192b36cf3b27108d5a3a5c841d08a70659a"
+                "reference": "93a31d4c95aba5109fb1cb2461d450bf1771ae51"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/contact-form/zipball/20f11192b36cf3b27108d5a3a5c841d08a70659a",
-                "reference": "20f11192b36cf3b27108d5a3a5c841d08a70659a",
+                "url": "https://api.github.com/repos/craftcms/contact-form/zipball/93a31d4c95aba5109fb1cb2461d450bf1771ae51",
+                "reference": "93a31d4c95aba5109fb1cb2461d450bf1771ae51",
                 "shasum": ""
             },
             "require": {
@@ -812,7 +812,7 @@
                 "rss": "https://github.com/craftcms/contact-form/commits/v2.atom",
                 "source": "https://github.com/craftcms/contact-form"
             },
-            "time": "2022-04-16T00:04:57+00:00"
+            "time": "2022-05-02T22:23:57+00:00"
         },
         {
             "name": "craftcms/html-field",
