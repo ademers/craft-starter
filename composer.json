@@ -11,7 +11,7 @@
     "version": "1.4.2",
     "license": "MIT",
     "require": {
-        "craftcms/cms": "3.7.38",
+        "craftcms/cms": "3.7.43",
         "craftcms/contact-form": "2.5.1",
         "craftcms/redactor": "2.10.8",
         "nystudio107/craft-minify": "1.2.11",
