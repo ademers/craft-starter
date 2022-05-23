@@ -1,4 +1,4 @@
-dateModified: 1646159641
+dateModified: 1653324628
 email:
   fromEmail: $SYSTEM_EMAIL_ADDRESS
   fromName: $SENDER_NAME
@@ -30,10 +30,6 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 2.3.0
-  retcon:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
   seomatic:
     edition: standard
     enabled: true
