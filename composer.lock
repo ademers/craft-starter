@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c9e45933c896fbf70048ad450354f378",
+    "content-hash": "fe1236108a3716da86c718d1383ec886",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -971,16 +971,16 @@
         },
         {
             "name": "craftcms/redactor",
-            "version": "2.10.6",
+            "version": "2.10.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/redactor.git",
-                "reference": "3ae12028303dc5ef95ccdd6b47a9307510080011"
+                "reference": "cc31c0a64a0a733337218d7ffd08b0424dbd8763"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/redactor/zipball/3ae12028303dc5ef95ccdd6b47a9307510080011",
-                "reference": "3ae12028303dc5ef95ccdd6b47a9307510080011",
+                "url": "https://api.github.com/repos/craftcms/redactor/zipball/cc31c0a64a0a733337218d7ffd08b0424dbd8763",
+                "reference": "cc31c0a64a0a733337218d7ffd08b0424dbd8763",
                 "shasum": ""
             },
             "require": {
@@ -1027,7 +1027,7 @@
                 "rss": "https://github.com/craftcms/redactor/commits/v2.atom",
                 "source": "https://github.com/craftcms/redactor"
             },
-            "time": "2022-04-07T23:15:08+00:00"
+            "time": "2022-05-04T19:01:46+00:00"
         },
         {
             "name": "craftcms/server-check",
