@@ -24,7 +24,7 @@
         "prettier": "2.6.2",
         "prettier-plugin-tailwindcss": "0.1.11",
         "prettier-plugin-twig-melody": "0.4.6",
-        "vite": "2.9.9",
+        "vite": "2.9.13",
         "vite-plugin-favicon2": "^1.1.4",
         "vite-plugin-restart": "0.1.1"
     }
